@@ -8,14 +8,15 @@
 - **Background:** Member of the Order of the Ashen Veil — dissolved under mysterious circumstances. Sole survivor.
 - **Age:** Late 20s
 - **Appearance:** Lean, precise, still. Eyes that catalogue everything. Moves like she's already decided how this ends.
+- **Current alias:** Sera Vann (borrowed from Maren's exit identity — one-time use, not yet burned)
 
 ## Abilities & Powers
 - **Weirding Combat:** Superhuman reflexes, precise unarmed strikes, reads opponents before they move
 - **The Voice:** Can layer compulsion into spoken words — subtle suggestions, sharp commands
 - **Shadow Step:** Blends into darkness, moves without sound
-- **Prescient Flashes:** Rare, unbidden glimpses — confirmed connection to the Remainder. Not reliable, but real.
+- **Prescient Flashes:** Confirmed connection to the Remainder. Surfaces information without traceable source.
 - **Truth-Sense:** Detects emotional tells and micro-deceptions; cannot be lied to easily
-- **Remainder Connection:** The Remainder has marked Seravyn. Gave her Cassia Vorne's name unprompted on the courier ship. Deepening. Unknown ceiling.
+- **Remainder Connection:** Deepening. Gave Seravyn Vorne's name unprompted. Showed an unknown face during meditation (Deputy Director Haan — not yet identified). Opened sublevel six specifically for Seravyn.
 
 ## Stats (D&D 5e)
 - **Level:** 3 (Monk 2 / Sorcerer 1)
@@ -36,36 +37,44 @@
 - Acrobatics, Stealth, Insight, Perception, Persuasion, History
 
 ## Equipment
-- Worn traveler's clothing (no insignia)
-- Two short blades, plain-hilted
+- Dark, structured dinner clothes — good cover for upper-tier environments
+- Two short blades, concealed
 - Data-chip from primary sanctum ruins (contents unknown — uncracked)
 - Cael's data-chip (recovered from his bunk on Karath's Drift)
-- Sister Aveth's location record (confirms chip seven is in the Sanctum of the Accord, Compact HQ, Corrath Prime)
-- Splice tool (purchased on Karath's Drift — 15 credits)
-- Change of clothes, Guild-appropriate (purchased on Karath's Drift — 10 credits)
-- Medical supplies — stimulant tabs, wound sealant (purchased on Karath's Drift — 10 credits, partially used on Maren)
-- Obsidian token (only thing taken when she ran)
-- **5 credits remaining**
+- Sister Aveth's location record (chip seven — Sanctum of the Accord, Corrath Prime)
+- Veil document case (recovered from Adrath — seals intact, contents unknown)
+- Splice tool
+- Obsidian token
+- Handwritten note from Moor: *"She'll come for the case. Let her have it. — T.M."*
+- **205 credits**
 
 ## Spells Known
 - **Cantrips:** Mage Hand, Minor Illusion
 - **1st Level:** Charm Person, Silent Image
 
-## Knowledge Gained from the Remainder
-- **Cassia Vorne's true motive:** Ordered the purge to destroy evidence of a 30-year-old operation she ran that killed hundreds of civilians. Not ideology — fear.
-- **Vorne's weakness:** She has a daughter, Lysa, who doesn't know the truth. The only thing Vorne loves without condition. She will burn the galaxy before Lysa sees.
-- **Chip seven's location:** Hidden by Sister Aveth in the Sanctum of the Accord inside Compact headquarters, Corrath Prime. Where power kneels.
+## Knowledge from the Remainder
+- **Cassia Vorne's motive:** Ordered the purge to destroy evidence of a 30-year-old operation that killed hundreds of civilians. Fear, not ideology.
+- **Vorne's weakness:** Daughter Lysa — physician, outer rim — doesn't know the truth. Vorne will burn the galaxy before Lysa sees.
+- **Chip seven's location:** Sanctum of the Accord, Compact HQ, Corrath Prime. Where power kneels.
+- **Unknown face:** Middle-aged woman, Compact grey collar, not Vorne. Identity unknown. Surfaced during meditation unprompted.
 
 ## Relationships
-- **Maren** — senior Veilborn survivor, now ally. Wounded. Has been running this alone for 11 months. Trusts Seravyn. Seravyn has committed not to disappear on her.
-- **Davan** — young Veil adjunct, Archive caretaker. Frightened but steady. Braver than he looks.
-- **Tessian Moor** — Guild factor, Karath's Drift. Owes Seravyn a favour. Not purely ally — collects leverage.
-- **Cael** — handler, missing. Taken by Compact. Stayed to leave Seravyn the trail knowing he was burned. Status unknown.
-- **The Remainder** — ancient presence beneath the Archive. Has been guiding events. Chose Seravyn because she chose audacity. Connection deepening.
+- **Maren** — senior Veilborn, fully trusted ally. Wounded but functional. Committed to each other: *don't disappear.*
+- **Davan** — young Veil adjunct. Growing. Taught survival basics. Doesn't know chip six is on his homeworld.
+- **Tessian Moor** — Guild factor. Powerful, patient, self-interested. Terms agreed: transparency, real conversation after. Not an enemy. Not purely an ally. Watch the limits.
+- **Oris** — Unmoored fence, Archive ally. Honest, capable, connected. Receiving Guild credentials on team's behalf.
+- **Cael** — missing handler. Stayed knowing he was burned. Status unknown.
+- **The Remainder** — ancient presence. Chose Seravyn because she chose audacity. Connection deepening.
+
+## Decisions That Define Her
+- Started with the hardest target — Corrath Prime first
+- Chose team vote over solo decision on routing
+- Protected Maren's exit identity (Sera Vann) — refused to burn it for convenience
+- Set terms with Moor: *no more moving pieces without telling me*
+- Read Moor in the room, on her feet, and turned his surveillance into an asset
 
 ## Notes
-- Sole survivor of the Order of the Ashen Veil's dissolution — by design, not accident
-- The Remainder ensured her survival and has been guiding her toward this moment
-- Chose to start with the hardest target (Corrath Prime) — this is what distinguished her to the Remainder
 - Does not yet know her original name or why the Order specifically chose her
-- Currently safe in the Quiet Archive, Voss Station
+- The Remainder has marked her — ceiling of this connection unknown
+- Currently operating as Sera Vann for Corrath Prime credentials
+- Nine days until the remembrance ceremony
