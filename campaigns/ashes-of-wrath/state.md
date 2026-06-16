@@ -1,6 +1,6 @@
 # Ashes of Wrath — Campaign State
 
-## Session 2 — Mirrath Station
+## Session 3 — Corrath Prime
 
 **Date:** 2026-06-16
 **Characters:** Seravyn Voss (Monk 2 / Sorcerer 1)
@@ -8,7 +8,9 @@
 ---
 
 ## Current Situation
-The team is on Mirrath Station. Seravyn has successfully retrieved the Veil document case from Fenn Adrath's residence and negotiated Guild credentials with Tessian Moor. Three Guild diplomatic observer passes — inner sanctum access — will be delivered to Oris's stall by morning. Nine days until the remembrance ceremony on Corrath Prime.
+The team is on Corrath Prime. It is the evening before the remembrance ceremony at the Sanctum of the Accord. All preparation is complete. The Oris package has been sent — deadman's switch active, forty-eight hour window running. The team has eaten together, gone over the plan one final time, and is resting.
+
+Tomorrow at nine, the operation begins.
 
 ---
 
@@ -23,108 +25,146 @@ The **Valdric Imperium** spans four hundred inhabited systems. It is old, vast, 
 - **The Remnant Orders** — ancient mystical traditions including the now-destroyed Order of the Ashen Veil
 
 ### The Seven Chips
-The Order distributed a critical record across seven data-chips, each held at a different sanctum. The Compact destroyed five sanctums — but not the chips.
-
 | Chip | Location | Status |
 |------|----------|--------|
 | 1 | Primary sanctum ruins | **In Seravyn's possession** |
 | 2 | Unknown sanctum | **In Maren's possession** |
-| 3 | Cael's chip (unknown sanctum) | **In Seravyn's possession** |
+| 3 | Cael's chip | **In Seravyn's possession** |
 | 4 | Thessan IV — outer rim, war-torn | To retrieve |
-| 5 | Mirrath Station | **To retrieve — still outstanding** |
+| 5 | Mirrath Station | **In Seravyn's possession** |
 | 6 | Kael's Rest — Davan's homeworld | To retrieve (Davan doesn't know yet) |
-| 7 | **Sanctum of the Accord, Compact HQ, Corrath Prime** | **Priority target — credentials secured** |
-
-All seven together reveal the true architect of the purge and the proof to destroy them.
+| 7 | **Sanctum of the Accord, Compact HQ, Corrath Prime** | **Tomorrow** |
 
 ### What the Chips Contain
-Fragment seven — the chip inside the Sanctum of the Accord — contains the file Cassia Vorne tried to destroy. Evidence of an operation thirty years ago that killed hundreds of civilians. The Order witnessed it. Vorne spent thirty years rising to the directorship knowing this file existed. She ordered the purge not for power — but to bury one piece of evidence.
+All seven chips together with the document case constitute undeniable, undismissable proof of Cassia Vorne's crime. The document case alone is enough to damage her. All seven chips make it impossible to survive politically.
 
-### The Quiet Archive — Voss Station
-The Order's secondary sanctum survived the purge. Located in Guild jurisdiction where Compact authority is limited. Six sublevels below Voss Station. The Remainder lives on sublevel seven — not yet visited.
-
-### The Remainder
-An ancient presence living beneath the Archive. Predates the Order. Has been guiding events — gave Seravyn the name Cassia Vorne, guided Cael, ensured Seravyn survived the purge. Opened sublevel six for Seravyn specifically because she chose audacity. Connection to Seravyn is deepening.
+**The plan: hold everything until all seven chips are in hand. Release simultaneously. Document case and all seven chips together. No previews, no leaks, no early access for Moor.**
 
 ---
 
-## The Plan — Corrath Prime
+## OPERATION: AUDACITY
+### Corrath Prime — Remembrance Ceremony — Tomorrow, 09:00
 
-**Target:** Chip seven, hidden in the inner sanctum of the Sanctum of the Accord, Compact HQ, Corrath Prime.
+### Intelligence Gathered
+**From Illen Vass (Senate Records Coordinator):**
+- Eight Compact agents total: two outer hall entrance, two ceremonial floor, two external patrol (40 min rotation), two plainclothes among diplomatic observers
+- Plainclothes agents briefed to watch for Veilborn behavioural tells specifically — written by someone who knows the Order
+- Shift change at 09:45 — after the operation window closes. Clean.
+- Inner sanctum: one uniformed Compact agent at the door, credential check plus biometric palm scan against ceremony register
+- Register compiled morning of ceremony, submitted by Guild factor at 07:00, amendable until 08:30
+- **Seravyn's biometric is now in the register.** Illen amended it at 07:53. Path to inner sanctum is open.
 
-**Method:** Attend the remembrance ceremony as Guild diplomatic observers. Inner sanctum access granted by senior diplomatic status.
+**From Davan's reconnaissance:**
+- Two plainclothes agents confirmed in approach plaza — possibly more
+- Main ceremonial entrance and secondary administrative entrance (north face) identified
+- Three uniformed external patrol, 40 minute rotation confirmed
 
-**Credentials:** Three Guild diplomatic observer passes, senior status, inner sanctum access. Provided by Tessian Moor. Delivered to Oris's stall by morning. Names TBD — whatever identities the team is using.
+**From Moor:**
+- Confirmed as presiding Guild factor for the ceremony
+- Will designate Seravyn as Keeper of the Accord — inner sanctum access, ceremony-sanctioned
+- Knows operation is in progress, does not know specifics, does not know about Illen, does not know about deadman's switch
 
-**Ceremony date:** Nine days from now.
+### Team Roles
+| Person | Role | Position |
+|--------|------|----------|
+| Davan | Distraction — draws plainclothes agents' attention before entry | Approach plaza, then exits |
+| Maren | Outer hall anchor — monitors room, signals if security shifts, manages exits | Outer hall |
+| Seravyn | Keeper of the Accord — enters inner sanctum, retrieves chip seven | Inner sanctum |
 
-**Terms with Moor:**
-- Guild to be known (privately, in the right rooms) as having facilitated Vorne's downfall
-- No visible or public Guild involvement
-- Full conversation after the operation about terms going forward
-- Moor agreed: no more moving pieces without telling Seravyn
-- No handshake — words are binding
+### Timeline
+- **08:00** — Team departs hotel separately, thirty second gaps
+- **08:30** — Arrive at Sanctum approach, Davan begins distraction
+- **08:45** — Seravyn and Maren enter outer hall on Guild credentials
+- **09:00** — Ceremony begins
+- **09:15** — Moor designates Seravyn as Keeper. She is admitted to inner sanctum.
+- **09:15–09:27** — Seravyn alone in inner sanctum. Foundation stone. Splice tool. Chip seven. **12 minute window.**
+- **09:27** — Seravyn emerges. Joins Maren. Both proceed normally.
+- **10:00** — Ceremony concludes. Team exits separately.
+- **10:30** — Reconvene at pre-agreed location (to be confirmed on the ground). Contact Oris. Deadman's switch deactivated.
+
+### Contingencies
+- **Illen gone/turned:** Proceed with Moor's intelligence only
+- **Moor won't give Keeper designation:** Seravyn uses the Voice on the door guard — higher risk, no paper trail
+- **Tighter security than expected:** Maren signals. Seravyn aborts, replaces stone, emerges normally. Chip stays. Find another way.
+- **Seravyn caught inside:** Maren exits immediately. Davan triggers deadman's switch early — 24 hour window. Information goes out regardless.
+- **Total failure:** Document case copy with Oris releases automatically at 48 hours. Enough to damage Vorne. Not destroy her. But damage her.
+
+### The Deadman's Switch
+Oris holds a complete copy of everything — document case, all chips in hand, release instructions, recipient list. Three separate transmissions, staggered, different routing. Recipients: Guild (wide reach), Imperial Senate (legitimate authority), independent outer rim broadcast networks (impossible to suppress simultaneously).
+
+**Window: 48 hours from last evening. Oris releases automatically unless she hears from the team.**
+**To deactivate: contact Oris by 10:30 tomorrow with a specific confirmation phrase.**
+**Moor does not know this exists.**
 
 ---
 
 ## Active Threads
-- [ ] Retrieve chip seven — Sanctum of the Accord, Corrath Prime — **9 days**
-- [ ] Retrieve chip five — Mirrath Station — **still outstanding**
-- [ ] Retrieve chips four and six — Thessan IV and Kael's Rest
-- [ ] Open and read the Veil document case (contents unknown — seals intact)
+- [ ] **TOMORROW: Retrieve chip seven — Sanctum of the Accord, 09:00**
+- [ ] Retrieve chip four — Thessan IV
+- [ ] Retrieve chip six — Kael's Rest (Davan's homeworld — he doesn't know yet)
+- [ ] Assemble all seven chips + document case
+- [ ] Release everything simultaneously — on the team's terms, not Moor's
+- [ ] Post-operation conversation with Moor about Guild's role going forward
 - [ ] Find out what happened to Cael
 - [ ] Understand the full nature of the Remainder
-- [ ] Expose Cassia Vorne using all seven chips combined
-- [ ] Post-operation conversation with Moor about Guild's role going forward
 
 ## Completed Events
-- Seravyn discovered Cael was taken by Compact field agents on Karath's Drift
+- Seravyn discovered Cael was taken by Compact agents on Karath's Drift
 - Recovered Cael's message: *THEY FOUND THE CHIP*
 - Acquired transit chit (compromised) and Cael's second chip from his bunk
-- Made deal with Guild factor Tessian Moor (Karath's Drift) — passage to Voss in exchange for identifying compromised dock worker Fen
-- Made contact with Maren in embarkation hall — she boarded compromised transit deliberately as decoy
-- Arrived at Voss Station via Guild courier — unmanifested, no record
-- Met Davan — Veil adjunct, Archive caretaker
+- Made deal with Tessian Moor — passage to Voss in exchange for identifying compromised dock worker Fen
+- Made contact with Maren in embarkation hall — she boarded compromised transit as decoy
+- Arrived Voss Station via Guild courier — unmanifested
+- Met Davan — sole Archive sublevel survivor
 - Identified Compact observer Reth Callan on Voss Station
-- Accessed sublevel five — found Sister Aveth's record of chip seven's location
-- Accessed sublevel six — the garden — received knowledge of Vorne's weakness and motive from the Remainder
+- Accessed sublevel five — found Aveth's record of chip seven's location
+- Accessed sublevel six — the garden — received knowledge of Vorne's weakness, motive, and the daughter from the Remainder
 - Team of three formed: Seravyn, Maren, Davan
 - Escaped Voss Station via maintenance corridors — avoided Callan
-- Three days transit to Mirrath — planning, training Davan, meditation
-- Arrived Mirrath — made contact with Oris (Unmoored fence, Archive ally)
-- Retrieved Veil document case from Fenn Adrath's residence via social infiltration
-- Negotiated Guild credentials with Tessian Moor at Adrath's dinner
-- Moor revealed he has known about the operation since Karath's Drift — has been positioning the Guild deliberately
-- Seravyn set terms: no more unilateral moves, real conversation after
+- Three days transit to Mirrath — planning, trained Davan, meditation
+- Made contact with Oris on Mirrath
+- Retrieved Veil document case from Fenn Adrath via social infiltration
+- Negotiated Guild credentials with Moor at Adrath's dinner — set terms: transparency, real conversation after
+- Identified Moor's true goal: Guild positioned to fill power vacuum left by weakened Compact
+- Acquired chip five from Illen's colleague Pell Vassin — given willingly
+- Opened document case — Aveth's first-hand account of Vael's Point massacre. 347 civilians. Vorne's authorisation codes. Thirty years of one woman's careful fury.
+- Found memorial to Vael's Point in Corrath Prime plaza — neglected, half-hidden by a transit shelter
+- Biometric lodged in ceremony register by Illen Vass — 07:53, confirmed
+- Oris package sent — deadman's switch active
+- Team resting. Ready.
 
 ## NPCs
 | Name | Role | Status | Notes |
 |------|------|--------|-------|
-| Cael | Unmoored handler, ally | Missing — taken by Compact | Knew Maren, was working with her. Stayed knowing he was burned. Left Seravyn the trail deliberately. |
-| Maren | Senior Veilborn survivor | Alive, Mirrath Station | Wounded but functional. Has been running this alone 11 months. Fully part of the team now. Holds chip two. |
-| Davan | Veil adjunct, Archive caretaker | Alive, Mirrath Station | Growing into himself. Braver than he looks. Doesn't know chip six is on his homeworld. |
-| Tessian Moor | Guild factor | Active, Mirrath Station | Has been tracking Seravyn since Karath's Drift. Wants the Guild credited (privately) with Vorne's fall. Providing inner sanctum credentials. Agreed to transparency going forward. |
-| Oris | Unmoored fence, Archive ally | Active, Mirrath Station | Knew Cael. Has been recovering Order materials for months. Paid 200 credits for document case recovery. Receiving Guild credentials on behalf of team. |
-| Reth Callan | Compact contractor | Last seen Voss Station | Freelance, not full Compact. Was watching for Maren specifically. Did not clock Seravyn. |
-| Fenn Adrath | Collector | Mirrath Station | Unknowingly held Veil document case. Will eventually notice it's gone — timeline unclear. |
-| Cassia Vorne | Director, Crimson Compact | Active antagonist | Ordered purge to destroy 30-year-old evidence of civilian deaths. Has daughter Lysa (physician, outer rim) who doesn't know the truth. |
+| Cael | Unmoored handler | Missing — taken by Compact | Stayed knowing he was burned. Left Seravyn the trail. Status unknown. Find him after. |
+| Maren | Senior Veilborn survivor | Alive, Corrath Prime, resting | Fully committed. Wound functional. Has been to Corrath Prime before — found the memorial three years ago from Aveth's notes. |
+| Davan | Veil adjunct | Alive, Corrath Prime, resting | Volunteered to be the distraction. Growing into himself daily. Doesn't know chip six is on his homeworld. |
+| Tessian Moor | Guild factor | Active, Corrath Prime | Presiding Guild factor tomorrow. Will designate Keeper. Does not know about Illen, deadman's switch, or release plan. Wants power vacuum. Watch him after. |
+| Illen Vass | Senate Records Coordinator | Active, Corrath Prime | Amended the ceremony register 07:53. Wants his name never attached. Has his own file on Vorne — probably. Will not be a problem. Might be a future asset. |
+| Oris | Unmoored fence, Archive ally | Active, Mirrath Station | Holds deadman's switch. Trusted completely. |
+| Pell Vassin | Guild archivist | Active, Mirrath Station | Gave chip five willingly. Honest. Reliable. Doesn't know what he held. |
+| Reth Callan | Compact contractor | Last seen Voss Station | His report triggered the tightened security on Corrath Prime. |
+| Fenn Adrath | Collector | Mirrath Station | Will eventually notice the document case is gone. Low priority. |
+| Cassia Vorne | Director, Crimson Compact | Active antagonist | Does not know the team is on Corrath Prime. Tightened ceremony security as precaution. Has daughter Lysa — physician, Thessan IV. Will encounter her during chip four retrieval without knowing who she is. |
+| Deputy Director Haan | Compact second-in-command | Unknown | The face Seravyn saw during meditation. Has been suspicious of Vorne for years. Potential future asset — does not know about Vael's Point. |
+| Lysa Vorne | Cassia's daughter | Thessan IV | Physician. Doesn't know what her mother is. Will be encountered during chip four retrieval. Not a weapon — a complication. |
 
 ## Resources
-- **Credits:** 200 (paid by Oris for document case recovery) + 5 remaining = **205 credits**
-- **Chips in hand:** 3 (primary sanctum chip, Cael's chip, Aveth's location record for chip seven)
-- **Document case:** Recovered, seals intact, contents unknown
-- **Guild credentials:** 3x senior diplomatic observer passes, inner sanctum access — delivered by morning
-- **Allies:** Maren, Davan, Oris, Tessian Moor (terms agreed)
-- **Safe location:** Oris's stall, Mirrath lower market
-- **Transit:** Need passage to Corrath Prime — 9 days window
+- **Credits:** 125
+- **Chips in hand:** 5 (chips 1, 2, 3, 5, plus Aveth's location record for chip 7)
+- **Document case:** Sealed copy with Oris. Original with team.
+- **Guild credentials:** 3x senior diplomatic observer, inner sanctum access
+- **Biometric:** In ceremony register. Confirmed.
+- **Deadman's switch:** Active. 48 hour window. Oris, Mirrath Station.
+- **Allies:** Maren, Davan, Oris, Moor (conditional), Illen (cautious)
 
 ---
 
 ## DM Notes
-- Chip five on Mirrath — held by a Guild archivist named **Pell Vassin** who doesn't know what he has. Acquired it as part of a job lot of recovered materials. He's cautious, honest, and would give it willingly if he understood its significance — but approaching him risks exposure on a station where Moor now knows the team's movements.
-- Chip six is on Kael's Rest — Davan's homeworld. He hasn't been back since childhood. The Order took him young. This will be the team's most emotionally complex retrieval.
-- Lysa Vorne (Cassia's daughter) is a thread for later — not a weapon, a complication. She practices medicine on **Thessan IV** — the same world as chip four. The team will encounter her without knowing who she is.
-- The document case contains Sister Aveth's personal record of the civilian massacre — not the official Order record, her *personal* account. Written in her voice. With names. This will hit Maren hard when opened.
-- Moor is genuinely committed to the accord but will test its limits — he'll share information selectively until Seravyn calls him on it again.
-- The face Seravyn saw during meditation (middle-aged woman, Compact grey, not Vorne) is **Deputy Director Haan** — Vorne's second in command who does not know about the purge's true motive. She's been suspicious of Vorne for years. A potential future asset.
-- Reth Callan has reported back to Vorne that Maren arrived at Voss and then disappeared. Vorne is tightening security at Corrath Prime in response — the remembrance ceremony will have additional Compact presence. The team's Guild credentials will hold, but the margin for error is shrinking.
+- The inner sanctum door guard tomorrow is a young Compact officer named **Edran Voss** — no relation to Seravyn's chosen name, but he will notice the name on her credentials and comment on it. A small human moment in a tense situation.
+- The foundation stone cavity is sealed with a Veil lock — same construction as the Archive doors. Seravyn's splice tool will work but the mechanism has thirty years of mineral deposit. Add thirty seconds to any roll under pressure.
+- Moor will watch Seravyn enter the inner sanctum and will understand exactly what she's doing. He will say nothing. He will smile slightly. He is not a threat tomorrow — his interests are perfectly aligned. After is another question.
+- The ceremony itself is moving — old words, old ritual, the kind of thing that accumulates genuine weight over four hundred years regardless of who speaks it. Seravyn will feel it.
+- Chip seven, when retrieved, is warm. It has been in that stone for thirty years. Aveth placed it there herself. The Remainder will acknowledge the moment — not intrusively, just present. A thread of connection, thin and certain.
+- After the operation, before the team leaves Corrath Prime, they will pass the memorial again. This time Seravyn will stop and read all three hundred and forty seven names. This is not a game mechanic. It simply happens.
+- Callan is on Corrath Prime. He arrived yesterday. He doesn't know the team is here. He's watching the ceremony approach for Veilborn. Davan's distraction will draw his attention specifically — Callan will spend the ceremony window watching Davan eat something nervously at a food vendor and conclude he's harmless. He's right, and he's wrong.
