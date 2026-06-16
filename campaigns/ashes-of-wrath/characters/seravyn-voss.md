@@ -5,18 +5,24 @@
 ## Identity
 - **Species:** Human (Veilborn)
 - **Class:** Monk (Way of Shadow) / Sorcerer
-- **Background:** Sole survivor of the Order of the Ashen Veil's dissolution.
+- **Background:** Sole survivor of the Order of the Ashen Veil's dissolution. The Remainder chose her. She chose audacity.
 - **Age:** Late 20s
 - **Appearance:** Lean, precise, still. Eyes that catalogue everything. Moves like she's already decided how this ends.
-- **Current alias:** Sera Vann — in the ceremony register, biometric confirmed
+
+## Current Status
+Alive. Undetected. Corrath Prime. Six chips in hand.
+
+Standing at a transit cantina table with two people she would not leave behind.
+
+*We're going to finish this.*
 
 ## Abilities & Powers
 - **Weirding Combat:** Superhuman reflexes, precise unarmed strikes
-- **The Voice:** Compulsion layered into spoken words — subtle suggestions, sharp commands
-- **Shadow Step:** Moves without sound, blends into darkness
-- **Prescient Flashes:** Confirmed Remainder connection. Surfaces information without traceable source. Uncontrollable but real.
-- **Truth-Sense:** Reads emotional tells and micro-deceptions. Cannot easily be lied to.
-- **Remainder Connection:** Deepening. Acknowledged Seravyn's presence near the Sanctum on the evening walk. Will be present tomorrow.
+- **The Voice:** Compulsion in spoken words — subtle to sharp
+- **Shadow Step:** Soundless movement, darkness as cover
+- **Prescient Flashes:** Remainder-connected. Real. Uncontrollable.
+- **Truth-Sense:** Reads deception past the words
+- **Remainder Connection:** Present in the Sanctum. Acknowledged the retrieval. *Yes. There. Finally.* Deepening toward something not yet known.
 
 ## Stats (D&D 5e)
 - **Level:** 3 (Monk 2 / Sorcerer 1)
@@ -30,68 +36,65 @@
 |-----|-----|-----|-----|-----|-----|
 | 12  | 18  | 14  | 14  | 16  | 16  |
 
-### Modifiers
-- STR +1 | DEX +4 | CON +2 | INT +2 | WIS +3 | CHA +3
-
 ## Skills (Proficient)
 - Acrobatics, Stealth, Insight, Perception, Persuasion, History
 
-## Combat Training — Splice Tool
-Practiced daily for six days in transit. Best clean time: 3 minutes 47 seconds. Under pressure target: under 4 minutes. Note: foundation stone cavity has 30 years of mineral deposit — add ~30 seconds to any roll under pressure.
+## Splice Tool Proficiency
+Best time under pressure: 4 minutes 12 seconds (Sanctum of the Accord, thirty years mineral deposit, ceremony proceeding fifty feet away). The training held.
 
 ## Equipment
-- Dark structured clothing — appropriate for diplomatic ceremony
+- Dark structured clothing
 - Two short blades, concealed
-- Chip 1 — primary sanctum ruins
-- Chip 3 — Cael's chip
-- Chip 5 — recovered from Pell Vassin, Mirrath
-- Aveth's location record — chip seven in Sanctum of the Accord foundation stone
-- Veil document case — Aveth's personal account of Vael's Point massacre. 347 civilians. Vorne's authorisation codes.
+- **Chip 1** — primary sanctum ruins
+- **Chip 2** — Maren's (held together)
+- **Chip 3** — Cael's chip
+- **Chip 5** — Pell Vassin, Mirrath
+- **Chip 7** — Sanctum of the Accord. Warm when retrieved. Aveth placed it there herself.
+- Aveth's location record
+- Veil document case — 347 civilians. Vorne's authorisation codes. Thirty years of fury.
 - Splice tool
 - Obsidian token
-- Moor's note: *"She'll come for the case. Let her have it. — T.M."*
-- Guild credential — senior diplomatic observer, inner sanctum access, name: Sera Vann
+- Davan's note: *You started with the hardest thing.*
 - **125 credits**
 
 ## Spells Known
 - **Cantrips:** Mage Hand, Minor Illusion
 - **1st Level:** Charm Person, Silent Image
 
-## Knowledge from the Remainder
-- Cassia Vorne ordered the purge to bury evidence of Vael's Point — 347 civilians killed for a budget increase
-- Vorne has a daughter, Lysa — physician, Thessan IV — who doesn't know the truth
-- Chip seven is beneath the foundation stone of the Sanctum of the Accord's inner sanctum altar
-- Deputy Director Haan (seen in meditation) — suspicious of Vorne, potential future asset
-
-## What She Understands Now
-- *I do not fear* means fear doesn't control her — not that it doesn't exist. She told Davan this. She believes it.
-- She is carrying Aveth's work to its conclusion. This is not metaphor. It is simply true.
-- The Remainder chose her because she chose audacity. That choice compounds.
-- Moor is a tool with opinions. Useful tomorrow. Complicated after.
-- Trust is a resource. Spend it on Maren, Davan, Oris. Be precise with everyone else.
+## What She Knows
+- Vorne's motive: Vael's Point, 347 civilians, budget increase, thirty years of fear
+- Vorne's weakness: Lysa, physician, Thessan IV. Does not know what her mother is.
+- Deputy Director Haan: suspicious of Vorne, potential future asset
+- Chip seven location: confirmed and retrieved
+- Two chips remain: Thessan IV (dangerous, war-torn), Kael's Rest (Davan's homeworld — he doesn't know)
 
 ## Relationships
-- **Maren** — fully trusted. *Don't disappear.* She slept last night. Good.
-- **Davan** — trusted. Volunteered to be the distraction. Growing into someone remarkable.
-- **Oris** — trusted. Holds the deadman's switch. Would not fail this.
-- **Moor** — useful, conditional, watch him after. Does not know about Illen or Oris.
-- **Illen** — cautious trust. Did what was asked. Has his own angle. Interests aligned for now.
-- **Cael** — missing. Find him after.
-- **The Remainder** — present. Watching. Connection deepening toward something unknown.
-- **Aveth** — never met. Thinks about her anyway. Laughing somewhere, probably.
+- **Maren** — *Don't disappear.* She said *we're going to finish this.* She means it completely.
+- **Davan** — Left a note. *I stayed.* Ran the distraction without flinching. Doesn't know about Kael's Rest yet. Seravyn needs to choose when to tell him.
+- **Oris** — Deadman's switch deactivated. Completely trusted.
+- **Moor** — Gave the Keeper designation. Wants his conversation. Time it carefully. Watch him after.
+- **Illen** — Did what was asked. Name will never appear. Probable future asset.
+- **Cael** — Missing. Alive, probably. Find him after. He stayed for us.
+- **The Remainder** — *Yes. There. Finally.* Growing toward something.
+- **Aveth** — Never met. Thinks about her anyway. Read 347 names at a neglected memorial on Corrath Prime. The last one was seven years old. Her name was Marra.
 
 ## Decisions That Define Her
-- Started with the hardest target
+- Started with the hardest thing
 - Protected Maren's exit identity
 - Put everything to team vote
 - Set terms with Moor and held them
-- Chose *I do not fear* to mean control, not absence
-- Stood at the Vael's Point memorial for thirty seconds before walking on
-- Checked in with the team before going to Illen — *I owe that to them*
+- Chose *I do not fear* to mean control, not absence — told Davan this
+- Stood at the memorial and read all three hundred and forty seven names
+- Checked in with the team before every move: *I owe that to them*
+- Held steady in the inner sanctum when footsteps stopped outside the door
+- Did not rush. Did not freeze. Four minutes twelve seconds. Clean.
 
-## Tonight
-Resting. Really resting. Not vigilance with eyes closed.
-
-Tomorrow at nine, the Sanctum of the Accord.
-
-*She built everything for someone who hadn't arrived yet. You arrived.*
+## What Comes Next
+- Tell Davan about Kael's Rest. Choose the moment carefully.
+- Thessan IV — retrieve chip four, navigate a war, meet someone who doesn't know who she is
+- Kael's Rest — the most emotionally complex retrieval
+- All seven chips assembled — the Remainder will speak again
+- Release everything simultaneously, on the team's terms
+- Find Cael
+- The conversation with Moor
+- Whatever the Remainder has been building toward since before the Order existed
