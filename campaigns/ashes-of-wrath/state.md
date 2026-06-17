@@ -1,16 +1,14 @@
 # Ashes of Wrath — Campaign State
 
-## Session 5 — Thessan IV (Concluded)
+## Session 6 — Kael's Rest (Concluded)
 
-**Date:** 2026-06-16
+**Date:** 2026-06-17
 **Characters:** Seravyn Voss (Monk 2 / Sorcerer 1)
 
 ---
 
 ## Current Situation
-Seven chips in hand. All seven. The team is returning through Lysa's camp as promised, then departing for Kael's Rest — the final retrieval. Davan's homeworld. He hasn't been back in twenty years.
-
-Maren learned that Sister Rel is alive. She kept her promise. Find her after.
+All seven chips are in Seravyn's possession. The Remainder has made direct contact. Davan found a brother he never knew existed. The team is aboard the ship at Kael's Rest, plan set: Heth's Crossing next, to extract Cael before the release.
 
 ---
 
@@ -18,107 +16,95 @@ Maren learned that Sister Rel is alive. She kept her promise. Find her after.
 | Chip | Location | Status |
 |------|----------|--------|
 | 1 | Primary sanctum ruins | **In Seravyn's possession** |
-| 2 | Unknown sanctum | **In Maren's possession** |
+| 2 | Unknown sanctum | **In Seravyn's possession** (Maren's, carried with team) |
 | 3 | Cael's chip | **In Seravyn's possession** |
-| 4 | Thessan IV buffer zone | **Retrieved — In Seravyn's possession** |
+| 4 | Thessan IV buffer zone | **In Seravyn's possession** |
 | 5 | Mirrath Station | **In Seravyn's possession** |
-| 6 | Kael's Rest | **To retrieve — final chip** |
+| 6 | Kael's Rest waystation | **Retrieved — In Seravyn's possession** |
 | 7 | Sanctum of the Accord | **In Seravyn's possession** |
 
-**Seven chips in hand after Kael's Rest. Then everything.**
+**ALL SEVEN CHIPS ASSEMBLED.**
 
 ---
 
-## What Happened on Thessan IV
+## What Happened at Kael's Rest
 
-**The camp:**
-The team spent a day at Lysa's humanitarian medical operation — genuinely helping, not just covering. Davan spent two hours with the camp's unofficial record-keeper, witnessing and writing. Maren worked alongside Lysa in the medical tent. Seravyn moved between the nutrition station, the perimeter, and securing corridor access through Preth (owes Lysa a favour — she saved his nephew's hand).
+**Arrival:**
+Seravyn told Davan "Welcome home. Hold on to the feeling..." as the ship descended. The team climbed to the northern plateau waystation — a Veil transit point, not a full sanctum. Seravyn scouted ahead alone (Perception 19, then 14, then Investigation 10) and found single, old footprints leading to the sublevel and back — someone had been here before, found the trap, and walked away.
 
-**Lysa:**
-Lysa — last name not given — runs the medical collective. Mid-twenties, precise, tireless. Her mother's discipline turned toward healing. Said *she is who she is, I am who I am* about her mother, who works for the government and with whom she is not close. Mentioned her mother once spoke about the Order keeping important things in places like the sanctum.
+**The trap:**
+The chip sat in an alcove rigged with a now-spent contact/proximity ward (Perception 24 to spot the disarm mechanism and chemical staining). The design was precise rather than brute-force — built for someone with a careful hand. Seravyn floated the theory: maybe it was built, in some sense, for whoever the Order would one day send back from this exact world. Davan chose to disarm it himself (rolled 16, success) and retrieved chip six personally — his homecoming, his to claim.
 
-She doesn't know.
+**The Remainder speaks:**
+The instant all seven chips were together in Seravyn's hands, the Remainder made full direct contact for the first time. It told her three things:
+1. The Order of the Ashen Veil was founded four hundred years ago specifically to preserve evidence of crimes like Vael's Point — not reactively, but by design, generation after generation, waiting for this exact moment.
+2. Seravyn was not chosen randomly. Her original name — the one before the Veil remade her — is the same name as the woman who built the first sanctum four centuries ago. She is the Order's direct descendant, and in some sense its intended conclusion.
+3. The Remainder is not a mystical force but the accumulated consciousness of every Order member who chose, at the end of their life, to give themselves to it — including, very recently, the Archive director on Voss Station who sealed the sub-levels and did not survive.
 
-The team's decision: the evidence goes public. If Lysa reads it, she'll know. That's hers to navigate, not the team's to deliver.
+Seravyn needed a moment to process. Maren and Davan supported her through it. She described it as "remembering something I never knew I'd forgotten."
 
-She gave them Lysa's map of the buffer zone safe paths (current as of 3 days prior) and asked them to come back through so she'd know they made it. They will.
-
-**The buffer zone:**
-Natural 20 Perception before entry. Seravyn identified the south face entry point — better than the northeast corner Davan had found. Two-metre drop to a single-room sublevel cache. No lock, no mechanism. The chip was placed there to be found.
-
-**Sister Rel's message — scratched in the wall:**
-*"If you're reading this the Archive on Voss survived.*
-*Tell Maren: I kept my promise.*
-*— Sister Rel"*
-
-Rel was Maren's closest sister. Maren believed she was dead. The promise: if everything burned, Rel would make sure at least one chip survived somewhere findable. She was careful. She's alive. Find her after.
-
-Maren's response: three seconds with eyes closed. Then: *"We find her. After."*
+**Davan's brother:**
+At the settlement records office, Davan learned his mother (Tamsin Erel) died eleven years ago in a mining accident — and that he has an older brother, Reth Erel, still alive and working the Kael's Rest fuel depot. He didn't know Reth existed. The two were reunited in the depot yard — found, embraced, grieved together for their mother, and parted with a promise from Davan to come back and explain everything properly.
 
 ---
 
-## After Thessan IV — The List
+## After Kael's Rest — The Plan
 
 **In order:**
-1. Return through Lysa's camp — we said we would
-2. **Kael's Rest** — chip six, Davan's homeworld, final retrieval
-3. **All seven assembled** — the Remainder speaks directly
-4. **Simultaneous release** — document case and all seven chips, all recipients, team's terms, before Moor's three-month vote deadline
-5. **Heth's Crossing** — find Cael
-6. **Find Sister Rel** — she's alive, she kept her promise
-7. The conversation the world doesn't know is coming
+1. **Heth's Crossing** — extract Cael before the release. The team decided he's not just a rescue, he's an asset: a former handler who's been inside Compact custody and may know how they move and respond to threats. Get him out, use what he knows.
+2. **The release** — Oris coordinates three simultaneous transmissions (Guild, Imperial Senate, independent broadcast networks). Document case and all seven chips, all recipients, team's terms, before Moor's three-month vote deadline.
+3. **Protect Lysa** — the team is wary of relying on Moor directly (colleagues, not trusted allies) for something this personal. Plan: let Moor's existing early-warning network watch for Vorne's movement passively (serves his own interests, no need to tell him why) — but keep actual ground protection in fully trusted hands: Preth (owes Lysa a favour, already has camp access) and possibly Oris's people, ready to act fast on any warning.
+4. **Find Sister Rel** — alive, not in immediate danger, can wait until after the release settles.
+5. The conversation the world doesn't know is coming.
 
 ---
 
 ## Active Threads
-- [ ] **Kael's Rest** — chip six, Davan's homeworld
-- [ ] All seven assembled — Remainder speaks
-- [ ] Release everything — simultaneously, team's terms
-- [ ] Cael — Heth's Crossing, alive
-- [ ] Sister Rel — alive, location unknown, find her
+- [ ] **Heth's Crossing** — extract Cael, next destination
+- [ ] Release everything — simultaneously, team's terms, via Oris
+- [ ] Lysa protection — Moor's network for warning, Preth/Oris's people for ground response
+- [ ] Sister Rel — alive, location unknown to the team (find her after the release)
 - [ ] Moor's Guild vote — three months, release must land before then
 - [ ] Deputy Director Haan — future asset
-- [ ] Lysa Vorne — doesn't know, not the team's to deliver
+- [ ] Lysa Vorne — doesn't know, not the team's to deliver; in danger the moment release goes out
 
 ## Completed
 - Order dissolved. Seravyn survived — deliberately.
 - Karath's Drift — Cael taken, trail found
-- Voss Station — Maren, Davan, Archive intact, Remainder speaks
+- Voss Station — Maren, Davan, Archive intact, Remainder speaks (first contact)
 - Mirrath — document case, chip five, Guild credentials, deadman's switch
 - Corrath Prime — chip seven retrieved from Sanctum of the Accord, 347 names read, Moor conversation, colleagues confirmed, Cael's location learned
 - Thessan IV — camp helped genuinely, Lysa met, buffer zone navigated, chip four retrieved, Sister Rel's message found, Maren learns Rel is alive
+- **Kael's Rest — chip six retrieved (Davan disarmed the trap himself), all seven chips assembled, Remainder's full revelation received (Order's founding purpose, Seravyn's true lineage, the Remainder's true nature), Davan reunited with his brother Reth, team plan set for Heth's Crossing next**
 
 ## NPCs
 | Name | Role | Status | Notes |
 |------|------|--------|-------|
-| Cael | Unmoored handler | Alive — Heth's Crossing | Find him after. He stayed for us. |
-| Maren | Senior Veilborn, team | Alive, Thessan IV | Rel is alive. Three seconds with eyes closed. Then moving. |
-| Davan | Veil adjunct, team | Alive, Thessan IV | Knows about Kael's Rest. Said he'd be ready. Is. |
-| Sister Rel | Veilborn survivor | **Alive — location unknown** | Maren's closest sister. Kept her promise. Left chip four and a message. Find her after. |
-| Lysa Vorne | Cassia's daughter | Thessan IV, medical camp | Doesn't know. Made something decent out of a life adjacent to something monstrous. Asked them to come back through. They will. |
-| Tessian Moor | Guild factor | Travelling | Transit arranged. Early warning network active. Three-month vote deadline. Colleagues. |
-| Oris | Unmoored fence | Mirrath Station | Document case copy held. Completely trusted. Will be part of the release. |
+| Cael | Unmoored handler | Alive — held at Heth's Crossing, Compact custody | Next extraction target. Useful: knows Compact custody/movement from the inside. |
+| Maren | Senior Veilborn, team | Alive, Kael's Rest | Rel is alive. Watched Seravyn through the Remainder's full revelation. |
+| Davan | Veil adjunct, team | Alive, Kael's Rest | Retrieved chip six himself. Found his mother died 11 years ago; reunited with brother Reth Erel. |
+| Reth Erel | Davan's older brother | Alive — Kael's Rest, fuel depot worker | Never knew Davan survived — was told he died in transit. Reunited. Asked Davan to come back and explain properly. |
+| Sister Rel | Veilborn survivor | Alive — location unknown to team | Maren's closest sister. Kept her promise. Find her after the release. |
+| Lysa Vorne | Cassia's daughter | Thessan IV, medical camp | Doesn't know. In danger the moment the release goes public — Vorne will move to reach her first. Protection plan: Moor's passive network + Preth/Oris on the ground. |
+| Tessian Moor | Guild factor | Travelling | Colleagues, not fully trusted. Early-warning network will be used passively (without full context) for the Lysa protection plan. Three-month vote deadline. |
+| Oris | Unmoored fence | Mirrath Station | Will coordinate the three-way simultaneous release. Completely trusted. |
 | Illen Vass | Senate Records Coordinator | Corrath Prime | Future asset. Has his own file on Vorne. |
-| Cassia Vorne | Director, Crimson Compact | Unknown | Doesn't know chip seven is gone yet. When she finds out she moves. Moor's network watching. |
+| Cassia Vorne | Director, Crimson Compact | Unknown | Doesn't know all seven chips are gone yet. Will move on Lysa first when the release goes public. |
 | Deputy Director Haan | Compact second | Unknown | Suspicious of Vorne. Future asset. |
 | Reth Callan | Compact contractor | Unknown | Reported no Veilborn on Corrath Prime. Quiet for now. |
 
 ## Resources
-- **Credits:** 85 (125 minus 40 for medical supplies — genuinely spent, not cover)
-- **Chips:** 6 in hand (1, 2, 3, 4, 5, 7). Chip 6 at Kael's Rest.
+- **Credits:** 85
+- **Chips:** All seven in Seravyn's possession.
 - **Document case:** Original with team. Copy with Oris.
-- **Transit:** Guild route to Kael's Rest — Moor's network
-- **Early warning:** Active — Moor watching for Vorne movement
-- **Allies:** Maren, Davan, Oris, Moor (colleagues), Illen, Lysa (tentative, doesn't know the full picture), Preth (owes Lysa)
+- **Transit:** Guild routes available via Moor's network
+- **Allies:** Maren, Davan, Oris, Moor (colleagues, limited trust), Illen, Lysa (tentative), Preth (owes Lysa), Reth Erel (Davan's brother, Kael's Rest)
 
 ---
 
 ## DM Notes
-- Kael's Rest: Cold, quiet, outer rim. Small mining community, mostly independent, Guild fuel contract keeps it on the map. Population ~3,000. Davan left at age six — the Order took him young because he showed archival aptitude. He doesn't know if anyone there remembers him or if family remains.
-- The chip is in the ruins of a small Veil waystation on the planet's northern plateau — not a full sanctum, a transit point. Minimally defended, minimally destroyed. The retrieval itself is straightforward. The difficulty is entirely Davan.
-- Davan will want to look for family records while he's there. Let him. It matters more than the mission timeline, and the mission has margin.
-- He will find something. A name on a community record. An older sibling who still lives there. This is not a complication — it's a gift. Small, real, worth having.
-- The moment all seven chips are in Seravyn's hands the Remainder makes direct contact. Not through flashes, not through resonance — direct. It will tell Seravyn three things: (1) the Order was founded specifically to preserve this evidence across generations, knowing the Compact would eventually need to be stopped; (2) Seravyn was chosen not randomly but because she is descended from the Order's founder — the original name she was born with before the Veil remade her is the same name as the woman who built the first sanctum four hundred years ago; (3) the Remainder is not a mystical force but the accumulated consciousness of every Order member who chose to give themselves to it at the end of their lives — including, very recently, the Archive director on Voss who sealed the sub-levels and did not survive.
-- This reframes everything. The Order wasn't just an institution — it was a four-hundred-year project built around a single purpose. And Seravyn is its conclusion.
-- Sister Rel is on a station called Mirren's Crossing, three systems from Kael's Rest. She's been running a small independent operation helping other Veilborn survivors find each other. There are more than Maren knew.
-- The release: Oris coordinates. Three simultaneous transmissions. The moment it goes out Vorne will know. She will move against her daughter first — not to harm her, to reach her before the story does. This is the complication. Lysa needs to be warned. Someone needs to get to Thessan IV before Vorne does. The team cannot be in two places. This is where having allies matters.
+- Cael is held at Heth's Crossing in Compact custody. The team has decided to extract him *before* the release — both to protect him from Vorne's potential retaliation once cornered, and because his insider knowledge of Compact custody/movement patterns will help during the release's most dangerous window.
+- Sister Rel is at Mirren's Crossing, three systems from Kael's Rest, running an informal network helping other Veilborn survivors find each other. There are more survivors than Maren knew. The team has deprioritized finding her until after the release — she's safe, not urgent.
+- The release: Oris coordinates three simultaneous transmissions (Guild, Imperial Senate, independent broadcast). The moment it airs, Vorne will move on Lysa first — not to harm her, to control the narrative before she can react to it herself. The team's plan: Moor's existing early-warning network (which already watches for Vorne's movements in his own interest) will catch this without needing to know why it matters; Preth and possibly Oris's people will be the actual ground response, since the team doesn't fully trust Moor with something this personal.
+- Davan's brother Reth Erel is now a loose thread — Davan promised to come back and explain everything once this is over. This is a strong hook for an epilogue or a future personal beat once the main plot resolves.
+- Next major beat: planning and executing the Cael extraction at Heth's Crossing — a Compact custody facility. This should be the campaign's first real infiltration/rescue under pressure, higher stakes than previous retrievals since Cael is an active prisoner, not a sealed cache.
