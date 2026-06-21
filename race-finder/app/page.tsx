@@ -1,12 +1,23 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Race } from "@/lib/types";
 import allRaces from "@/data/races.json";
 
 const races = allRaces as Race[];
 
 const SURFACES = ["road", "trail", "track", "mixed"];
+
+const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+function formatDay(dateStr: string) {
+  const d = new Date(dateStr + "T00:00:00");
+  const weekday = d.toLocaleDateString("en-GB", { weekday: "short" });
+  return { day: d.getDate(), weekday };
+}
 
 export default function HomePage() {
   const [q, setQ] = useState("");
@@ -39,6 +50,20 @@ export default function HomePage() {
       })
       .sort((a, b) => a.date.localeCompare(b.date));
   }, [q, region, surface, minDistance, maxDistance, dateFrom, dateTo]);
+
+  const groups = useMemo(() => {
+    const map = new Map<string, Race[]>();
+    for (const race of filtered) {
+      const [year, month] = race.date.split("-");
+      const key = `${year}-${month}`;
+      if (!map.has(key)) map.set(key, []);
+      map.get(key)!.push(race);
+    }
+    return Array.from(map.entries()).map(([key, items]) => {
+      const [year, month] = key.split("-");
+      return { key, label: `${MONTH_NAMES[Number(month) - 1]} ${year}`, items };
+    });
+  }, [filtered]);
 
   return (
     <div>
@@ -104,23 +129,34 @@ export default function HomePage() {
 
       <p className="result-count">{filtered.length} races found</p>
 
-      <div className="race-list">
-        {filtered.map((race) => (
-          <a key={race.id} href={`/race/${race.id}`} className="race-card">
-            <div className="race-card-top">
-              <span className="race-name">{race.name}</span>
-              <span className="race-date">{race.date}</span>
-            </div>
-            <div className="race-meta">
-              <span>{race.location}</span>
-              <span className="tag">{race.region}</span>
-              <span className="tag">{race.surface}</span>
-              <span className="tag">{race.distancesKm.join(" / ")} km</span>
-            </div>
-          </a>
-        ))}
-        {filtered.length === 0 && <p>No races match your filters.</p>}
-      </div>
+      {groups.map((group) => (
+        <section key={group.key} className="month-group">
+          <h2 className="month-heading">{group.label}</h2>
+          <div className="race-table">
+            {group.items.map((race) => {
+              const { day, weekday } = formatDay(race.date);
+              return (
+                <a key={race.id} href={`/race/${race.id}`} className="race-row">
+                  <div className="race-row-date">
+                    <span className="race-row-day">{day}</span>
+                    <span className="race-row-weekday">{weekday}</span>
+                  </div>
+                  <div className="race-row-main">
+                    <div className="race-row-name">{race.name}</div>
+                    <div className="race-row-location">{race.location}</div>
+                  </div>
+                  <div className="race-row-tags">
+                    <span className={`tag tag-surface-${race.surface}`}>{race.surface}</span>
+                    <span className="tag">{race.distancesKm.join(" / ")} km</span>
+                    <span className="tag tag-region">{race.region}</span>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+      {filtered.length === 0 && <p>No races match your filters.</p>}
     </div>
   );
 }

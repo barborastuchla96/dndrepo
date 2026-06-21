@@ -48,6 +48,10 @@ main {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 16px;
+  position: sticky;
+  top: 12px;
+  z-index: 10;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
 .filters input,
@@ -74,54 +78,6 @@ main {
   font-size: 14px;
 }
 
-.race-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.race-card {
-  display: block;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px 18px;
-  text-decoration: none;
-  color: var(--text);
-  transition: border-color 0.15s ease;
-}
-
-.race-card:hover {
-  border-color: var(--accent);
-}
-
-.race-card-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-}
-
-.race-name {
-  font-size: 17px;
-  font-weight: 600;
-}
-
-.race-date {
-  color: var(--accent);
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.race-meta {
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 14px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .tag {
   display: inline-block;
   background: #11131a;
@@ -130,6 +86,109 @@ main {
   padding: 2px 10px;
   font-size: 12px;
   color: var(--muted);
+  white-space: nowrap;
+}
+
+.tag-region {
+  color: var(--muted);
+}
+
+.tag-surface-road { color: #6fb1ff; border-color: #2c4566; }
+.tag-surface-trail { color: #6fdc8c; border-color: #2c5a3c; }
+.tag-surface-track { color: #e0c26f; border-color: #5a4d2c; }
+.tag-surface-mixed { color: #c98cff; border-color: #46306b; }
+
+.month-group {
+  margin-bottom: 28px;
+}
+
+.month-heading {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 10px 4px;
+}
+
+.race-table {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.race-row {
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: center;
+  gap: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s ease, transform 0.1s ease;
+}
+
+.race-row:hover {
+  border-color: var(--accent);
+  transform: translateX(2px);
+}
+
+.race-row-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.race-row-day {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.race-row-weekday {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.race-row-main {
+  min-width: 0;
+}
+
+.race-row-name {
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.race-row-location {
+  font-size: 13px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.race-row-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 720px) {
+  .race-row {
+    grid-template-columns: 44px 1fr;
+  }
+  .race-row-tags {
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+  }
 }
 
 .race-detail {
