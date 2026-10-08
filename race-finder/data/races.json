@@ -1,28 +1,34 @@
 [
   {
-    "id": "volkswagen-maraton-praha-2026",
-    "name": "Volkswagen Maraton Praha",
-    "date": "2026-05-03",
-    "region": "Praha",
-    "location": "Praha",
-    "distancesKm": [42.195, 21.1, 4.4],
-    "surface": "road",
-    "elevationGainM": 80,
-    "description": "Czech Republic's flagship international marathon through the historic streets of Prague. Also includes a half marathon and a 4.4 km Run for Fun.",
-    "website": "https://www.runczech.com/cs/zavody/volkswagen-maraton-praha/",
-    "source": "manual"
-  },
-  {
     "id": "sportisimo-prague-half-marathon-2026",
     "name": "Sportisimo Prague Half Marathon",
     "date": "2026-04-04",
     "region": "Praha",
     "location": "Praha",
-    "distancesKm": [21.1],
+    "distancesKm": [
+      21.1
+    ],
     "surface": "road",
     "elevationGainM": 60,
     "description": "One of the world's most scenic half marathons, part of the RunCzech series.",
     "website": "https://www.runczech.com/cs/zavody/sportisimo-prague-half-marathon/",
+    "source": "manual"
+  },
+  {
+    "id": "volkswagen-maraton-praha-2026",
+    "name": "Volkswagen Maraton Praha",
+    "date": "2026-05-03",
+    "region": "Praha",
+    "location": "Praha",
+    "distancesKm": [
+      42.195,
+      21.1,
+      4.4
+    ],
+    "surface": "road",
+    "elevationGainM": 80,
+    "description": "Czech Republic's flagship international marathon through the historic streets of Prague. Also includes a half marathon and a 4.4 km Run for Fun.",
+    "website": "https://www.runczech.com/cs/zavody/volkswagen-maraton-praha/",
     "source": "manual"
   },
   {
@@ -31,7 +37,9 @@
     "date": "2026-09-13",
     "region": "Praha",
     "location": "Praha",
-    "distancesKm": [10],
+    "distancesKm": [
+      10
+    ],
     "surface": "road",
     "description": "10 km road race through central Prague, part of the RunCzech series.",
     "website": "https://www.runczech.com/cs/zavody/birell-grand-prix-praha/",
