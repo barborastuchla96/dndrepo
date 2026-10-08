@@ -6,17 +6,46 @@ import allRaces from "@/data/races.json";
 
 const races = allRaces as Race[];
 
-const SURFACES = ["road", "trail", "track", "mixed"];
-
 const MONTH_NAMES = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
+  "January","February","March","April","May","June",
+  "July","August","September","October","November","December",
 ];
+
+type QuickFilter = "all" | "road" | "trail" | "mixed" | "short" | "half" | "marathon" | "ultra";
+
+const QUICK_FILTERS: { id: QuickFilter; label: string }[] = [
+  { id: "all",      label: "All" },
+  { id: "road",     label: "Road" },
+  { id: "trail",    label: "Trail" },
+  { id: "mixed",    label: "Mixed / OCR" },
+  { id: "short",    label: "Up to 10 km" },
+  { id: "half",     label: "Half marathon" },
+  { id: "marathon", label: "Marathon" },
+  { id: "ultra",    label: "Ultra (50 km+)" },
+];
+
+function matchesQuick(race: Race, qf: QuickFilter): boolean {
+  if (qf === "all") return true;
+  if (qf === "road") return race.surface === "road";
+  if (qf === "trail") return race.surface === "trail";
+  if (qf === "mixed") return race.surface === "mixed";
+  if (qf === "short") return race.distancesKm.some((d) => d <= 10);
+  if (qf === "half") return race.distancesKm.some((d) => d >= 20 && d <= 22);
+  if (qf === "marathon") return race.distancesKm.some((d) => d >= 40 && d <= 45);
+  if (qf === "ultra") return race.distancesKm.some((d) => d >= 50);
+  return true;
+}
 
 function formatDay(dateStr: string) {
   const d = new Date(dateStr + "T00:00:00");
-  const weekday = d.toLocaleDateString("en-GB", { weekday: "short" });
-  return { day: d.getDate(), weekday };
+  return {
+    day: d.getDate(),
+    weekday: d.toLocaleDateString("en-GB", { weekday: "short" }),
+  };
+}
+
+function fmtDistances(dists: number[]) {
+  return dists.map((d) => (Number.isInteger(d) ? d : d.toFixed(1))).join(" / ") + " km";
 }
 
 export default function HomePage() {
@@ -27,6 +56,7 @@ export default function HomePage() {
   const [maxDistance, setMaxDistance] = useState("");
   const [dateFrom, setDateFrom] = useState("");
   const [dateTo, setDateTo] = useState("");
+  const [quick, setQuick] = useState<QuickFilter>("all");
 
   const regions = useMemo(
     () => Array.from(new Set(races.map((r) => r.region))).sort(),
@@ -36,9 +66,10 @@ export default function HomePage() {
   const filtered = useMemo(() => {
     return races
       .filter((race) => {
+        if (!matchesQuick(race, quick)) return false;
         if (q) {
-          const haystack = `${race.name} ${race.location} ${race.description}`.toLowerCase();
-          if (!haystack.includes(q.toLowerCase())) return false;
+          const hay = `${race.name} ${race.location} ${race.region} ${race.description}`.toLowerCase();
+          if (!hay.includes(q.toLowerCase())) return false;
         }
         if (region && race.region !== region) return false;
         if (surface && race.surface !== surface) return false;
@@ -49,7 +80,7 @@ export default function HomePage() {
         return true;
       })
       .sort((a, b) => a.date.localeCompare(b.date));
-  }, [q, region, surface, minDistance, maxDistance, dateFrom, dateTo]);
+  }, [q, region, surface, minDistance, maxDistance, dateFrom, dateTo, quick]);
 
   const groups = useMemo(() => {
     const map = new Map<string, Race[]>();
@@ -67,71 +98,82 @@ export default function HomePage() {
 
   return (
     <div>
+      {/* Quick filters */}
+      <div className="quick-filters">
+        {QUICK_FILTERS.map((f) => (
+          <button
+            key={f.id}
+            className={`qf-pill${quick === f.id ? " active" : ""}`}
+            onClick={() => setQuick(f.id)}
+          >
+            {f.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Detailed filters row 1 */}
       <div className="filters">
-        <label>
-          Search
+        <div className="filter-field">
+          <label>Search</label>
           <input
             type="text"
-            placeholder="name, town, description..."
+            placeholder="name, town, region…"
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
-        </label>
-        <label>
-          Region
+        </div>
+        <div className="filter-field">
+          <label>Region</label>
           <select value={region} onChange={(e) => setRegion(e.target.value)}>
             <option value="">All regions</option>
             {regions.map((r) => (
-              <option key={r} value={r}>
-                {r}
-              </option>
+              <option key={r} value={r}>{r}</option>
             ))}
           </select>
-        </label>
-        <label>
-          Surface
+        </div>
+        <div className="filter-field">
+          <label>Surface</label>
           <select value={surface} onChange={(e) => setSurface(e.target.value)}>
-            <option value="">All surfaces</option>
-            {SURFACES.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
+            <option value="">All</option>
+            <option value="road">Road</option>
+            <option value="trail">Trail</option>
+            <option value="track">Track</option>
+            <option value="mixed">Mixed</option>
           </select>
-        </label>
-        <label>
-          Min distance (km)
-          <input
-            type="number"
-            min={0}
-            value={minDistance}
-            onChange={(e) => setMinDistance(e.target.value)}
-          />
-        </label>
-        <label>
-          Max distance (km)
-          <input
-            type="number"
-            min={0}
-            value={maxDistance}
-            onChange={(e) => setMaxDistance(e.target.value)}
-          />
-        </label>
-        <label>
-          From date
-          <input type="date" value={dateFrom} onChange={(e) => setDateFrom(e.target.value)} />
-        </label>
-        <label>
-          To date
-          <input type="date" value={dateTo} onChange={(e) => setDateTo(e.target.value)} />
-        </label>
+        </div>
+        <div className="filter-field">
+          <label>Min distance (km)</label>
+          <input type="number" min={0} value={minDistance} onChange={(e) => setMinDistance(e.target.value)} />
+        </div>
+        <div className="filter-field">
+          <label>Max distance (km)</label>
+          <input type="number" min={0} value={maxDistance} onChange={(e) => setMaxDistance(e.target.value)} />
+        </div>
       </div>
 
-      <p className="result-count">{filtered.length} races found</p>
+      {/* Detailed filters row 2 */}
+      <div className="filters-row2">
+        <div className="filter-field">
+          <label>From date</label>
+          <input type="date" value={dateFrom} onChange={(e) => setDateFrom(e.target.value)} />
+        </div>
+        <div className="filter-field">
+          <label>To date</label>
+          <input type="date" value={dateTo} onChange={(e) => setDateTo(e.target.value)} />
+        </div>
+      </div>
+
+      <div className="result-bar">
+        <p className="result-count"><strong>{filtered.length}</strong> races found</p>
+      </div>
 
       {groups.map((group) => (
         <section key={group.key} className="month-group">
-          <h2 className="month-heading">{group.label}</h2>
+          <div className="month-heading">
+            <span className="month-heading-text">{group.label}</span>
+            <div className="month-heading-line" />
+            <span className="month-heading-count">{group.items.length}</span>
+          </div>
           <div className="race-table">
             {group.items.map((race) => {
               const { day, weekday } = formatDay(race.date);
@@ -143,12 +185,14 @@ export default function HomePage() {
                   </div>
                   <div className="race-row-main">
                     <div className="race-row-name">{race.name}</div>
-                    <div className="race-row-location">{race.location}</div>
+                    <div className="race-row-location">{race.location} · {race.region}</div>
                   </div>
                   <div className="race-row-tags">
                     <span className={`tag tag-surface-${race.surface}`}>{race.surface}</span>
-                    <span className="tag">{race.distancesKm.join(" / ")} km</span>
-                    <span className="tag tag-region">{race.region}</span>
+                    <span className="tag tag-dist">{fmtDistances(race.distancesKm)}</span>
+                    {race.itraPoints != null && (
+                      <span className="tag tag-itra">ITRA {race.itraPoints}pts</span>
+                    )}
                   </div>
                 </a>
               );
@@ -156,7 +200,10 @@ export default function HomePage() {
           </div>
         </section>
       ))}
-      {filtered.length === 0 && <p>No races match your filters.</p>}
+
+      {filtered.length === 0 && (
+        <div className="empty">No races match your filters.</div>
+      )}
     </div>
   );
 }

@@ -1,14 +1,11 @@
 /**
  * Scraper entry point for populating data/races.json from public Czech
- * race-calendar sites. This cannot run inside the current sandbox (no
- * outbound network access beyond the repo host) — run it locally or in CI
- * where network access is available.
+ * race-calendar sites. Run locally or in CI with open network access:
  *
- * Usage: npm run scrape
+ *   npm run scrape
  *
- * Add one function per source below, following the `Scraper` shape, then
- * register it in `SCRAPERS`. Run `npm run scrape` to merge fresh results
- * into data/races.json (existing entries with the same id are overwritten).
+ * Add one function per source following the `Scraper` shape, then register
+ * it in `SCRAPERS`. Results are merged into data/races.json by id.
  */
 import * as cheerio from "cheerio";
 import { writeFileSync, readFileSync } from "fs";
@@ -19,9 +16,8 @@ type Scraper = () => Promise<Race[]>;
 
 const DATA_PATH = path.join(__dirname, "..", "data", "races.json");
 
-// Example scraper for behej.com's public race calendar. Selectors are
-// illustrative — inspect the live page HTML and adjust before relying on
-// this in production.
+// ── behej.com ──────────────────────────────────────────────────────────────
+// Adjust selectors after inspecting the live HTML — they change over time.
 const scrapeBehej: Scraper = async () => {
   const res = await fetch("https://www.behej.com/zavody");
   const html = await res.text();
@@ -33,24 +29,43 @@ const scrapeBehej: Scraper = async () => {
     const date = $(el).find(".race-date").attr("data-date") ?? "";
     const location = $(el).find(".race-location").text().trim();
     if (!name || !date) return;
-
     races.push({
       id: `behej-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-      name,
-      date,
-      region: "",
-      location,
-      distancesKm: [],
-      surface: "road",
-      description: "",
-      source: "behej.com",
+      name, date, region: "", location, distancesKm: [],
+      surface: "road", description: "", source: "behej.com",
     });
   });
-
   return races;
 };
 
+// ── itra.run ───────────────────────────────────────────────────────────────
+// ITRA provides a JSON search endpoint; country code for Czech Republic = CZE.
+// Returns races with their ITRA point value.
+const scrapeItra: Scraper = async () => {
+  const url = "https://itra.run/api/races/search?country=CZE&limit=200";
+  const res = await fetch(url, {
+    headers: { "Accept": "application/json", "User-Agent": "race-finder-cz/1.0" },
+  });
+  if (!res.ok) throw new Error(`ITRA returned ${res.status}`);
+  const json: { races?: { name: string; date: string; city: string; distanceKm: number; itraPoints: number; website?: string }[] } = await res.json();
+
+  return (json.races ?? []).map((r) => ({
+    id: `itra-${r.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-${r.date.slice(0, 4)}`,
+    name: r.name,
+    date: r.date.slice(0, 10),
+    region: "",
+    location: r.city,
+    distancesKm: [r.distanceKm],
+    surface: "trail" as const,
+    itraPoints: r.itraPoints,
+    description: `ITRA-listed trail race. ITRA points: ${r.itraPoints}.`,
+    website: r.website,
+    source: "itra.run",
+  }));
+};
+
 const SCRAPERS: Record<string, Scraper> = {
+  itra: scrapeItra,
   behej: scrapeBehej,
 };
 

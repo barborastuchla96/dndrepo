@@ -1,316 +1,5 @@
 [
   {
-    "id": "prague-marathon-2026",
-    "name": "Volkswagen Maraton Praha",
-    "date": "2026-05-03",
-    "region": "Praha",
-    "location": "Praha - Staré Město (start/cíl Old Town)",
-    "distancesKm": [
-      42.195,
-      21.1,
-      4.4
-    ],
-    "surface": "road",
-    "elevationGainM": 80,
-    "description": "Czech Republic's flagship international marathon through the historic streets of Prague. Also includes a half marathon and a 4.4 km Run for Fun.",
-    "website": "https://www.runczech.com/cs/zavody/volkswagen-maraton-praha/",
-    "source": "runczech.com"
-  },
-  {
-    "id": "sportisimo-prague-half-2026",
-    "name": "Sportisimo Prague Half Marathon",
-    "date": "2026-04-04",
-    "region": "Praha",
-    "location": "Praha",
-    "distancesKm": [
-      21.1
-    ],
-    "surface": "road",
-    "elevationGainM": 60,
-    "description": "One of the world's most scenic half marathons, crossing the Vltava river multiple times.",
-    "website": "https://www.runczech.com/cs/zavody/sportisimo-prague-half-marathon/",
-    "source": "runczech.com"
-  },
-  {
-    "id": "mattoni-karlovy-vary-half-2026",
-    "name": "Mattoni Karlovy Vary Half Marathon",
-    "date": "2026-06-27",
-    "region": "Karlovarský kraj",
-    "location": "Karlovy Vary",
-    "distancesKm": [
-      21.1,
-      10,
-      4.7
-    ],
-    "surface": "road",
-    "elevationGainM": 150,
-    "description": "Half marathon through the spa town of Karlovy Vary, part of the Mattoni Race Tour.",
-    "website": "https://www.mattonicup.cz/",
-    "source": "mattonicup.cz"
-  },
-  {
-    "id": "mattoni-olomouc-half-2026",
-    "name": "Mattoni Olomouc Half Marathon",
-    "date": "2026-06-13",
-    "region": "Olomoucký kraj",
-    "location": "Olomouc",
-    "distancesKm": [
-      21.1,
-      10,
-      4.6
-    ],
-    "surface": "road",
-    "description": "Half marathon through Olomouc's historic UNESCO city centre.",
-    "website": "https://www.mattonicup.cz/",
-    "source": "mattonicup.cz"
-  },
-  {
-    "id": "mattoni-ceske-budejovice-half-2026",
-    "name": "Mattoni České Budějovice Half Marathon",
-    "date": "2026-09-12",
-    "region": "Jihočeský kraj",
-    "location": "České Budějovice",
-    "distancesKm": [
-      21.1,
-      10
-    ],
-    "surface": "road",
-    "description": "Half marathon and 10 km race in the South Bohemian regional capital.",
-    "website": "https://www.mattonicup.cz/",
-    "source": "mattonicup.cz"
-  },
-  {
-    "id": "mattoni-usti-nad-labem-half-2026",
-    "name": "Mattoni Ústí nad Labem Half Marathon",
-    "date": "2026-09-26",
-    "region": "Ústecký kraj",
-    "location": "Ústí nad Labem",
-    "distancesKm": [
-      21.1,
-      10
-    ],
-    "surface": "road",
-    "description": "Half marathon along the Elbe river in Ústí nad Labem.",
-    "website": "https://www.mattonicup.cz/",
-    "source": "mattonicup.cz"
-  },
-  {
-    "id": "sumavsky-maraton-2026",
-    "name": "Šumavský maraton",
-    "date": "2026-07-18",
-    "region": "Jihočeský kraj",
-    "location": "Kvilda, Šumava",
-    "distancesKm": [
-      42.195,
-      21.1,
-      7
-    ],
-    "surface": "trail",
-    "elevationGainM": 850,
-    "description": "Mountain trail marathon through the Šumava national park forests and meadows.",
-    "website": "https://www.sumavskymaraton.cz/",
-    "source": "sumavskymaraton.cz"
-  },
-  {
-    "id": "krkonosska-70-2026",
-    "name": "Krkonošská 70",
-    "date": "2026-08-08",
-    "region": "Královéhradecký kraj",
-    "location": "Pec pod Sněžkou, Krkonoše",
-    "distancesKm": [
-      70,
-      35,
-      15
-    ],
-    "surface": "trail",
-    "elevationGainM": 3200,
-    "description": "Demanding ultra trail race in the Giant Mountains with major elevation gain, climbing near Sněžka.",
-    "website": "https://www.krkonosska70.cz/",
-    "source": "krkonosska70.cz"
-  },
-  {
-    "id": "beskydska-sedmicka-2026",
-    "name": "Beskydská sedmička",
-    "date": "2026-11-21",
-    "region": "Moravskoslezský kraj",
-    "location": "Frenštát pod Radhoštěm, Beskydy",
-    "distancesKm": [
-      64,
-      30
-    ],
-    "surface": "trail",
-    "elevationGainM": 2800,
-    "description": "Legendary autumn/winter ultra trail run across the Beskydy mountain ridges, often in snow and mud.",
-    "website": "https://www.beskydskasedmicka.cz/",
-    "source": "beskydskasedmicka.cz"
-  },
-  {
-    "id": "zlata-praha-10k-2026",
-    "name": "Zlatá Praha",
-    "date": "2026-03-15",
-    "region": "Praha",
-    "location": "Praha",
-    "distancesKm": [
-      10
-    ],
-    "surface": "road",
-    "description": "Traditional season-opening 10 km road race through central Prague, running since 1897.",
-    "website": "https://www.atletika.cz/",
-    "source": "atletika.cz"
-  },
-  {
-    "id": "velikonocni-desitka-2026",
-    "name": "Velikonoční desítka Kolín",
-    "date": "2026-04-05",
-    "region": "Středočeský kraj",
-    "location": "Kolín",
-    "distancesKm": [
-      10,
-      5
-    ],
-    "surface": "road",
-    "description": "Small local Easter 10K and 5K road race in Kolín, popular family event.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "devils-race-2026",
-    "name": "Devil's Race Kuks",
-    "date": "2026-07-04",
-    "region": "Královéhradecký kraj",
-    "location": "Kuks",
-    "distancesKm": [
-      9,
-      4.5
-    ],
-    "surface": "mixed",
-    "description": "Obstacle race (OCR) through forest, mud, and water obstacles near the Kuks chateau.",
-    "website": "https://www.devilsrace.cz/",
-    "source": "devilsrace.cz"
-  },
-  {
-    "id": "spartan-race-cz-2026",
-    "name": "Spartan Race Czech - Sprint",
-    "date": "2026-06-06",
-    "region": "Liberecký kraj",
-    "location": "Liberec - Ještěd",
-    "distancesKm": [
-      5
-    ],
-    "surface": "trail",
-    "elevationGainM": 300,
-    "description": "Obstacle course race with 20+ obstacles on the slopes of Ještěd.",
-    "website": "https://www.spartan.cz/",
-    "source": "spartan.cz"
-  },
-  {
-    "id": "behej-lesem-brdy-2026",
-    "name": "Běhej lesem Brdy",
-    "date": "2026-05-16",
-    "region": "Středočeský kraj",
-    "location": "Brdy",
-    "distancesKm": [
-      25,
-      12
-    ],
-    "surface": "trail",
-    "elevationGainM": 600,
-    "description": "Small local forest trail race series in the Brdy hills, low-key and well-marked.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "noc-na-karlstejne-2026",
-    "name": "Noc na Karlštejně",
-    "date": "2026-09-05",
-    "region": "Středočeský kraj",
-    "location": "Karlštejn",
-    "distancesKm": [
-      13,
-      33
-    ],
-    "surface": "trail",
-    "elevationGainM": 500,
-    "description": "Atmospheric night trail race finishing near Karlštejn castle.",
-    "website": "https://www.nocnakarlstejne.cz/",
-    "source": "nocnakarlstejne.cz"
-  },
-  {
-    "id": "mikulasska-desitka-2026",
-    "name": "Mikulášská desítka Pardubice",
-    "date": "2026-12-05",
-    "region": "Pardubický kraj",
-    "location": "Pardubice",
-    "distancesKm": [
-      10,
-      3
-    ],
-    "surface": "road",
-    "description": "Local winter 10K road race with Santa/Mikuláš costumes encouraged, family-friendly.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "rakovnicka-zubacka-2026",
-    "name": "Rakovnická zubačka",
-    "date": "2026-10-10",
-    "region": "Středočeský kraj",
-    "location": "Rakovník",
-    "distancesKm": [
-      21.1,
-      10.5
-    ],
-    "surface": "trail",
-    "elevationGainM": 400,
-    "description": "Small regional half marathon and 10.5K on forest and field paths near Rakovník.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "ostravska-22-2026",
-    "name": "Ostravská 22",
-    "date": "2026-09-19",
-    "region": "Moravskoslezský kraj",
-    "location": "Ostrava",
-    "distancesKm": [
-      22,
-      11
-    ],
-    "surface": "road",
-    "description": "City road race through Ostrava's industrial and modern districts.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "obecni-behanka-strakonice-2026",
-    "name": "Strakonická obecní běhánka",
-    "date": "2026-05-09",
-    "region": "Jihočeský kraj",
-    "location": "Strakonice",
-    "distancesKm": [
-      3.5
-    ],
-    "surface": "road",
-    "description": "Tiny non-competitive town fun run organised by the local sports club, open to all ages, no timing chip required.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "vanocni-bezka-trebon-2026",
-    "name": "Vánoční běžka Třeboň",
-    "date": "2026-12-20",
-    "region": "Jihočeský kraj",
-    "location": "Třeboň",
-    "distancesKm": [
-      4,
-      8
-    ],
-    "surface": "trail",
-    "description": "Small local Christmas-season run around the Třeboň fishponds, organised by the town recreation centre.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
     "id": "novorocni-vyběh-rip-2026",
     "name": "Novoroční výběh na Říp",
     "date": "2026-01-01",
@@ -326,92 +15,17 @@
     "source": "behej.com"
   },
   {
-    "id": "memorial-jana-zacha-humpolec-2026",
-    "name": "Memoriál Jana Zacha Humpolec",
-    "date": "2026-08-22",
-    "region": "Vysočina",
-    "location": "Humpolec",
+    "id": "novorocni-brno-2026",
+    "name": "Novoroční běh Brnem",
+    "date": "2026-01-01",
+    "region": "Jihomoravský kraj",
+    "location": "Brno",
     "distancesKm": [
-      10,
-      5,
-      1
+      6,
+      3
     ],
     "surface": "road",
-    "description": "Small-town memorial road race including a kids' 1 km race, organised by the local athletics club since the 1970s.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "babi-leto-bezec-telc-2026",
-    "name": "Babí léto běžec Telč",
-    "date": "2026-09-13",
-    "region": "Vysočina",
-    "location": "Telč",
-    "distancesKm": [
-      6.5
-    ],
-    "surface": "mixed",
-    "description": "Small autumn fun run around the historic ponds of Telč, organised by a local running club, very low-key.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "jarni-probuzeni-jindrichuv-hradec-2026",
-    "name": "Jarní probuzení Jindřichův Hradec",
-    "date": "2026-03-21",
-    "region": "Jihočeský kraj",
-    "location": "Jindřichův Hradec",
-    "distancesKm": [
-      5,
-      2
-    ],
-    "surface": "road",
-    "description": "Tiny season-opening race around the town pond, run by a handful of local clubs and families, no entry fee.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "lesni-bezec-krivoklat-2026",
-    "name": "Lesní běžec Křivoklát",
-    "date": "2026-06-13",
-    "region": "Středočeský kraj",
-    "location": "Křivoklát",
-    "distancesKm": [
-      14,
-      7
-    ],
-    "surface": "trail",
-    "elevationGainM": 350,
-    "description": "Small forest trail race through the Křivoklát game reserve, capped at ~150 runners, run by volunteers.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "podzimni-desitka-pelhrimov-2026",
-    "name": "Podzimní desítka Pelhřimov",
-    "date": "2026-10-17",
-    "region": "Vysočina",
-    "location": "Pelhřimov",
-    "distancesKm": [
-      10
-    ],
-    "surface": "road",
-    "description": "Local autumn 10K through the streets of Pelhřimov, town of records, organised by the regional athletics union.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "noha-vinohrady-litomerice-2026",
-    "name": "Litoměřický vinohradní běh",
-    "date": "2026-09-27",
-    "region": "Ústecký kraj",
-    "location": "Litoměřice",
-    "distancesKm": [
-      8,
-      4
-    ],
-    "surface": "mixed",
-    "description": "Small race through the vineyards above Litoměřice with views over the Elbe valley, harvest-festival atmosphere.",
+    "description": "Traditional New Year's Day road run through central Brno, hundreds of participants, costumes welcome.",
     "website": "https://www.behej.com/",
     "source": "behej.com"
   },
@@ -431,6 +45,300 @@
     "source": "behej.com"
   },
   {
+    "id": "zlata-praha-10k-2026",
+    "name": "Zlatá Praha",
+    "date": "2026-03-15",
+    "region": "Praha",
+    "location": "Praha",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "Traditional season-opening 10 km road race through central Prague, running since 1897.",
+    "website": "https://www.atletika.cz/",
+    "source": "atletika.cz"
+  },
+  {
+    "id": "jarni-probuzeni-jindrichuv-hradec-2026",
+    "name": "Jarní probuzení Jindřichův Hradec",
+    "date": "2026-03-21",
+    "region": "Jihočeský kraj",
+    "location": "Jindřichův Hradec",
+    "distancesKm": [
+      5,
+      2
+    ],
+    "surface": "road",
+    "description": "Tiny season-opening race around the town pond, run by a handful of local clubs and families, no entry fee.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "hanicka-beha-2026",
+    "name": "Hanička běhá",
+    "date": "2026-03-28",
+    "region": "Královéhradecký kraj",
+    "location": "Hanička, Orlické hory",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "trail",
+    "description": "Small local trail race on snow-possible terrain in the Orlické hory foothills, early season opener.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "sportisimo-prague-half-2026",
+    "name": "Sportisimo Prague Half Marathon",
+    "date": "2026-04-04",
+    "region": "Praha",
+    "location": "Praha",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "elevationGainM": 60,
+    "description": "One of the world's most scenic half marathons, crossing the Vltava river multiple times.",
+    "website": "https://www.runczech.com/cs/zavody/sportisimo-prague-half-marathon/",
+    "source": "runczech.com"
+  },
+  {
+    "id": "velikonocni-desitka-2026",
+    "name": "Velikonoční desítka Kolín",
+    "date": "2026-04-05",
+    "region": "Středočeský kraj",
+    "location": "Kolín",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Small local Easter 10K and 5K road race in Kolín, popular family event.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "jaro-bezi-jihlava-2026",
+    "name": "Jaro běží Jihlava",
+    "date": "2026-04-11",
+    "region": "Vysočina",
+    "location": "Jihlava",
+    "distancesKm": [
+      5,
+      10,
+      21.1
+    ],
+    "surface": "road",
+    "description": "Spring road race series in the Vysočina regional capital, one of the longest-running local races in the region.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "podbelohorsky-trail-2026",
+    "name": "Podbělohorský trail",
+    "date": "2026-04-12",
+    "region": "Praha",
+    "location": "Praha - Bílá Hora",
+    "distancesKm": [
+      21,
+      10
+    ],
+    "surface": "trail",
+    "elevationGainM": 400,
+    "description": "Small trail race on the outskirts of Prague through the White Mountain battlefield forests.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "runtour-brno-2026",
+    "name": "RunTour Brno",
+    "date": "2026-04-18",
+    "region": "Jihomoravský kraj",
+    "location": "Brno",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Part of the Czech RunTour road-race series, city 10K and 5K through Brno's streets.",
+    "website": "https://www.runtour.cz/",
+    "source": "runtour.cz"
+  },
+  {
+    "id": "pisecka-patnactka-2026",
+    "name": "Písecká patnáctka",
+    "date": "2026-04-19",
+    "region": "Jihočeský kraj",
+    "location": "Písek",
+    "distancesKm": [
+      15,
+      7.5
+    ],
+    "surface": "road",
+    "description": "Small local 15K and 7.5K road race along the Otava river in Písek, organised by a local running club.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "bohemia-100-2026",
+    "name": "Bohemia 100",
+    "date": "2026-04-25",
+    "region": "Středočeský kraj",
+    "location": "Příbram",
+    "distancesKm": [
+      100,
+      50,
+      25
+    ],
+    "surface": "trail",
+    "elevationGainM": 3800,
+    "itraPoints": 4,
+    "description": "ITRA-listed 100-mile / 100-km / 50-km trail race through the forests and ridges of central Bohemia, one of the most competitive Czech ultras.",
+    "website": "https://www.bohemia100.cz/",
+    "source": "itra.run / bohemia100.cz"
+  },
+  {
+    "id": "ceske-budejovice-pulmaraton-2026",
+    "name": "Českobudějovický půlmaraton",
+    "date": "2026-04-26",
+    "region": "Jihočeský kraj",
+    "location": "České Budějovice",
+    "distancesKm": [
+      21.1,
+      5
+    ],
+    "surface": "road",
+    "description": "Spring half marathon through České Budějovice with a 5K family race.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "runtour-plzen-2026",
+    "name": "RunTour Plzeň",
+    "date": "2026-05-02",
+    "region": "Plzeňský kraj",
+    "location": "Plzeň",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Part of the Czech RunTour road-race series, city 10K and 5K through Plzeň.",
+    "website": "https://www.runtour.cz/",
+    "source": "runtour.cz"
+  },
+  {
+    "id": "prague-marathon-2026",
+    "name": "Volkswagen Maraton Praha",
+    "date": "2026-05-03",
+    "region": "Praha",
+    "location": "Praha - Staré Město (start/cíl Old Town)",
+    "distancesKm": [
+      42.195,
+      21.1,
+      4.4
+    ],
+    "surface": "road",
+    "elevationGainM": 80,
+    "description": "Czech Republic's flagship international marathon through the historic streets of Prague. Also includes a half marathon and a 4.4 km Run for Fun.",
+    "website": "https://www.runczech.com/cs/zavody/volkswagen-maraton-praha/",
+    "source": "runczech.com"
+  },
+  {
+    "id": "obecni-behanka-strakonice-2026",
+    "name": "Strakonická obecní běhánka",
+    "date": "2026-05-09",
+    "region": "Jihočeský kraj",
+    "location": "Strakonice",
+    "distancesKm": [
+      3.5
+    ],
+    "surface": "road",
+    "description": "Tiny non-competitive town fun run organised by the local sports club, open to all ages, no timing chip required.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "lysec-trail-2026",
+    "name": "Lysecký trail",
+    "date": "2026-05-09",
+    "region": "Jihomoravský kraj",
+    "location": "Soběšice, Brno",
+    "distancesKm": [
+      32,
+      16,
+      8
+    ],
+    "surface": "trail",
+    "elevationGainM": 800,
+    "description": "Trail race in the hills above Brno, popular with Brno running club runners.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "plzen-marathon-2026",
+    "name": "Plzeňský maraton",
+    "date": "2026-05-10",
+    "region": "Plzeňský kraj",
+    "location": "Plzeň",
+    "distancesKm": [
+      42.195,
+      21.1,
+      10
+    ],
+    "surface": "road",
+    "description": "Marathon, half marathon and 10K through Pilsen, the city of beer.",
+    "website": "https://www.plzenmarathon.cz/",
+    "source": "plzenmarathon.cz"
+  },
+  {
+    "id": "behej-lesem-brdy-2026",
+    "name": "Běhej lesem Brdy",
+    "date": "2026-05-16",
+    "region": "Středočeský kraj",
+    "location": "Brdy",
+    "distancesKm": [
+      25,
+      12
+    ],
+    "surface": "trail",
+    "elevationGainM": 600,
+    "description": "Small local forest trail race series in the Brdy hills, low-key and well-marked.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "kutnohorsky-okruh-2026",
+    "name": "Kutnohorský okruh",
+    "date": "2026-05-23",
+    "region": "Středočeský kraj",
+    "location": "Kutná Hora",
+    "distancesKm": [
+      12,
+      6
+    ],
+    "surface": "mixed",
+    "description": "Small loop race past Kutná Hora's UNESCO sites, run by the local tourist club, low entry fee.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "runtour-liberec-2026",
+    "name": "RunTour Liberec",
+    "date": "2026-05-23",
+    "region": "Liberecký kraj",
+    "location": "Liberec",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Part of the Czech RunTour road-race series.",
+    "website": "https://www.runtour.cz/",
+    "source": "runtour.cz"
+  },
+  {
     "id": "hanacka-desitka-prostejov-2026",
     "name": "Hanácká desítka Prostějov",
     "date": "2026-05-30",
@@ -446,49 +354,132 @@
     "source": "behej.com"
   },
   {
-    "id": "slovacky-bezec-uherske-hradiste-2026",
-    "name": "Slovácký běžec Uherské Hradiště",
-    "date": "2026-09-06",
-    "region": "Zlínský kraj",
-    "location": "Uherské Hradiště",
+    "id": "moravia-100-2026",
+    "name": "Moravia 100",
+    "date": "2026-05-30",
+    "region": "Jihomoravský kraj",
+    "location": "Buchlov",
     "distancesKm": [
-      10,
-      21.1
-    ],
-    "surface": "road",
-    "description": "Regional half marathon and 10K through Uherské Hradiště in the Moravian wine region.",
-    "website": "https://www.behej.com/",
-    "source": "behej.com"
-  },
-  {
-    "id": "valassky-trail-roznov-2026",
-    "name": "Valašský trail Rožnov",
-    "date": "2026-07-25",
-    "region": "Zlínský kraj",
-    "location": "Rožnov pod Radhoštěm",
-    "distancesKm": [
-      18,
-      9
+      100,
+      50,
+      20
     ],
     "surface": "trail",
-    "elevationGainM": 700,
-    "description": "Small Wallachian-region trail race climbing toward Radhošť, run by a local volunteer trail club.",
+    "elevationGainM": 4200,
+    "itraPoints": 4,
+    "description": "ITRA-listed ultra trail race in the White Carpathians and Chřiby hills of South Moravia.",
+    "website": "https://www.moravia100.cz/",
+    "source": "itra.run / moravia100.cz"
+  },
+  {
+    "id": "klokocsky-okruh-2026",
+    "name": "Klokoč trail run",
+    "date": "2026-05-30",
+    "region": "Liberecký kraj",
+    "location": "Klokoč, Jizerské hory",
+    "distancesKm": [
+      17,
+      8
+    ],
+    "surface": "trail",
+    "elevationGainM": 600,
+    "description": "Small Jizerské hory trail race run by a local club, limited to 200 runners.",
     "website": "https://www.behej.com/",
     "source": "behej.com"
   },
   {
-    "id": "noc-bezec-frydek-mistek-2026",
-    "name": "Noční běžec Frýdek-Místek",
-    "date": "2026-08-15",
-    "region": "Moravskoslezský kraj",
-    "location": "Frýdek-Místek",
+    "id": "spartan-race-cz-2026",
+    "name": "Spartan Race Czech - Sprint",
+    "date": "2026-06-06",
+    "region": "Liberecký kraj",
+    "location": "Liberec - Ještěd",
     "distancesKm": [
-      6
+      5
+    ],
+    "surface": "trail",
+    "elevationGainM": 300,
+    "description": "Obstacle course race with 20+ obstacles on the slopes of Ještěd.",
+    "website": "https://www.spartan.cz/",
+    "source": "spartan.cz"
+  },
+  {
+    "id": "jizerska-50-2026",
+    "name": "Jizerská 50",
+    "date": "2026-06-06",
+    "region": "Liberecký kraj",
+    "location": "Bedřichov, Jizerské hory",
+    "distancesKm": [
+      50,
+      27
+    ],
+    "surface": "trail",
+    "elevationGainM": 1600,
+    "itraPoints": 2,
+    "description": "ITRA-listed trail race through the Jizerské hory highland, famous for its cross-country ski trails.",
+    "website": "https://www.jizerska50.cz/",
+    "source": "itra.run / jizerska50.cz"
+  },
+  {
+    "id": "desitka-trebic-2026",
+    "name": "Třebíčská desítka",
+    "date": "2026-06-06",
+    "region": "Vysočina",
+    "location": "Třebíč",
+    "distancesKm": [
+      10,
+      5
     ],
     "surface": "road",
-    "description": "Small evening/night fun run through the town centre with headlamps encouraged, family-friendly.",
+    "description": "Local road race in Třebíč near the UNESCO Jewish Quarter, small club-organised event.",
     "website": "https://www.behej.com/",
     "source": "behej.com"
+  },
+  {
+    "id": "mattoni-olomouc-half-2026",
+    "name": "Mattoni Olomouc Half Marathon",
+    "date": "2026-06-13",
+    "region": "Olomoucký kraj",
+    "location": "Olomouc",
+    "distancesKm": [
+      21.1,
+      10,
+      4.6
+    ],
+    "surface": "road",
+    "description": "Half marathon through Olomouc's historic UNESCO city centre.",
+    "website": "https://www.mattonicup.cz/",
+    "source": "mattonicup.cz"
+  },
+  {
+    "id": "lesni-bezec-krivoklat-2026",
+    "name": "Lesní běžec Křivoklát",
+    "date": "2026-06-13",
+    "region": "Středočeský kraj",
+    "location": "Křivoklát",
+    "distancesKm": [
+      14,
+      7
+    ],
+    "surface": "trail",
+    "elevationGainM": 350,
+    "description": "Small forest trail race through the Křivoklát game reserve, capped at ~150 runners, run by volunteers.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "runtour-ostrava-2026",
+    "name": "RunTour Ostrava",
+    "date": "2026-06-13",
+    "region": "Moravskoslezský kraj",
+    "location": "Ostrava",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Part of the Czech RunTour road-race series.",
+    "website": "https://www.runtour.cz/",
+    "source": "runtour.cz"
   },
   {
     "id": "jesenicka-padesatka-2026",
@@ -507,6 +498,489 @@
     "source": "behej.com"
   },
   {
+    "id": "cesky-raj-trail-2026",
+    "name": "Český ráj trail",
+    "date": "2026-06-20",
+    "region": "Liberecký kraj",
+    "location": "Jičín, Český ráj",
+    "distancesKm": [
+      42,
+      21,
+      10
+    ],
+    "surface": "trail",
+    "elevationGainM": 1200,
+    "itraPoints": 1,
+    "description": "Trail race through the Bohemian Paradise geopark with its iconic sandstone rock formations.",
+    "website": "https://www.behej.com/",
+    "source": "itra.run / behej.com"
+  },
+  {
+    "id": "mattoni-karlovy-vary-half-2026",
+    "name": "Mattoni Karlovy Vary Half Marathon",
+    "date": "2026-06-27",
+    "region": "Karlovarský kraj",
+    "location": "Karlovy Vary",
+    "distancesKm": [
+      21.1,
+      10,
+      4.7
+    ],
+    "surface": "road",
+    "elevationGainM": 150,
+    "description": "Half marathon through the spa town of Karlovy Vary, part of the Mattoni Race Tour.",
+    "website": "https://www.mattonicup.cz/",
+    "source": "mattonicup.cz"
+  },
+  {
+    "id": "orlicke-hory-ultra-2026",
+    "name": "Orlické hory ultra",
+    "date": "2026-06-27",
+    "region": "Královéhradecký kraj",
+    "location": "Deštné v Orlických horách",
+    "distancesKm": [
+      55,
+      28,
+      14
+    ],
+    "surface": "trail",
+    "elevationGainM": 2200,
+    "itraPoints": 2,
+    "description": "ITRA-listed trail race through the Eagle Mountains ridge trail.",
+    "website": "https://www.behej.com/",
+    "source": "itra.run / behej.com"
+  },
+  {
+    "id": "devils-race-2026",
+    "name": "Devil's Race Kuks",
+    "date": "2026-07-04",
+    "region": "Královéhradecký kraj",
+    "location": "Kuks",
+    "distancesKm": [
+      9,
+      4.5
+    ],
+    "surface": "mixed",
+    "description": "Obstacle race (OCR) through forest, mud, and water obstacles near the Kuks chateau.",
+    "website": "https://www.devilsrace.cz/",
+    "source": "devilsrace.cz"
+  },
+  {
+    "id": "trinecka-desitka-2026",
+    "name": "Třinecká desítka",
+    "date": "2026-07-04",
+    "region": "Moravskoslezský kraj",
+    "location": "Třinec",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Small town 10K and 5K in Třinec organised by the local athletics club.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "sumava-100-2026",
+    "name": "Šumava 100",
+    "date": "2026-07-10",
+    "region": "Jihočeský kraj",
+    "location": "Srní, Šumava",
+    "distancesKm": [
+      100,
+      60,
+      30
+    ],
+    "surface": "trail",
+    "elevationGainM": 5000,
+    "itraPoints": 5,
+    "description": "ITRA 5-point ultra trail race through the Šumava wilderness, one of the toughest Czech ultras with significant navigation sections.",
+    "website": "https://www.sumava100.cz/",
+    "source": "itra.run / sumava100.cz"
+  },
+  {
+    "id": "stezka-labyrintem-bohem-2026",
+    "name": "Stezka labyrintem Čech",
+    "date": "2026-07-11",
+    "region": "Středočeský kraj",
+    "location": "Kokořín",
+    "distancesKm": [
+      50,
+      25
+    ],
+    "surface": "trail",
+    "elevationGainM": 1400,
+    "itraPoints": 2,
+    "description": "ITRA-listed trail race through the sandstone ravines and forests of the Kokořínsko landscape.",
+    "website": "https://www.behej.com/",
+    "source": "itra.run / behej.com"
+  },
+  {
+    "id": "chomutovska-desitka-2026",
+    "name": "Chomutovská desítka",
+    "date": "2026-07-11",
+    "region": "Ústecký kraj",
+    "location": "Chomutov",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Small local 10K and 5K around the Chomutov city lake, popular summer evening race.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "sumavsky-maraton-2026",
+    "name": "Šumavský maraton",
+    "date": "2026-07-18",
+    "region": "Jihočeský kraj",
+    "location": "Kvilda, Šumava",
+    "distancesKm": [
+      42.195,
+      21.1,
+      7
+    ],
+    "surface": "trail",
+    "elevationGainM": 850,
+    "description": "Mountain trail marathon through the Šumava national park forests and meadows.",
+    "website": "https://www.sumavskymaraton.cz/",
+    "source": "sumavskymaraton.cz"
+  },
+  {
+    "id": "valassky-trail-roznov-2026",
+    "name": "Valašský trail Rožnov",
+    "date": "2026-07-25",
+    "region": "Zlínský kraj",
+    "location": "Rožnov pod Radhoštěm",
+    "distancesKm": [
+      18,
+      9
+    ],
+    "surface": "trail",
+    "elevationGainM": 700,
+    "description": "Small Wallachian-region trail race climbing toward Radhošť, run by a local volunteer trail club.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "loucky-trail-2026",
+    "name": "Loučský trail",
+    "date": "2026-08-01",
+    "region": "Jihočeský kraj",
+    "location": "Loučovice, Šumava",
+    "distancesKm": [
+      44,
+      22,
+      11
+    ],
+    "surface": "trail",
+    "elevationGainM": 1700,
+    "itraPoints": 1,
+    "description": "ITRA-listed trail race along the Vltava river gorge in southern Bohemia.",
+    "website": "https://www.behej.com/",
+    "source": "itra.run / behej.com"
+  },
+  {
+    "id": "krkonosska-70-2026",
+    "name": "Krkonošská 70",
+    "date": "2026-08-08",
+    "region": "Královéhradecký kraj",
+    "location": "Pec pod Sněžkou, Krkonoše",
+    "distancesKm": [
+      70,
+      35,
+      15
+    ],
+    "surface": "trail",
+    "elevationGainM": 3200,
+    "description": "Demanding ultra trail race in the Giant Mountains with major elevation gain, climbing near Sněžka.",
+    "website": "https://www.krkonosska70.cz/",
+    "source": "krkonosska70.cz"
+  },
+  {
+    "id": "noc-bezec-frydek-mistek-2026",
+    "name": "Noční běžec Frýdek-Místek",
+    "date": "2026-08-15",
+    "region": "Moravskoslezský kraj",
+    "location": "Frýdek-Místek",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "Small evening/night fun run through the town centre with headlamps encouraged, family-friendly.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "krusnohorska-stovka-2026",
+    "name": "Krušnohorská stovka",
+    "date": "2026-08-15",
+    "region": "Ústecký kraj",
+    "location": "Vejprty, Krušné hory",
+    "distancesKm": [
+      100,
+      50,
+      30
+    ],
+    "surface": "trail",
+    "elevationGainM": 4000,
+    "itraPoints": 4,
+    "description": "ITRA-listed 100-km ultra trail race along the Ore Mountains ridge on the Czech-German border.",
+    "website": "https://www.krusnohorskastovka.cz/",
+    "source": "itra.run / krusnohorskastovka.cz"
+  },
+  {
+    "id": "memorial-jana-zacha-humpolec-2026",
+    "name": "Memoriál Jana Zacha Humpolec",
+    "date": "2026-08-22",
+    "region": "Vysočina",
+    "location": "Humpolec",
+    "distancesKm": [
+      10,
+      5,
+      1
+    ],
+    "surface": "road",
+    "description": "Small-town memorial road race including a kids' 1 km race, organised by the local athletics club since the 1970s.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "zlaty-hreben-2026",
+    "name": "Zlatý hřeben",
+    "date": "2026-08-22",
+    "region": "Královéhradecký kraj",
+    "location": "Špindlerův Mlýn, Krkonoše",
+    "distancesKm": [
+      54,
+      27,
+      15
+    ],
+    "surface": "trail",
+    "elevationGainM": 2400,
+    "itraPoints": 2,
+    "description": "ITRA-listed trail race along the Giant Mountains ridge between Czech Republic and Poland.",
+    "website": "https://www.zlatyhreben.cz/",
+    "source": "itra.run / zlatyhreben.cz"
+  },
+  {
+    "id": "lysahora-trail-2026",
+    "name": "Lysá hora trail",
+    "date": "2026-08-29",
+    "region": "Moravskoslezský kraj",
+    "location": "Ostravice, Beskydy",
+    "distancesKm": [
+      36,
+      18
+    ],
+    "surface": "trail",
+    "elevationGainM": 1600,
+    "itraPoints": 1,
+    "description": "ITRA-listed trail race to the Lysá hora summit, the highest point of the Beskydy mountains.",
+    "website": "https://www.behej.com/",
+    "source": "itra.run / behej.com"
+  },
+  {
+    "id": "noc-na-karlstejne-2026",
+    "name": "Noc na Karlštejně",
+    "date": "2026-09-05",
+    "region": "Středočeský kraj",
+    "location": "Karlštejn",
+    "distancesKm": [
+      13,
+      33
+    ],
+    "surface": "trail",
+    "elevationGainM": 500,
+    "description": "Atmospheric night trail race finishing near Karlštejn castle.",
+    "website": "https://www.nocnakarlstejne.cz/",
+    "source": "nocnakarlstejne.cz"
+  },
+  {
+    "id": "runtour-zlin-2026",
+    "name": "RunTour Zlín",
+    "date": "2026-09-05",
+    "region": "Zlínský kraj",
+    "location": "Zlín",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Part of the Czech RunTour road-race series.",
+    "website": "https://www.runtour.cz/",
+    "source": "runtour.cz"
+  },
+  {
+    "id": "slovacky-bezec-uherske-hradiste-2026",
+    "name": "Slovácký běžec Uherské Hradiště",
+    "date": "2026-09-06",
+    "region": "Zlínský kraj",
+    "location": "Uherské Hradiště",
+    "distancesKm": [
+      10,
+      21.1
+    ],
+    "surface": "road",
+    "description": "Regional half marathon and 10K through Uherské Hradiště in the Moravian wine region.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "mattoni-ceske-budejovice-half-2026",
+    "name": "Mattoni České Budějovice Half Marathon",
+    "date": "2026-09-12",
+    "region": "Jihočeský kraj",
+    "location": "České Budějovice",
+    "distancesKm": [
+      21.1,
+      10
+    ],
+    "surface": "road",
+    "description": "Half marathon and 10 km race in the South Bohemian regional capital.",
+    "website": "https://www.mattonicup.cz/",
+    "source": "mattonicup.cz"
+  },
+  {
+    "id": "jeseniky-ultra-2026",
+    "name": "Jeseníky Ultra",
+    "date": "2026-09-12",
+    "region": "Olomoucký kraj",
+    "location": "Karlova Studánka, Jeseníky",
+    "distancesKm": [
+      75,
+      38,
+      18
+    ],
+    "surface": "trail",
+    "elevationGainM": 3500,
+    "itraPoints": 3,
+    "description": "ITRA-listed multi-distance mountain ultra through the Jeseníky range, including the Praděd summit.",
+    "website": "https://www.behej.com/",
+    "source": "itra.run / behej.com"
+  },
+  {
+    "id": "babi-leto-bezec-telc-2026",
+    "name": "Babí léto běžec Telč",
+    "date": "2026-09-13",
+    "region": "Vysočina",
+    "location": "Telč",
+    "distancesKm": [
+      6.5
+    ],
+    "surface": "mixed",
+    "description": "Small autumn fun run around the historic ponds of Telč, organised by a local running club, very low-key.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "ostravska-22-2026",
+    "name": "Ostravská 22",
+    "date": "2026-09-19",
+    "region": "Moravskoslezský kraj",
+    "location": "Ostrava",
+    "distancesKm": [
+      22,
+      11
+    ],
+    "surface": "road",
+    "description": "City road race through Ostrava's industrial and modern districts.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "skaceluv-memorial-2026",
+    "name": "Skácelův memoriál",
+    "date": "2026-09-19",
+    "region": "Jihomoravský kraj",
+    "location": "Brno - Mariánské údolí",
+    "distancesKm": [
+      13,
+      6
+    ],
+    "surface": "trail",
+    "elevationGainM": 350,
+    "description": "Small trail memorial race through Brno's Mariánské údolí valley, run by the local athletics club.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "hradecky-pulmaraton-2026",
+    "name": "Hradecký půlmaraton",
+    "date": "2026-09-19",
+    "region": "Královéhradecký kraj",
+    "location": "Hradec Králové",
+    "distancesKm": [
+      21.1,
+      10
+    ],
+    "surface": "road",
+    "description": "Popular half marathon through Hradec Králové city centre.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "mattoni-usti-nad-labem-half-2026",
+    "name": "Mattoni Ústí nad Labem Half Marathon",
+    "date": "2026-09-26",
+    "region": "Ústecký kraj",
+    "location": "Ústí nad Labem",
+    "distancesKm": [
+      21.1,
+      10
+    ],
+    "surface": "road",
+    "description": "Half marathon along the Elbe river in Ústí nad Labem.",
+    "website": "https://www.mattonicup.cz/",
+    "source": "mattonicup.cz"
+  },
+  {
+    "id": "runtour-hk-2026",
+    "name": "RunTour Hradec Králové",
+    "date": "2026-09-26",
+    "region": "Královéhradecký kraj",
+    "location": "Hradec Králové",
+    "distancesKm": [
+      10,
+      5
+    ],
+    "surface": "road",
+    "description": "Part of the Czech RunTour road-race series.",
+    "website": "https://www.runtour.cz/",
+    "source": "runtour.cz"
+  },
+  {
+    "id": "noha-vinohrady-litomerice-2026",
+    "name": "Litoměřický vinohradní běh",
+    "date": "2026-09-27",
+    "region": "Ústecký kraj",
+    "location": "Litoměřice",
+    "distancesKm": [
+      8,
+      4
+    ],
+    "surface": "mixed",
+    "description": "Small race through the vineyards above Litoměřice with views over the Elbe valley, harvest-festival atmosphere.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "liberecky-maraton-2026",
+    "name": "Liberecký maraton",
+    "date": "2026-09-27",
+    "region": "Liberecký kraj",
+    "location": "Liberec",
+    "distancesKm": [
+      42.195,
+      21.1
+    ],
+    "surface": "road",
+    "description": "Road marathon and half marathon through Liberec and the Nisa valley.",
+    "website": "https://www.libereckymaraton.cz/",
+    "source": "libereckymaraton.cz"
+  },
+  {
     "id": "memorial-emila-zatopka-kopřivnice-2026",
     "name": "Memoriál Emila Zátopka Kopřivnice",
     "date": "2026-10-03",
@@ -523,32 +997,127 @@
     "source": "behej.com"
   },
   {
-    "id": "pisecka-patnactka-2026",
-    "name": "Písecká patnáctka",
-    "date": "2026-04-19",
-    "region": "Jihočeský kraj",
-    "location": "Písek",
+    "id": "vinotrail-znojmo-2026",
+    "name": "VinoTrail Znojmo",
+    "date": "2026-10-03",
+    "region": "Jihomoravský kraj",
+    "location": "Znojmo",
     "distancesKm": [
-      15,
-      7.5
+      40,
+      20,
+      10
     ],
-    "surface": "road",
-    "description": "Small local 15K and 7.5K road race along the Otava river in Písek, organised by a local running club.",
+    "surface": "trail",
+    "elevationGainM": 900,
+    "itraPoints": 1,
+    "description": "ITRA-listed trail race through the Znojmo wine country and the Podyjí national park.",
+    "website": "https://www.vinotrail.cz/",
+    "source": "itra.run / vinotrail.cz"
+  },
+  {
+    "id": "rakovnicka-zubacka-2026",
+    "name": "Rakovnická zubačka",
+    "date": "2026-10-10",
+    "region": "Středočeský kraj",
+    "location": "Rakovník",
+    "distancesKm": [
+      21.1,
+      10.5
+    ],
+    "surface": "trail",
+    "elevationGainM": 400,
+    "description": "Small regional half marathon and 10.5K on forest and field paths near Rakovník.",
     "website": "https://www.behej.com/",
     "source": "behej.com"
   },
   {
-    "id": "kutnohorsky-okruh-2026",
-    "name": "Kutnohorský okruh",
-    "date": "2026-05-23",
-    "region": "Středočeský kraj",
-    "location": "Kutná Hora",
+    "id": "brno-marathon-2026",
+    "name": "Brno Marathon",
+    "date": "2026-10-11",
+    "region": "Jihomoravský kraj",
+    "location": "Brno",
     "distancesKm": [
-      12,
-      6
+      42.195,
+      21.1
     ],
-    "surface": "mixed",
-    "description": "Small loop race past Kutná Hora's UNESCO sites, run by the local tourist club, low entry fee.",
+    "surface": "road",
+    "elevationGainM": 120,
+    "description": "The main marathon event for Brno, running through the city centre and along the Svratka river.",
+    "website": "https://www.brnointernationalmarathon.com/",
+    "source": "brnointernationalmarathon.com"
+  },
+  {
+    "id": "podzimni-desitka-pelhrimov-2026",
+    "name": "Podzimní desítka Pelhřimov",
+    "date": "2026-10-17",
+    "region": "Vysočina",
+    "location": "Pelhřimov",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "Local autumn 10K through the streets of Pelhřimov, town of records, organised by the regional athletics union.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "opavsky-pulmaraton-2026",
+    "name": "Opavský půlmaraton",
+    "date": "2026-10-17",
+    "region": "Moravskoslezský kraj",
+    "location": "Opava",
+    "distancesKm": [
+      21.1,
+      10
+    ],
+    "surface": "road",
+    "description": "Half marathon and 10K through the streets of Opava in north Moravia.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "beskydska-sedmicka-2026",
+    "name": "Beskydská sedmička",
+    "date": "2026-11-21",
+    "region": "Moravskoslezský kraj",
+    "location": "Frenštát pod Radhoštěm, Beskydy",
+    "distancesKm": [
+      64,
+      30
+    ],
+    "surface": "trail",
+    "elevationGainM": 2800,
+    "description": "Legendary autumn/winter ultra trail run across the Beskydy mountain ridges, often in snow and mud.",
+    "website": "https://www.beskydskasedmicka.cz/",
+    "source": "beskydskasedmicka.cz"
+  },
+  {
+    "id": "mikulasska-desitka-2026",
+    "name": "Mikulášská desítka Pardubice",
+    "date": "2026-12-05",
+    "region": "Pardubický kraj",
+    "location": "Pardubice",
+    "distancesKm": [
+      10,
+      3
+    ],
+    "surface": "road",
+    "description": "Local winter 10K road race with Santa/Mikuláš costumes encouraged, family-friendly.",
+    "website": "https://www.behej.com/",
+    "source": "behej.com"
+  },
+  {
+    "id": "vanocni-bezka-trebon-2026",
+    "name": "Vánoční běžka Třeboň",
+    "date": "2026-12-20",
+    "region": "Jihočeský kraj",
+    "location": "Třeboň",
+    "distancesKm": [
+      4,
+      8
+    ],
+    "surface": "trail",
+    "description": "Small local Christmas-season run around the Třeboň fishponds, organised by the town recreation centre.",
     "website": "https://www.behej.com/",
     "source": "behej.com"
   }

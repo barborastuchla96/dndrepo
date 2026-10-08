@@ -1,158 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 :root {
-  --bg: #0f1115;
-  --panel: #181b22;
-  --border: #2a2e38;
-  --text: #e8e9ed;
-  --muted: #9aa1ad;
-  --accent: #ff5a36;
+  --bg: #0a0c10;
+  --bg2: #0f1218;
+  --panel: #13161e;
+  --panel2: #181c26;
+  --border: #1e2330;
+  --border2: #252c3a;
+  --text: #eceef2;
+  --text2: #b0b8c8;
+  --muted: #6b7589;
+  --accent: #e85d2f;
+  --accent2: #ff7a50;
+  --green: #3fd68c;
+  --blue: #5ba4f5;
+  --purple: #a78bfa;
+  --yellow: #f0c040;
+  --radius: 10px;
 }
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
+/* ── Header ── */
 .site-header {
-  padding: 24px 32px;
   border-bottom: 1px solid var(--border);
+  background: rgba(10, 12, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 28px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .brand {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   color: var(--text);
   text-decoration: none;
-}
-
-.tagline {
-  color: var(--muted);
-  margin: 4px 0 0;
-}
-
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 24px 32px 64px;
-}
-
-.filters {
+  letter-spacing: -0.02em;
   display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.brand-flag {
+  font-size: 19px;
+}
+
+.header-stat {
+  font-size: 13px;
+  color: var(--muted);
+  margin-left: 6px;
+}
+
+.header-stat span {
+  color: var(--text2);
+  font-weight: 600;
+}
+
+/* ── Main ── */
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 28px 80px;
+}
+
+/* ── Quick filter pills ── */
+.quick-filters {
+  display: flex;
+  gap: 8px;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.qf-pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border2);
+  background: var(--panel);
+  color: var(--text2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.qf-pill:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.qf-pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ── Filters ── */
+.filters {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 8px;
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 16px;
-  position: sticky;
-  top: 12px;
-  z-index: 10;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-radius: var(--radius);
+  padding: 14px 16px;
 }
 
-.filters input,
-.filters select {
-  background: #11131a;
+.filters-row2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 22px;
+  background: var(--panel);
   border: 1px solid var(--border);
-  color: var(--text);
-  padding: 8px 10px;
-  border-radius: 6px;
-  font-size: 14px;
+  border-top: none;
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 0 16px 14px;
 }
 
-.filters label {
+.filter-field {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  font-size: 12px;
+  gap: 5px;
+}
+
+.filter-field label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--muted);
+}
+
+.filter-field input,
+.filter-field select {
+  background: var(--bg2);
+  border: 1px solid var(--border2);
+  color: var(--text);
+  padding: 7px 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-family: inherit;
+  transition: border-color 0.15s;
+  width: 100%;
+}
+
+.filter-field input:focus,
+.filter-field select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.filter-field input::placeholder {
+  color: var(--muted);
+}
+
+/* ── Result count ── */
+.result-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
 }
 
 .result-count {
+  font-size: 13px;
   color: var(--muted);
-  margin-bottom: 12px;
-  font-size: 14px;
 }
 
-.tag {
-  display: inline-block;
-  background: #11131a;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 2px 10px;
-  font-size: 12px;
+.result-count strong {
+  color: var(--text2);
+}
+
+/* ── Month groups ── */
+.month-group {
+  margin-bottom: 32px;
+}
+
+.month-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.month-heading-text {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
   color: var(--muted);
   white-space: nowrap;
 }
 
-.tag-region {
+.month-heading-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.month-heading-count {
+  font-size: 12px;
   color: var(--muted);
 }
 
-.tag-surface-road { color: #6fb1ff; border-color: #2c4566; }
-.tag-surface-trail { color: #6fdc8c; border-color: #2c5a3c; }
-.tag-surface-track { color: #e0c26f; border-color: #5a4d2c; }
-.tag-surface-mixed { color: #c98cff; border-color: #46306b; }
-
-.month-group {
-  margin-bottom: 28px;
-}
-
-.month-heading {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--muted);
-  margin: 0 0 10px 4px;
-}
-
+/* ── Race rows ── */
 .race-table {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .race-row {
   display: grid;
-  grid-template-columns: 52px 1fr auto;
+  grid-template-columns: 54px 1fr auto;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 10px 14px;
+  padding: 11px 16px;
   text-decoration: none;
   color: var(--text);
-  transition: border-color 0.15s ease, transform 0.1s ease;
+  transition: background 0.12s ease, border-color 0.12s ease;
 }
 
 .race-row:hover {
-  border-color: var(--accent);
-  transform: translateX(2px);
+  background: var(--panel2);
+  border-color: var(--border2);
+}
+
+.race-row:hover .race-row-name {
+  color: var(--accent2);
 }
 
 .race-row-date {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.1;
+  line-height: 1;
+  border-right: 1px solid var(--border);
+  padding-right: 14px;
 }
 
 .race-row-day {
-  font-size: 19px;
-  font-weight: 700;
-  color: var(--accent);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
 }
 
 .race-row-weekday {
-  font-size: 11px;
+  font-size: 10px;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--muted);
+  margin-top: 2px;
 }
 
 .race-row-main {
@@ -161,58 +287,160 @@ main {
 
 .race-row-name {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: color 0.12s ease;
 }
 
 .race-row-location {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 2px;
 }
 
 .race-row-tags {
   display: flex;
-  gap: 6px;
-  flex-wrap: nowrap;
+  gap: 5px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-@media (max-width: 720px) {
-  .race-row {
-    grid-template-columns: 44px 1fr;
-  }
-  .race-row-tags {
-    grid-column: 1 / -1;
-    flex-wrap: wrap;
-  }
+/* ── Tags ── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
 }
+
+.tag-surface-road    { background: rgba(91,164,245,0.12); color: var(--blue); }
+.tag-surface-trail   { background: rgba(63,214,140,0.12); color: var(--green); }
+.tag-surface-track   { background: rgba(240,192,64,0.12);  color: var(--yellow); }
+.tag-surface-mixed   { background: rgba(167,139,250,0.12); color: var(--purple); }
+
+.tag-dist {
+  background: var(--panel2);
+  color: var(--text2);
+  border: 1px solid var(--border2);
+}
+
+.tag-itra {
+  background: rgba(232,93,47,0.15);
+  color: var(--accent2);
+  font-size: 10px;
+}
+
+/* ── No results ── */
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+}
+
+/* ── Detail page ── */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 20px;
+  transition: color 0.12s;
+}
+
+.back-link:hover { color: var(--text2); }
 
 .race-detail {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 24px;
+  border-radius: 12px;
+  padding: 28px 32px;
 }
 
-.back-link {
+.race-detail h1 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.detail-item-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.detail-item-value {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.detail-desc {
+  color: var(--text2);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.detail-link {
+  color: var(--accent2);
   text-decoration: none;
   font-size: 14px;
 }
 
-.race-detail h1 {
-  margin-top: 12px;
-}
+.detail-link:hover { text-decoration: underline; }
 
-.detail-row {
-  margin: 6px 0;
-  color: var(--muted);
-}
+/* ── Responsive ── */
+@media (max-width: 760px) {
+  main { padding: 16px 16px 60px; }
 
-.detail-row strong {
-  color: var(--text);
+  .site-header-inner { padding: 0 16px; }
+
+  .filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filters-row2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .race-row {
+    grid-template-columns: 44px 1fr;
+    gap: 10px;
+  }
+
+  .race-row-tags {
+    grid-column: 2;
+    flex-wrap: wrap;
+  }
+
+  .detail-grid { grid-template-columns: 1fr; }
 }
