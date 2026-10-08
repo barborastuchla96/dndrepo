@@ -26,6 +26,10 @@ jobs:
         working-directory: race-finder
         run: npm ci
 
+      - name: Install Playwright browsers
+        working-directory: race-finder
+        run: npx playwright install chromium --with-deps
+
       - name: Run scraper
         working-directory: race-finder
         run: npm run scrape

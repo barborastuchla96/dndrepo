@@ -13,6 +13,7 @@
 import * as cheerio from "cheerio";
 import { writeFileSync, readFileSync } from "fs";
 import path from "path";
+import { chromium } from "playwright";
 import { Race, Surface } from "../lib/types";
 
 const DATA_PATH = path.join(__dirname, "..", "data", "races.json");
@@ -67,156 +68,65 @@ async function fetchHtml(url: string): Promise<string> {
 //   td.date, td.name > a, td.location, td.distance, td.type
 // The page is server-rendered and paginates via ?page=N.
 
+// behej.com renders races client-side via JS, so we use Playwright
 async function scrapeBehej(): Promise<Race[]> {
   const races: Race[] = [];
-  let page = 1;
-  let hasMore = true;
+  const browser = await chromium.launch({ headless: true });
+  try {
+    const page = await browser.newPage();
+    let pageNum = 1;
+    let hasMore = true;
 
-  while (hasMore && page <= 20) {
-    const url = `https://www.behej.com/terminovka?page=${page}`;
-    console.log(`  [behej] page ${page}: ${url}`);
-    let html: string;
-    try {
-      html = await fetchHtml(url);
-    } catch (err) {
-      console.warn(`  [behej] fetch failed: ${err}`);
-      break;
-    }
-    const $ = cheerio.load(html);
+    while (hasMore && pageNum <= 20) {
+      const url = `https://www.behej.com/terminovka?page=${pageNum}`;
+      console.log(`  [behej] page ${pageNum}: ${url}`);
+      await page.goto(url, { waitUntil: "networkidle", timeout: 30000 });
 
-    // Debug: log page title and table count to understand structure
-    if (page === 1) {
-      console.log(`  [behej] page title: ${$("title").text().trim()}`);
-      console.log(`  [behej] tables found: ${$("table").length}`);
-      // Log first table's HTML to understand structure
-      const firstTable = $("table").first();
-      console.log(`  [behej] first table class: "${firstTable.attr("class") ?? "none"}"`);
-      console.log(`  [behej] first table HTML (800 chars): ${firstTable.html()?.slice(0, 800).replace(/\s+/g, " ") ?? "empty"}`);
-      // Log any tr with th elements
-      console.log(`  [behej] tr with th: ${$("tr").filter((_, el) => $(el).find("th").length > 0).length}`);
-      // Log all tr count and td distribution
-      const trCounts: number[] = [];
-      $("tr").each((_, el) => trCounts.push($(el).find("td, th").length));
-      console.log(`  [behej] td/th per row: ${JSON.stringify(trCounts.slice(0, 20))}`);
-      // Find any dates in the page
-      const dateMatches = html.match(/\d{1,2}\.\d{1,2}\.\d{4}/g) ?? [];
-      console.log(`  [behej] dates found in HTML: ${dateMatches.slice(0, 10).join(", ")}`);
-    }
+      // Wait for the table to fill with actual rows
+      await page.waitForSelector("table tr td", { timeout: 10000 }).catch(() => {});
 
-    // Try many possible row selectors, including th-based rows
-    let rows = $([
-      "table.race-list tr",
-      "table.zavody tr",
-      ".terminovka-table tr",
-      ".race-table tr",
-      "table tr",
-      ".terminovka tr",
-      ".race-list tr",
-      "[class*='terminov'] tr",
-      "[class*='race'] tr",
-    ].join(", ")).filter((_, el) => $(el).find("td, th").length >= 3);
+      const html = await page.content();
+      const $ = cheerio.load(html);
 
-    if (rows.length === 0) {
-      // Last resort: any tr with enough td or th
-      rows = $("tr").filter((_, el) => $(el).find("td, th").length >= 3);
-    }
+      // The table columns (from header): [icon] [Datum] [flag] [Název akce, Místo] [Délka] [Pohár/seriál] [Ode mne]
+      // col 0=icon, 1=date, 2=flag, 3=name+location, 4=distance, 5=series, 6=distance-from-me
+      const rows = $("table tr").filter((_, el) => $(el).find("td").length >= 4);
 
-    if (page === 1) {
-      console.log(`  [behej] matching rows: ${rows.length}`);
-    }
+      let found = 0;
+      rows.each((_, el) => {
+        const tds = $(el).find("td");
+        const dateRaw = tds.eq(1).text().trim();
+        const nameCell = tds.eq(3);
+        const name = nameCell.find("a").first().text().trim() || nameCell.text().trim().split("\n")[0].trim();
+        const href = nameCell.find("a").first().attr("href") ?? "";
+        // location is often a second line in the name cell
+        const location = nameCell.text().trim().split("\n").slice(1).join(" ").trim();
+        const distRaw = tds.eq(4).text().trim();
 
-    if (rows.length === 0) {
-      // Maybe it's not a table layout — try list items
-      const items = $([
-        ".event-item",
-        ".race-item",
-        ".terminovka-item",
-        "[class*='event']",
-        "[class*='race']",
-        "li",
-      ].join(", ")).filter((_, el) => {
-        const text = $(el).text();
-        return /\d{1,2}\.\d{1,2}\.\d{4}/.test(text);
-      });
-      if (page === 1) console.log(`  [behej] list items with dates: ${items.length}`);
-
-      items.each((_, el) => {
-        const text = $(el).text();
-        const dm = text.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})/);
+        if (!name || !dateRaw) return;
+        const dm = dateRaw.match(/(\d{1,2})[.\s]+(\d{1,2})[.\s]+(\d{4})/);
         if (!dm) return;
         const date = `${dm[3]}-${dm[2].padStart(2, "0")}-${dm[1].padStart(2, "0")}`;
-        const name = $(el).find("a").first().text().trim() || text.split("\n")[0].trim();
-        const href = $(el).find("a").first().attr("href") ?? "";
-        if (!name || name.length < 3) return;
+
         races.push({
           id: `behej-${slug(name)}-${date.slice(0, 4)}`,
-          name, date, region: "", location: "", distancesKm: parseDistances(text),
-          surface: guessSurface(name, ""),
-          description: text.replace(/\s+/g, " ").slice(0, 200),
+          name, date, region: "", location: location || "",
+          distancesKm: parseDistances(distRaw),
+          surface: guessSurface(name, distRaw),
+          description: distRaw || "",
           website: href.startsWith("http") ? href : href ? `https://www.behej.com${href}` : undefined,
           source: "behej.com",
         });
+        found++;
       });
 
-      hasMore = false;
-      break;
+      console.log(`  [behej] page ${pageNum}: found ${found} races`);
+      hasMore = found > 0 && await page.$("a:has-text('Další'), a[rel=next], .next-page") !== null;
+      pageNum++;
     }
-
-    let found = 0;
-    rows.each((_, el) => {
-      const tds = $(el).find("td, th");
-      // Try to find date in any td (look for Czech date pattern)
-      let dateRaw = "";
-      let dateTdIdx = -1;
-      tds.each((i, td) => {
-        const txt = $(td).text().trim();
-        if (/\d{1,2}[.\s]\d{1,2}[.\s]\d{4}/.test(txt)) {
-          dateRaw = txt;
-          dateTdIdx = i;
-          return false; // break
-        }
-      });
-
-      if (!dateRaw) {
-        dateRaw = tds.eq(0).text().trim();
-        dateTdIdx = 0;
-      }
-
-      const nameIdx = dateTdIdx + 1 < tds.length ? dateTdIdx + 1 : 1;
-      const locIdx = nameIdx + 1 < tds.length ? nameIdx + 1 : 2;
-      const distIdx = locIdx + 1 < tds.length ? locIdx + 1 : 3;
-      const typeIdx = distIdx + 1 < tds.length ? distIdx + 1 : 4;
-
-      const name = tds.eq(nameIdx).find("a").first().text().trim() || tds.eq(nameIdx).text().trim();
-      const href = tds.eq(nameIdx).find("a").attr("href") ?? "";
-      const location = tds.eq(locIdx).text().trim();
-      const distRaw = tds.eq(distIdx).text().trim();
-      const typeRaw = tds.eq(typeIdx).text().trim();
-
-      if (!name || !dateRaw) return;
-
-      const dm = dateRaw.match(/(\d{1,2})[.\s]+(\d{1,2})[.\s]+(\d{4})/);
-      if (!dm) return;
-      const date = `${dm[3]}-${dm[2].padStart(2, "0")}-${dm[1].padStart(2, "0")}`;
-
-      const distancesKm = parseDistances(distRaw || tds.text());
-      const surface = guessSurface(name, typeRaw);
-      const website = href.startsWith("http") ? href : href ? `https://www.behej.com${href}` : undefined;
-
-      races.push({
-        id: `behej-${slug(name)}-${date.slice(0, 4)}`,
-        name, date, region: "", location, distancesKm, surface,
-        description: [typeRaw, distRaw].filter(Boolean).join(" · "),
-        website, source: "behej.com",
-      });
-      found++;
-    });
-
-    console.log(`  [behej] page ${page}: found ${found} races`);
-    hasMore = found > 0 && $("a[rel=next], .pagination .next, a:contains('Další'), a:contains('dalsi'), .next-page").length > 0;
-    page++;
+  } finally {
+    await browser.close();
   }
-
   return races;
 }
 
