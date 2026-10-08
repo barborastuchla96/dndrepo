@@ -80,10 +80,12 @@ async function scrapeBehej(): Promise<Race[]> {
     while (hasMore && pageNum <= 20) {
       const url = `https://www.behej.com/terminovka?page=${pageNum}`;
       console.log(`  [behej] page ${pageNum}: ${url}`);
-      await page.goto(url, { waitUntil: "networkidle", timeout: 30000 });
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 20000 });
 
-      // Wait for the table to fill with actual rows
-      await page.waitForSelector("table tr td", { timeout: 10000 }).catch(() => {});
+      // Wait up to 8s for actual race rows to appear
+      await page.waitForSelector("table tr td", { timeout: 8000 }).catch(() => {});
+      // Extra small delay for JS to finish populating
+      await page.waitForTimeout(2000);
 
       const html = await page.content();
       const $ = cheerio.load(html);
