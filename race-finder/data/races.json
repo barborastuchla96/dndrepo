@@ -44,5 +44,4871 @@
     "description": "10 km road race through central Prague, part of the RunCzech series.",
     "website": "https://www.runczech.com/cs/zavody/birell-grand-prix-praha/",
     "source": "manual"
+  },
+  {
+    "id": "behej-rijnovy-beh-smetanovymi-sady-2026",
+    "name": "Říjnový běh Smetanovými sady",
+    "date": "2026-10-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.55
+    ],
+    "surface": "road",
+    "description": "6,55 km",
+    "website": "https://www.behej.com/zavod/49157",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolske-schody-2026",
+    "name": "Sokolské schody",
+    "date": "2026-10-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      1.25
+    ],
+    "surface": "road",
+    "description": "1,25 km",
+    "website": "https://www.behej.com/zavod/50532",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-rostejnskou-oborou-2026",
+    "name": "Roštejnskou oborou",
+    "date": "2026-10-09",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7.7
+    ],
+    "surface": "road",
+    "description": "7,7 km",
+    "website": "https://www.behej.com/zavod/49593",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-prazsky-kelt-2026",
+    "name": "Pražský kelt",
+    "date": "2026-10-09",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      100
+    ],
+    "surface": "road",
+    "description": "33/65/100 km",
+    "website": "https://www.behej.com/zavod/49917",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-nn-night-run-olomouc-2026",
+    "name": "NN Night Run Olomouc",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10,
+      5,
+      2,
+      1
+    ],
+    "surface": "road",
+    "description": "1 km, 2 km, 5 km, 10 km",
+    "website": "https://www.behej.com/zavod/48480",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-javornicka-stovka-2026",
+    "name": "Javornícka stovka",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      106
+    ],
+    "surface": "road",
+    "description": "106 km/4030 m",
+    "website": "https://www.behej.com/zavod/48547",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-behej-lesy-8-lednice-42-km-2026",
+    "name": "Běhej lesy #8 Lednice - 42 km",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.4
+    ],
+    "surface": "trail",
+    "description": "42,4 km",
+    "website": "https://www.behej.com/zavod/48602",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-behej-lesy-8-lednice-csob-21-km-2026",
+    "name": "Běhej lesy #8 Lednice - ČSOB 21 km",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "trail",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/48603",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-behej-lesy-8-lednice-penny-beh-7-km-2026",
+    "name": "Běhej lesy #8 Lednice - PENNY.běh 7 km",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "trail",
+    "description": "7 km",
+    "website": "https://www.behej.com/zavod/48604",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-behej-lesy-8-lednice-nova-14-km-2026",
+    "name": "Běhej lesy #8 Lednice - Nova 14 km",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      14
+    ],
+    "surface": "trail",
+    "description": "14 km",
+    "website": "https://www.behej.com/zavod/48605",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-saucony-vokolo-priglu-2026",
+    "name": "Saucony Vokolo priglu",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      14.1
+    ],
+    "surface": "road",
+    "description": "14,1 km",
+    "website": "https://www.behej.com/zavod/49056",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-hradcanske-vlnky-2026",
+    "name": "Hradčanské vlnky",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10.4
+    ],
+    "surface": "road",
+    "description": "10,4 km",
+    "website": "https://www.behej.com/zavod/49149",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-borskym-parkem-2026",
+    "name": "Běh Borským parkem",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/49174",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-beh-olympu-2026",
+    "name": "Podzimní běh Olympu",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.5
+    ],
+    "surface": "road",
+    "description": "5,5 km",
+    "website": "https://www.behej.com/zavod/49191",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cerveny-okruh-2026",
+    "name": "Červený okruh",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.2
+    ],
+    "surface": "road",
+    "description": "9,2 km",
+    "website": "https://www.behej.com/zavod/49487",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mala-cena-spindlerova-mlyna-2026",
+    "name": "Malá cena Špindlerova Mlýna",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      14
+    ],
+    "surface": "road",
+    "description": "7/14 km",
+    "website": "https://www.behej.com/zavod/49513",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-klatovskou-hurkou-2026",
+    "name": "Běh klatovskou Hůrkou",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.8
+    ],
+    "surface": "road",
+    "description": "4,8 km",
+    "website": "https://www.behej.com/zavod/49627",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-rybsky-trhak-2026",
+    "name": "Rybský trhák",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "road",
+    "description": "7 km",
+    "website": "https://www.behej.com/zavod/49740",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-enervit-benesovsky-pulmaraton-pojizerim-2026",
+    "name": "Enervit Benešovský půlmaratón Pojizeřím",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/49774",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-enervit-benesovsky-maraton-pojizerim-2026",
+    "name": "Enervit Benešovský maratón Pojizeřím",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/49775",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cena-metuje-2026",
+    "name": "Cena Metuje",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49837",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-smolnickym-kopcem-2026",
+    "name": "Běh Smolnickým kopcem",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.2
+    ],
+    "surface": "road",
+    "description": "3,5/5,2 km",
+    "website": "https://www.behej.com/zavod/49908",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-malacka-desiatka-2026",
+    "name": "Malacká desiatka",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.9
+    ],
+    "surface": "road",
+    "description": "9,9 km",
+    "website": "https://www.behej.com/zavod/49949",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-lubenska-10-cross-2026",
+    "name": "Lubenská 10 cross",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49990",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-bukovem-2026",
+    "name": "Běh Bukovem",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.25
+    ],
+    "surface": "road",
+    "description": "8,25 km muži / 4,12 ženy",
+    "website": "https://www.behej.com/zavod/50042",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-beh-2026",
+    "name": "Podzimní běh",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50081",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-edp-maratona-de-lisboa-2026",
+    "name": "EDP Maratona de Lisboa",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50138",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-kostelu-kralovska-trat-2026",
+    "name": "Běh kostelů - Královská trať",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      16
+    ],
+    "surface": "road",
+    "description": "16 km",
+    "website": "https://www.behej.com/zavod/50546",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-salajka-extreme-challenge-2026",
+    "name": "Salajka Extreme Challenge",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12
+    ],
+    "surface": "road",
+    "description": "12 hodin",
+    "website": "https://www.behej.com/zavod/50830",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-chribsky-maraton-2026",
+    "name": "Chřibský maratón",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/51103",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-ropak-2026",
+    "name": "Ropák",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [],
+    "surface": "road",
+    "description": "",
+    "website": "https://www.behej.com/zavod/51125",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-strelicky-kros-2026",
+    "name": "Střelický kros",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km a kratší",
+    "website": "https://www.behej.com/zavod/51133",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-svatovaclavsky-beh-tyretorun-2026",
+    "name": "Svatováclavský běh - TyretoRun",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21
+    ],
+    "surface": "road",
+    "description": "5/12/21 km",
+    "website": "https://www.behej.com/zavod/51142",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maraton-dvojic-2026",
+    "name": "Maraton dvojic",
+    "date": "2026-10-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      47
+    ],
+    "surface": "road",
+    "description": "47 km",
+    "website": "https://www.behej.com/zavod/51154",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-z-pistova-2026",
+    "name": "Běh z Pístova",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.38
+    ],
+    "surface": "road",
+    "description": "8,38 km",
+    "website": "https://www.behej.com/zavod/49175",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-lesni-beh-ricany-xcr-2026",
+    "name": "Lesní běh Říčany XCR",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      11
+    ],
+    "surface": "trail",
+    "description": "300 m - 11 km",
+    "website": "https://www.behej.com/zavod/49314",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-z-dobrichovic-na-srank-2026",
+    "name": "Z Dobřichovic na Šraňk",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.75
+    ],
+    "surface": "road",
+    "description": "3,75 km/280 m",
+    "website": "https://www.behej.com/zavod/49526",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-borsky-kros-2026",
+    "name": "Borský kros",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49773",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kros-na-hradku-2026",
+    "name": "Kros na Hrádku",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4,
+      2
+    ],
+    "surface": "road",
+    "description": "2/4 míle",
+    "website": "https://www.behej.com/zavod/49943",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-slovacky-beh-2026",
+    "name": "Slovácký běh",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/49948",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-canikacinacross-2026",
+    "name": "CaniKačinaCross",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.5
+    ],
+    "surface": "road",
+    "description": "2,5/4,5 km",
+    "website": "https://www.behej.com/zavod/50187",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-bank-of-america-chicago-marathon-2026",
+    "name": "Bank of America Chicago Marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50720",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-bucharest-city-marathon-2026",
+    "name": "Bucharest City Marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50721",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-eindhoven-marathon-2026",
+    "name": "Eindhoven Marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50722",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-graz-marathon-2026",
+    "name": "Graz Marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50723",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kyiv-marathon-2026",
+    "name": "Kyiv Marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50724",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-marathon-der-3-lander-am-bodensee-2026",
+    "name": "Marathon der 3 Länder am Bodensee",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50725",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-munchen-marathon-by-brooks-2026",
+    "name": "München Marathon by Brooks",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50726",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-spar-budapest-marathon-2026",
+    "name": "Spar Budapest Marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50728",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-wizz-air-sofia-marathon-2026",
+    "name": "Wizz Air Sofia Marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2km",
+    "website": "https://www.behej.com/zavod/50729",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zagreb-marathon-2026",
+    "name": "Zagreb marathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50730",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-lcc-wien-herbstmarathon-2026",
+    "name": "LCC-Wien Herbstmarathon",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50731",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-paris-2026",
+    "name": "Sokolský běh republiky - Paris",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50977",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-pittsburgh-2026",
+    "name": "Sokolský běh republiky - Pittsburgh",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50979",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-ms-hamburg-75-11-2026",
+    "name": "MŠ Hamburg 75/11",
+    "date": "2026-10-11",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/51257",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kladenska-hodinovka-2026",
+    "name": "Kladenská hodinovka",
+    "date": "2026-10-13",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      60
+    ],
+    "surface": "road",
+    "description": "60 minut",
+    "website": "https://www.behej.com/zavod/49449",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zatopkova-petka-2026",
+    "name": "Zátopkova pětka",
+    "date": "2026-10-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/49739",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-heulosem-memorial-jiriho-smrhy-2026",
+    "name": "Běh Heulosem - Memoriál Jiřího Šmrhy",
+    "date": "2026-10-16",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.6
+    ],
+    "surface": "road",
+    "description": "6,6 km",
+    "website": "https://www.behej.com/zavod/49592",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-nn-night-run-ceske-budejovice-2026",
+    "name": "NN Night Run České Budějovice",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10,
+      5,
+      2,
+      1
+    ],
+    "surface": "road",
+    "description": "1 km, 2 km, 5 km, 10 km",
+    "website": "https://www.behej.com/zavod/48479",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-silnicni-beh-hronov-nachod-2026",
+    "name": "Silniční běh Hronov - Náchod",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.85
+    ],
+    "surface": "road",
+    "description": "8,85 km",
+    "website": "https://www.behej.com/zavod/48941",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-5-a-10-km-vasi-ligy-rijnovy-2026",
+    "name": "5 a 10 km VAŠÍ LIGY - říjnový",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5 a 10 km",
+    "website": "https://www.behej.com/zavod/49011",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-horsky-beh-2026",
+    "name": "Horský běh",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12
+    ],
+    "surface": "road",
+    "description": "12 km/600 m",
+    "website": "https://www.behej.com/zavod/49148",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jesenicky-surovec-ultratrail-50-km-2026",
+    "name": "Jesenický Surovec - ultratrail 50 km",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      50
+    ],
+    "surface": "trail",
+    "description": "50 km / 1000 m+",
+    "website": "https://www.behej.com/zavod/49178",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jesenicky-surovec-dogtrekk-25-km-50-km-2026",
+    "name": "Jesenický Surovec - dogtrekk 25 km / 50 km",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      50
+    ],
+    "surface": "road",
+    "description": "25/50 km",
+    "website": "https://www.behej.com/zavod/49179",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trail-running-cup-pulmaraton-cesky-les-2026",
+    "name": "Trail Running Cup - Půlmaraton Český les",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21
+    ],
+    "surface": "trail",
+    "description": "7/21 km",
+    "website": "https://www.behej.com/zavod/49300",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trail-running-cup-pulmaraton-cesky-les-7-km-2026",
+    "name": "Trail Running Cup - Půlmaraton Český les (7 km)",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "trail",
+    "description": "7 km",
+    "website": "https://www.behej.com/zavod/49301",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-kolem-ameriky-2026",
+    "name": "Běh kolem Ameriky",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.13
+    ],
+    "surface": "road",
+    "description": "8,13 km",
+    "website": "https://www.behej.com/zavod/49373",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-okolo-lemberka-2026",
+    "name": "Běh okolo Lemberka",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/49427",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-krumlovsky-beh-2026",
+    "name": "Krumlovský běh",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.5
+    ],
+    "surface": "road",
+    "description": "0,1 - 8,5 km",
+    "website": "https://www.behej.com/zavod/49614",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-belska-petka-2026",
+    "name": "Bělská pětka",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "3/5 km",
+    "website": "https://www.behej.com/zavod/49621",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cez-runtour-pardubice-powerade-half-marathon-21-km-2026",
+    "name": "ČEZ RunTour Pardubice - Powerade Half Marathon 21 km",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21,
+      10,
+      5,
+      3
+    ],
+    "surface": "road",
+    "description": "21 km/10 km/5 km/3 km",
+    "website": "https://www.behej.com/zavod/49686",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-borovinska-10-2026",
+    "name": "Borovinská 10",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49927",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-po-buransky-2026",
+    "name": "Po Búransky",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "road",
+    "description": "7 km",
+    "website": "https://www.behej.com/zavod/49947",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mala-krivoklatska-2026",
+    "name": "Malá Křivoklátská",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "3/6 km",
+    "website": "https://www.behej.com/zavod/50046",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-ultramaraton-zapomenute-hory-2026",
+    "name": "Ultramaraton Zapomenuté hory",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      76
+    ],
+    "surface": "trail",
+    "description": "26/46/76 km",
+    "website": "https://www.behej.com/zavod/50182",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jirikovska-pulka-2026",
+    "name": "Jiříkovská půlka",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      22.4
+    ],
+    "surface": "road",
+    "description": "22,4 km",
+    "website": "https://www.behej.com/zavod/50508",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cez-runtour-pardubice-cez-run-10-km-2026",
+    "name": "ČEZ RunTour Pardubice - ČEZ Run 10 km",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21,
+      10,
+      5,
+      3
+    ],
+    "surface": "road",
+    "description": "21 km/10 km/5 km/3 km",
+    "website": "https://www.behej.com/zavod/50846",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cez-runtour-pardubice-puma-run-5-km-2026",
+    "name": "ČEZ RunTour Pardubice - Puma Run 5 km",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21,
+      10,
+      5,
+      3
+    ],
+    "surface": "road",
+    "description": "21 km/10 km/5 km/3 km",
+    "website": "https://www.behej.com/zavod/50847",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cez-runtour-pardubice-rajec-run-3-km-2026",
+    "name": "ČEZ RunTour Pardubice - Rajec Run 3 km",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21,
+      10,
+      5,
+      3
+    ],
+    "surface": "road",
+    "description": "21 km/10 km/5 km/3 km",
+    "website": "https://www.behej.com/zavod/50848",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-gajary-2026",
+    "name": "Sokolský běh republiky - Gajary",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/50924",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jirikovska-pulka-11-2-km-2026",
+    "name": "Jiříkovská půlka (11,2 km)",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      11.2
+    ],
+    "surface": "road",
+    "description": "11,2 km",
+    "website": "https://www.behej.com/zavod/51140",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jirikovska-pulka-5-6-km-2026",
+    "name": "Jiříkovská půlka (5,6 km)",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.6
+    ],
+    "surface": "road",
+    "description": "5,6 km",
+    "website": "https://www.behej.com/zavod/51141",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-xkros-stvoridla-2026",
+    "name": "XKros Stvořidla",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4
+    ],
+    "surface": "road",
+    "description": "4 km",
+    "website": "https://www.behej.com/zavod/51143",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mala-kunraticka-2026",
+    "name": "Malá Kunratická",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.25
+    ],
+    "surface": "road",
+    "description": "3,25 km",
+    "website": "https://www.behej.com/zavod/51191",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mecholupy-backyard-ultra-run-2026",
+    "name": "Měcholupy Backyard Ultra Run",
+    "date": "2026-10-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.7
+    ],
+    "surface": "trail",
+    "description": "okruh 6,7 km",
+    "website": "https://www.behej.com/zavod/51250",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-klanovicky-terenni-pulmaraton-2026",
+    "name": "Klánovický terénní půlmaraton",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/48677",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-klanovicky-terenni-pulmaraton-10-km-2026",
+    "name": "Klánovický terénní půlmaraton - 10 km",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/48678",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-klanovicky-terenni-pulmaraton-5-4-km-canicross-2026",
+    "name": "Klánovický terénní půlmaraton - 5,4 km canicross",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/48679",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-prefa-brnenska-25-2026",
+    "name": "PREFA Brněnská 25",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      25
+    ],
+    "surface": "road",
+    "description": "8/16/25 km, štafety",
+    "website": "https://www.behej.com/zavod/49005",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-kiosk-2026",
+    "name": "Podzimní kiosk",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "road",
+    "description": "3,5/7 km",
+    "website": "https://www.behej.com/zavod/49147",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jesenicky-surovec-kros-2026",
+    "name": "Jesenický surovec - kros",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12
+    ],
+    "surface": "road",
+    "description": "6/12 km",
+    "website": "https://www.behej.com/zavod/49176",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jesenicky-surovec-canicross-2026",
+    "name": "Jesenický surovec - canicross",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/49177",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-pres-valasske-kotary-2026",
+    "name": "Běh přes Valašské kotáry",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/49238",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-46-velka-cena-monaka-2026",
+    "name": "46. Velká cena Monaka",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10,
+      3.6
+    ],
+    "surface": "road",
+    "description": "10 km / 3,6 km",
+    "website": "https://www.behej.com/zavod/49254",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-gladiator-race-praha-ocrc-2026",
+    "name": "Gladiator Race Praha OCRC",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      15,
+      3
+    ],
+    "surface": "mixed",
+    "description": "3+ km/15+ překážek",
+    "website": "https://www.behej.com/zavod/49345",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kros-ceskym-rajem-2026",
+    "name": "Kros Českým rájem",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      15
+    ],
+    "surface": "road",
+    "description": "5/10/15 km",
+    "website": "https://www.behej.com/zavod/49392",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-horsky-sprint-beh-na-zaltman-2026",
+    "name": "Horský sprint - Běh na Žaltman",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3
+    ],
+    "surface": "road",
+    "description": "3 km/350 m",
+    "website": "https://www.behej.com/zavod/49515",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-pribramsky-pulmaraton-2026",
+    "name": "Příbramský půlmaraton",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "3,5/21,1 km + štafeta",
+    "website": "https://www.behej.com/zavod/49549",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-borsky-trail-2026",
+    "name": "Borský trail",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10.5
+    ],
+    "surface": "trail",
+    "description": "10,5 km",
+    "website": "https://www.behej.com/zavod/49620",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-ljubljana-marathon-2026",
+    "name": "Ljubljana Marathon",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50732",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-neapolis-marathon-2026",
+    "name": "Neapolis Marathon",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2",
+    "website": "https://www.behej.com/zavod/50734",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-palma-marathon-mallorca-2026",
+    "name": "Palma Marathon Mallorca",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50735",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-tcs-amsterdam-marathon-2026",
+    "name": "TCS Amsterdam Marathon",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50736",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-sao-paulo-2026",
+    "name": "Sokolský běh republiky - São Paulo",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9
+    ],
+    "surface": "road",
+    "description": "3/9 km",
+    "website": "https://www.behej.com/zavod/50937",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-pro-republiku-2026",
+    "name": "Běh pro republiku",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/51149",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-metropole-praha-6-2026",
+    "name": "Běh metropole Praha 6",
+    "date": "2026-10-18",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.2
+    ],
+    "surface": "road",
+    "description": "4,2 km",
+    "website": "https://www.behej.com/zavod/51244",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-o-pohar-rektora-czu-2026",
+    "name": "Běh o pohár rektora ČZU",
+    "date": "2026-10-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.6
+    ],
+    "surface": "road",
+    "description": "6,6 km",
+    "website": "https://www.behej.com/zavod/51190",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mizuno-neon-run-olomouc-2026",
+    "name": "Mizuno Neon Run Olomouc",
+    "date": "2026-10-23",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/49869",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cesky-beh-zen-2026",
+    "name": "Český běh žen",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "1/2,5/5/10 km",
+    "website": "https://www.behej.com/zavod/48704",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-prague-park-race-prokopske-udoli-2026",
+    "name": "Prague Park Race - Prokopské údolí",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      14
+    ],
+    "surface": "road",
+    "description": "8 a 14 km",
+    "website": "https://www.behej.com/zavod/48816",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trebicsky-maraton-2026",
+    "name": "Třebíčský maraton",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "10/21,1/42,2 km",
+    "website": "https://www.behej.com/zavod/48951",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trebicsky-maraton-pulmaraton-2026",
+    "name": "Třebíčský maraton (půlmaraton)",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "10/21,1/42,2 km",
+    "website": "https://www.behej.com/zavod/48952",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trebicsky-maraton-10-km-2026",
+    "name": "Třebíčský maraton (10 km)",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "10/21,1/42,2 km",
+    "website": "https://www.behej.com/zavod/48953",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-leskros-hradecak-2026",
+    "name": "Leskros Hradečák",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1,
+      10,
+      5,
+      3
+    ],
+    "surface": "trail",
+    "description": "3 km, 5 km, 10 km, 21,1 km",
+    "website": "https://www.behej.com/zavod/49114",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-behej-valachy-2026",
+    "name": "Běhej Valachy",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12,
+      6.5
+    ],
+    "surface": "road",
+    "description": "6,5 km / 12 km",
+    "website": "https://www.behej.com/zavod/49279",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-talinska-desitka-2026",
+    "name": "Tálínská desítka",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49326",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-rajecka-12minutovka-2026",
+    "name": "Rajecká 12minútovka",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12
+    ],
+    "surface": "road",
+    "description": "12 minut",
+    "website": "https://www.behej.com/zavod/49504",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-hostivarska-sance-2026",
+    "name": "Hostivařská šance",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.4
+    ],
+    "surface": "road",
+    "description": "4,4 km",
+    "website": "https://www.behej.com/zavod/49519",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-hajenka-run-2026",
+    "name": "Hájenka RUN",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      11
+    ],
+    "surface": "road",
+    "description": "6 nebo 11 km",
+    "website": "https://www.behej.com/zavod/50222",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-moravska-sazava-2026",
+    "name": "Moravská Sázava",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      50
+    ],
+    "surface": "road",
+    "description": "50 km",
+    "website": "https://www.behej.com/zavod/50557",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-curych-2026",
+    "name": "Sokolský běh republiky - Curych",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.7
+    ],
+    "surface": "road",
+    "description": "4,7 km",
+    "website": "https://www.behej.com/zavod/50890",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-brezova-pod-bradlom-2026",
+    "name": "Sokolský běh republiky - Brezová pod Bradlom",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.2
+    ],
+    "surface": "road",
+    "description": "6,2 km",
+    "website": "https://www.behej.com/zavod/50923",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-toronto-2026",
+    "name": "Sokolský běh republiky - Toronto",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50930",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-otrokovicke-svahy-2026",
+    "name": "Otrokovické svahy",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/51042",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zadovsky-pulmaraton-2026",
+    "name": "Zadovský půlmaraton",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21
+    ],
+    "surface": "road",
+    "description": "21 km",
+    "website": "https://www.behej.com/zavod/51134",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zadovska-5ka-2026",
+    "name": "Zadovská 5ka",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/51135",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zadovska-desitka-2026",
+    "name": "Zadovská desítka",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/51136",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kuklicka-x10-2026",
+    "name": "Kuklická X10",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/51155",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-ceskym-udolim-2026",
+    "name": "Běh Českým údolím",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/51235",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-kolem-asuanu-2026",
+    "name": "Běh kolem Asuánu",
+    "date": "2026-10-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.6
+    ],
+    "surface": "road",
+    "description": "3,6 km",
+    "website": "https://www.behej.com/zavod/51251",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mainova-frankfurt-marathon-2026",
+    "name": "Mainova Frankfurt Marathon",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50137",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-levicka-desiatka-2026",
+    "name": "Levická desiatka",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/50354",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-medio-maraton-trinidad-alfonso-2026",
+    "name": "Medio Maraton Trinidad Alfonso",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/50419",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-dresden-marathon-2026",
+    "name": "Dresden Marathon",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50738",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-dublin-marathon-2026",
+    "name": "Dublin Marathon",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50739",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-marine-corps-marathon-2026",
+    "name": "Marine Corps Marathon",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50740",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-swisscitymarathon-2026",
+    "name": "SwissCityMarathon",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50741",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-wizz-air-venice-marathon-2026",
+    "name": "Wizz Air Venice Marathon",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50742",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-washington-dc-2026",
+    "name": "Sokolský běh republiky - Washington DC",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.3
+    ],
+    "surface": "road",
+    "description": "4,3 km",
+    "website": "https://www.behej.com/zavod/50928",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-san-francisco-2026",
+    "name": "Sokolský běh republiky - San Francisco",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4
+    ],
+    "surface": "road",
+    "description": "0,5/4 km",
+    "website": "https://www.behej.com/zavod/50980",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-cokafe-pulmaraton-2026",
+    "name": "COKAFE Půlmaraton",
+    "date": "2026-10-25",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21
+    ],
+    "surface": "road",
+    "description": "5, 10, 21 km",
+    "website": "https://www.behej.com/zavod/51212",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podnuselak-61-2026",
+    "name": "Podnuselák #61",
+    "date": "2026-10-26",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/51208",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-pulmaraton-vasi-ligy-2026",
+    "name": "Podzimní půlmaraton VAŠÍ LIGY",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/49014",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-provodovsky-beh-2026",
+    "name": "Provodovský běh",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "5/11/21,1 km",
+    "website": "https://www.behej.com/zavod/49240",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-debri-2026",
+    "name": "Běh Debří",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.4
+    ],
+    "surface": "road",
+    "description": "5,4 km",
+    "website": "https://www.behej.com/zavod/49695",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-lounovice-pod-blanikem-2026",
+    "name": "Sokolský běh republiky - Louňovice pod Blaníkem",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.6
+    ],
+    "surface": "road",
+    "description": "5,6 km",
+    "website": "https://www.behej.com/zavod/49809",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-tynistska-desitka-2026",
+    "name": "Týnišťská desítka",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/50188",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-cabo-roig-2026",
+    "name": "Sokolský běh republiky - Cabo Roig",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50889",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-zamberk-2026",
+    "name": "Sokolský běh republiky - Žamberk",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50891",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-zlata-olesnice-2026",
+    "name": "Sokolský běh republiky - Zlatá Olešnice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.2
+    ],
+    "surface": "road",
+    "description": "5,2 km",
+    "website": "https://www.behej.com/zavod/50892",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-praha-2026",
+    "name": "Sokolský běh republiky - Praha",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.6
+    ],
+    "surface": "road",
+    "description": "5,6 km",
+    "website": "https://www.behej.com/zavod/50893",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-kadan-2026",
+    "name": "Sokolský běh republiky - Kadaň",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50894",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-chleny-2026",
+    "name": "Sokolský běh republiky - Chleny",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "3,5/10 km",
+    "website": "https://www.behej.com/zavod/50895",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-hrivice-2026",
+    "name": "Sokolský běh republiky - Hřivice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.2
+    ],
+    "surface": "road",
+    "description": "3,2 km",
+    "website": "https://www.behej.com/zavod/50896",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-horomerice-2026",
+    "name": "Sokolský běh republiky - Horoměřice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.9
+    ],
+    "surface": "road",
+    "description": "0,7/4,9 km",
+    "website": "https://www.behej.com/zavod/50897",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-libochovice-2026",
+    "name": "Sokolský běh republiky - Libochovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.2
+    ],
+    "surface": "road",
+    "description": "4,2 km",
+    "website": "https://www.behej.com/zavod/50898",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-most-2026",
+    "name": "Sokolský běh republiky - Most",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.9
+    ],
+    "surface": "road",
+    "description": "4,7/8,9 km",
+    "website": "https://www.behej.com/zavod/50899",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-cerhovice-2026",
+    "name": "Sokolský běh republiky - Cerhovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.7
+    ],
+    "surface": "road",
+    "description": "8,7 km",
+    "website": "https://www.behej.com/zavod/50900",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-ledce-2026",
+    "name": "Sokolský běh republiky - Ledce",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/50901",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-milovice-2026",
+    "name": "Sokolský běh republiky - Milovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.8
+    ],
+    "surface": "road",
+    "description": "5,8 km",
+    "website": "https://www.behej.com/zavod/50902",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-namest-na-hane-2026",
+    "name": "Sokolský běh republiky - Náměšť na Hané",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.9
+    ],
+    "surface": "road",
+    "description": "4,3/8,9 km",
+    "website": "https://www.behej.com/zavod/50903",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-msene-lazne-2026",
+    "name": "Sokolský běh republiky - Mšené-lázně",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.5
+    ],
+    "surface": "road",
+    "description": "4,5 km",
+    "website": "https://www.behej.com/zavod/50904",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-mestecko-trnavka-2026",
+    "name": "Sokolský běh republiky - Městečko Trnávka",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      2.9
+    ],
+    "surface": "road",
+    "description": "2,1/2,9 km",
+    "website": "https://www.behej.com/zavod/50905",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-alsovice-2026",
+    "name": "Sokolský běh republiky - Alšovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.7
+    ],
+    "surface": "road",
+    "description": "4,7 km",
+    "website": "https://www.behej.com/zavod/50906",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-knezmost-2026",
+    "name": "Sokolský běh republiky - Kněžmost",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/50912",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-jedovnice-2026",
+    "name": "Sokolský běh republiky - Jedovnice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.7
+    ],
+    "surface": "road",
+    "description": "4,7 km",
+    "website": "https://www.behej.com/zavod/50913",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-hlasna-treban-2026",
+    "name": "Sokolský běh republiky - Hlásná Třebaň",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.9
+    ],
+    "surface": "road",
+    "description": "5/6,9 km",
+    "website": "https://www.behej.com/zavod/50915",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-breznik-2026",
+    "name": "Sokolský běh republiky - Březník",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.2
+    ],
+    "surface": "road",
+    "description": "5,5/6,2 km",
+    "website": "https://www.behej.com/zavod/50916",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-komarov-2026",
+    "name": "Sokolský běh republiky - Komárov",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.9
+    ],
+    "surface": "road",
+    "description": "4,9 km",
+    "website": "https://www.behej.com/zavod/50917",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-blatna-2026",
+    "name": "Sokolský běh republiky - Blatná",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.9
+    ],
+    "surface": "road",
+    "description": "3,9 km",
+    "website": "https://www.behej.com/zavod/50918",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-voznice-2026",
+    "name": "Sokolský běh republiky - Voznice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.5
+    ],
+    "surface": "road",
+    "description": "5,5 km",
+    "website": "https://www.behej.com/zavod/50919",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-vemyslice-2026",
+    "name": "Sokolský běh republiky - Vémyslice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.6
+    ],
+    "surface": "road",
+    "description": "5,6 km",
+    "website": "https://www.behej.com/zavod/50920",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-zasada-2026",
+    "name": "Sokolský běh republiky - Zásada",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/50921",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-uhelna-pribram-2026",
+    "name": "Sokolský běh republiky - Uhelná Příbram",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.5
+    ],
+    "surface": "road",
+    "description": "4,5 km",
+    "website": "https://www.behej.com/zavod/50922",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-syrovice-2026",
+    "name": "Sokolský běh republiky - Syrovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.2
+    ],
+    "surface": "road",
+    "description": "5,2 km",
+    "website": "https://www.behej.com/zavod/50925",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-sruby-2026",
+    "name": "Sokolský běh republiky - Sruby",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.3
+    ],
+    "surface": "road",
+    "description": "6,3 km",
+    "website": "https://www.behej.com/zavod/50926",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-oleska-2026",
+    "name": "Sokolský běh Republiky - Oleška",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.5
+    ],
+    "surface": "road",
+    "description": "6,5 km",
+    "website": "https://www.behej.com/zavod/50927",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-koncenice-2026",
+    "name": "Sokolský běh republiky - Končenice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.2
+    ],
+    "surface": "road",
+    "description": "3,2 km",
+    "website": "https://www.behej.com/zavod/50929",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-potstejn-2026",
+    "name": "Sokolský běh republiky - Potštejn",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.3
+    ],
+    "surface": "road",
+    "description": "3,3 km",
+    "website": "https://www.behej.com/zavod/50931",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-podebrady-2026",
+    "name": "Sokolský běh republiky - Poděbrady",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3
+    ],
+    "surface": "road",
+    "description": "3 km",
+    "website": "https://www.behej.com/zavod/50932",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-otradovice-2026",
+    "name": "Sokolský běh republiky - Otradovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.3
+    ],
+    "surface": "road",
+    "description": "5,3 km",
+    "website": "https://www.behej.com/zavod/50933",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-uhersky-brod-2026",
+    "name": "Sokolský běh republiky - Uherský Brod",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "5/8 km",
+    "website": "https://www.behej.com/zavod/50934",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-usti-nad-labem-2026",
+    "name": "Sokolský běh republiky - Ústí nad Labem",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.5
+    ],
+    "surface": "road",
+    "description": "4,5 km",
+    "website": "https://www.behej.com/zavod/50935",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-terezin-2026",
+    "name": "Sokolský běh republiky - Terezín",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.85
+    ],
+    "surface": "road",
+    "description": "6,85 km",
+    "website": "https://www.behej.com/zavod/50936",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-sumperk-2026",
+    "name": "Sokolský běh republiky - Šumperk",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7.7
+    ],
+    "surface": "road",
+    "description": "7,7 km",
+    "website": "https://www.behej.com/zavod/50938",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-telc-2026",
+    "name": "Sokolský běh republiky - Telč",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.3
+    ],
+    "surface": "road",
+    "description": "3,3 km",
+    "website": "https://www.behej.com/zavod/50939",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-roztoky-2026",
+    "name": "Sokolský běh republiky - Roztoky",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      1.9
+    ],
+    "surface": "road",
+    "description": "1,9 km",
+    "website": "https://www.behej.com/zavod/50940",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-babice-nad-svitavou-2026",
+    "name": "Sokolský běh republiky - Babice nad Svitavou",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.7
+    ],
+    "surface": "road",
+    "description": "6,7 km",
+    "website": "https://www.behej.com/zavod/50941",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-brno-2026",
+    "name": "Sokolský běh republiky - Brno",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.8
+    ],
+    "surface": "road",
+    "description": "4,8 km",
+    "website": "https://www.behej.com/zavod/50942",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-kamenny-ujezd-u-rokycan-2026",
+    "name": "Sokolský běh republiky - Kamenný Újezd u Rokycan",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "2,5/5 km",
+    "website": "https://www.behej.com/zavod/50943",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-decin-2026",
+    "name": "Sokolský běh republiky - Děčín",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50944",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-mnisek-pod-brdy-2026",
+    "name": "Sokolský běh republiky - Mníšek pod Brdy",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50945",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-mala-hrastice-2026",
+    "name": "Sokolský běh republiky - Malá Hraštice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.5
+    ],
+    "surface": "road",
+    "description": "5,5 km",
+    "website": "https://www.behej.com/zavod/50946",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-luzice-2026",
+    "name": "Sokolský běh republiky - Lužice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7.6
+    ],
+    "surface": "road",
+    "description": "7,6 km",
+    "website": "https://www.behej.com/zavod/50947",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-lomnice-nad-popelkou-2026",
+    "name": "Sokolský běh republiky - Lomnice nad Popelkou",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      22
+    ],
+    "surface": "road",
+    "description": "6,5/12/22 km",
+    "website": "https://www.behej.com/zavod/50948",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-kutna-hora-2026",
+    "name": "Sokolský běh republiky - Kutná Hora",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.7
+    ],
+    "surface": "trail",
+    "description": "5,7 km",
+    "website": "https://www.behej.com/zavod/50950",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-kromeriz-2026",
+    "name": "Sokolský běh republiky - Kroměříž",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10.4
+    ],
+    "surface": "road",
+    "description": "5,2/10,4 km",
+    "website": "https://www.behej.com/zavod/50951",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-kamenice-2026",
+    "name": "Sokolský běh republiky - Kamenice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.25
+    ],
+    "surface": "road",
+    "description": "2,75/5,25 km",
+    "website": "https://www.behej.com/zavod/50952",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-chocen-2026",
+    "name": "Sokolský běh republiky - Choceň",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.2
+    ],
+    "surface": "road",
+    "description": "5,2 km",
+    "website": "https://www.behej.com/zavod/50953",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-jilove-u-prahy-2026",
+    "name": "Sokolský běh republiky - Jílové u Prahy",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7.3
+    ],
+    "surface": "road",
+    "description": "7,3 km",
+    "website": "https://www.behej.com/zavod/50954",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-ceske-budejovice-2026",
+    "name": "Sokolský běh republiky - České Budějovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50955",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-ceska-trebova-2026",
+    "name": "Sokolský běh republiky - Česká Třebová",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.8
+    ],
+    "surface": "road",
+    "description": "6,8 km",
+    "website": "https://www.behej.com/zavod/50956",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-dobris-2026",
+    "name": "Sokolský běh republiky - Dobříš",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "8 km",
+    "website": "https://www.behej.com/zavod/50957",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-ivanovice-na-hane-2026",
+    "name": "Sokolský běh republiky - Ivanovice na Hané",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50958",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-jablonec-nad-nisou-2026",
+    "name": "Sokolský běh republiky - Jablonec nad Nisou",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50959",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-hora-svate-kateriny-2026",
+    "name": "Sokolský běh republiky - Hora Svaté Kateřiny",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.2
+    ],
+    "surface": "trail",
+    "description": "1/5,2 km",
+    "website": "https://www.behej.com/zavod/50960",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-hluboka-nad-vltavou-2026",
+    "name": "Sokolský běh republiky - Hluboká nad Vltavou",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.7
+    ],
+    "surface": "road",
+    "description": "4,7 km",
+    "website": "https://www.behej.com/zavod/50961",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-dolni-ujezd-2026",
+    "name": "Sokolský běh republiky - Dolní Újezd",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.9
+    ],
+    "surface": "road",
+    "description": "8,9 km",
+    "website": "https://www.behej.com/zavod/50962",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-radcice-2026",
+    "name": "Sokolský běh republiky - Radčice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50963",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-ostrava-proskovice-2026",
+    "name": "Sokolský běh republiky - Ostrava - Proskovice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50964",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-prerov-2026",
+    "name": "Sokolský běh republiky - Přerov",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "3,43/10 km",
+    "website": "https://www.behej.com/zavod/50965",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-prostejov-2026",
+    "name": "Sokolský běh republiky - Prostějov",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "2,5/5/10 km",
+    "website": "https://www.behej.com/zavod/50966",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-pisek-2026",
+    "name": "Sokolský běh republiky - Písek",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.35
+    ],
+    "surface": "road",
+    "description": "5,35 km",
+    "website": "https://www.behej.com/zavod/50967",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-opava-2026",
+    "name": "Sokolský běh republiky - Opava",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "4/8 km",
+    "website": "https://www.behej.com/zavod/50968",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-okrisky-2026",
+    "name": "Sokolský běh republiky - Okříšky",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.2
+    ],
+    "surface": "road",
+    "description": "4,2 km",
+    "website": "https://www.behej.com/zavod/50969",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-novy-bydzov-2026",
+    "name": "Sokolský běh republiky - Nový Bydžov",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.8
+    ],
+    "surface": "road",
+    "description": "4,8 km",
+    "website": "https://www.behej.com/zavod/50970",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-nove-mesto-na-morave-2026",
+    "name": "Sokolský běh republiky - Nové Město na Moravě",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "road",
+    "description": "7 km",
+    "website": "https://www.behej.com/zavod/50971",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-nepomuk-2026",
+    "name": "Sokolský běh republiky - Nepomuk",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.2
+    ],
+    "surface": "road",
+    "description": "3,2 km",
+    "website": "https://www.behej.com/zavod/50988",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-horni-briza-2026",
+    "name": "Sokolský běh republiky - Horní Bříza",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/50989",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-hradec-kralove-2026",
+    "name": "Sokolský běh republiky - Hradec Králové",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "3,2/8 km",
+    "website": "https://www.behej.com/zavod/50990",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-turnov-2026",
+    "name": "Sokolský běh republiky - Turnov",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.2
+    ],
+    "surface": "road",
+    "description": "2,5/6,2 km",
+    "website": "https://www.behej.com/zavod/50991",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-rakovnik-2026",
+    "name": "Sokolský běh republiky - Rakovník",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.9
+    ],
+    "surface": "road",
+    "description": "4,2/9,9 km",
+    "website": "https://www.behej.com/zavod/50992",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-bystrice-nad-perstejnem-2026",
+    "name": "Sokolský běh republiky - Bystřice nad Perštejnem",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7.3
+    ],
+    "surface": "road",
+    "description": "7,3 km",
+    "website": "https://www.behej.com/zavod/50996",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-bystrice-pod-hostynem-2026",
+    "name": "Sokolský běh republiky - Bystřice pod Hostýnem",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.2
+    ],
+    "surface": "road",
+    "description": "5/6,2 km",
+    "website": "https://www.behej.com/zavod/50998",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-radotin-2026",
+    "name": "Sokolský běh republiky - Radotín",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.3
+    ],
+    "surface": "road",
+    "description": "3,7/9,3 km",
+    "website": "https://www.behej.com/zavod/50999",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-prestice-2026",
+    "name": "Sokolský běh republiky - Přeštice",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "8 km",
+    "website": "https://www.behej.com/zavod/51000",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-sokolsky-beh-republiky-vrsac-2026",
+    "name": "Sokolský běh republiky - Vršac",
+    "date": "2026-10-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3
+    ],
+    "surface": "road",
+    "description": "3 km",
+    "website": "https://www.behej.com/zavod/51001",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-gladiator-race-halloween-josefov-2026",
+    "name": "Gladiator Race Halloween Josefov",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      20,
+      4
+    ],
+    "surface": "road",
+    "description": "4+ km/20+ překážek",
+    "website": "https://www.behej.com/zavod/49346",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-lhotecka-kastanka-2026",
+    "name": "Podzimní Lhotecká Kaštanka",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      15
+    ],
+    "surface": "road",
+    "description": "15 km",
+    "website": "https://www.behej.com/zavod/49434",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-krospulmaraton-2026",
+    "name": "Krospůlmaraton",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "10,5/21,1 km",
+    "website": "https://www.behej.com/zavod/49491",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-beh-drazovkou-2026",
+    "name": "Podzimní běh Dražovkou",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "8 km",
+    "website": "https://www.behej.com/zavod/50041",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-vinarsky-maraton-2026",
+    "name": "Vinařský maraton",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50737",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-janovskych-11-a-19-km-2026",
+    "name": "Janovských 11 a 19 km",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      19
+    ],
+    "surface": "road",
+    "description": "6,11 a 19 km",
+    "website": "https://www.behej.com/zavod/50877",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-bezecky-kros-okolo-soukeniku-2026",
+    "name": "Běžecký kros okolo Soukeníku",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/51137",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-lesni-kros-mezi-prestickymi-prasaty-2026",
+    "name": "Lesní kros mezi Přeštickými prasaty",
+    "date": "2026-10-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "trail",
+    "description": "8 km",
+    "website": "https://www.behej.com/zavod/51194",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trail-running-cup-motolske-jamky-2026",
+    "name": "Trail Running Cup - Motolské jamky",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "trail",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/49292",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-3x-hradistskou-strani-2026",
+    "name": "3x Hradišťskou strání",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.9
+    ],
+    "surface": "road",
+    "description": "3,9 km",
+    "website": "https://www.behej.com/zavod/49461",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-na-korab-2026",
+    "name": "Běh na Koráb",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.54
+    ],
+    "surface": "road",
+    "description": "6,54 km",
+    "website": "https://www.behej.com/zavod/49619",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-na-babi-lom-2026",
+    "name": "Běh na Babí lom",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4
+    ],
+    "surface": "road",
+    "description": "4 km",
+    "website": "https://www.behej.com/zavod/49744",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-hrustice-memorial-zdenka-drobnika-2026",
+    "name": "Hruštice - Memoriál Zdeňka Drobníka",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49770",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-brussels-airport-marathon-2026",
+    "name": "Brussels Airport Marathon",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50743",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-istanbul-marathon-2026",
+    "name": "Istanbul Marathon",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50744",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-tcs-new-york-city-marathon-2026",
+    "name": "TCS New York City Marathon",
+    "date": "2026-11-01",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50746",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-bezecka-serie-berounka-beroun-2026",
+    "name": "Běžecká série Berounka - Beroun",
+    "date": "2026-11-02",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.5
+    ],
+    "surface": "road",
+    "description": "9,5 km",
+    "website": "https://www.behej.com/zavod/48931",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-brko-nocni-beh-terenem-2026",
+    "name": "BRKO - Noční běh terénem",
+    "date": "2026-11-04",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      14
+    ],
+    "surface": "road",
+    "description": "5/14 km",
+    "website": "https://www.behej.com/zavod/51252",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-jizerun-2026",
+    "name": "Jizerun",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      162
+    ],
+    "surface": "road",
+    "description": "162 km",
+    "website": "https://www.behej.com/zavod/48743",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-labsky-pulmaraton-2026",
+    "name": "Labský půlmaraton",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21
+    ],
+    "surface": "road",
+    "description": "12 a 21 km",
+    "website": "https://www.behej.com/zavod/48819",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kral-tocne-zaludska-osma-2026",
+    "name": "Král Točné - Žaludská osma",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.5
+    ],
+    "surface": "road",
+    "description": "8,5 km",
+    "website": "https://www.behej.com/zavod/48986",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kovarska-petka-2026",
+    "name": "Kovářská pětka",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/49247",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trail-lazne-velichovky-2026",
+    "name": "Trail Lázně Velichovky",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "trail",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/49348",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trail-lazne-velichovky-canicross-2026",
+    "name": "Trail Lázně Velichovky - Canicross",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.6
+    ],
+    "surface": "trail",
+    "description": "3,6 km",
+    "website": "https://www.behej.com/zavod/49349",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zavod-dvojic-2026",
+    "name": "Závod dvojic",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49433",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-kolem-prachne-2026",
+    "name": "Běh kolem Práchně",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.5
+    ],
+    "surface": "road",
+    "description": "9,5 km",
+    "website": "https://www.behej.com/zavod/49624",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mala-pardubicka-cross-country-2026",
+    "name": "Malá pardubická cross country",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.8
+    ],
+    "surface": "road",
+    "description": "3,8 km",
+    "website": "https://www.behej.com/zavod/49771",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-svatojanska-20-2026",
+    "name": "Svatojánská 20",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      18,
+      11
+    ],
+    "surface": "road",
+    "description": "18 km / 11 km",
+    "website": "https://www.behej.com/zavod/50045",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-o-kolac-panny-z-divcich-hradu-2026",
+    "name": "Běh o koláč panny z Dívčích hradů",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.45
+    ],
+    "surface": "road",
+    "description": "5,45 km (muži)",
+    "website": "https://www.behej.com/zavod/50650",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-behem-proti-zavislostem-2026",
+    "name": "Během proti závislostem",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km a kratší",
+    "website": "https://www.behej.com/zavod/51189",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-humpolecke-sestistovky-2026",
+    "name": "Humpolecké šestistovky",
+    "date": "2026-11-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      28
+    ],
+    "surface": "road",
+    "description": "28 km",
+    "website": "https://www.behej.com/zavod/51209",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-velka-kunraticka-2026",
+    "name": "Velká kunratická",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.1
+    ],
+    "surface": "road",
+    "description": "3,1 km",
+    "website": "https://www.behej.com/zavod/45758",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-drsny-beh-okolo-hradu-potstejn-2026",
+    "name": "Drsný běh okolo hradu Potštejn",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7.8
+    ],
+    "surface": "road",
+    "description": "3,9/7,8 km",
+    "website": "https://www.behej.com/zavod/49070",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-pohodova-devitka-2026",
+    "name": "PoHodová devítka",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9
+    ],
+    "surface": "road",
+    "description": "9 km",
+    "website": "https://www.behej.com/zavod/49223",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zandovska-desitka-2026",
+    "name": "Žandovská desítka",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.6
+    ],
+    "surface": "road",
+    "description": "9,6 km",
+    "website": "https://www.behej.com/zavod/49489",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-starobelske-lurdy-2026",
+    "name": "Starobělské Lurdy",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.2
+    ],
+    "surface": "road",
+    "description": "3,2 km",
+    "website": "https://www.behej.com/zavod/49657",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-dobrichovicky-beh-2026",
+    "name": "Dobřichovický běh",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/50044",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-kolem-doubravky-2026",
+    "name": "Běh kolem Doubravky",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.2
+    ],
+    "surface": "road",
+    "description": "4,2 km",
+    "website": "https://www.behej.com/zavod/50200",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maratona-do-porto-2026",
+    "name": "Maratona do Porto",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "42/15/6 km",
+    "website": "https://www.behej.com/zavod/50745",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-athens-classic-marathon-2026",
+    "name": "Athens Classic Marathon",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50748",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-lago-maggiore-marathon-2026",
+    "name": "Lago Maggiore Marathon",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50749",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-marathon-des-alpes-maritimes-2026",
+    "name": "Marathon des Alpes-Maritimes",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50750",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maratona-di-ravenna-2026",
+    "name": "Maratona di Ravenna",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50751",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-generali-maraton-malaga-2026",
+    "name": "Generali Maratón Málaga",
+    "date": "2026-11-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2",
+    "website": "https://www.behej.com/zavod/50761",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-listopadovy-beh-smetanovymi-sady-2026",
+    "name": "Listopadový běh Smetanovými sady",
+    "date": "2026-11-12",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.55
+    ],
+    "surface": "road",
+    "description": "6,55 km",
+    "website": "https://www.behej.com/zavod/49158",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-obora-trail-ultra-9h-2026",
+    "name": "Obora Trail Ultra 9h",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9
+    ],
+    "surface": "trail",
+    "description": "9 hodin",
+    "website": "https://www.behej.com/zavod/49085",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-pres-cernovirsky-les-2026",
+    "name": "Běh přes černovírský les",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9
+    ],
+    "surface": "trail",
+    "description": "9 km",
+    "website": "https://www.behej.com/zavod/49142",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-hannah-pilsen-trail-krkavec-2026",
+    "name": "Hannah Pilsen Trail Krkavec",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42
+    ],
+    "surface": "trail",
+    "description": "0,8/1,6/7/22,5/42 km",
+    "website": "https://www.behej.com/zavod/49312",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-dlouhymi-zahony-2026",
+    "name": "Běh Dlouhými Záhony",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.8
+    ],
+    "surface": "road",
+    "description": "6,8 km",
+    "website": "https://www.behej.com/zavod/49510",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-pulmaraton-vaclava-kosmaka-2026",
+    "name": "Půlmaraton Václava Kosmáka",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/49618",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-rakom-2026",
+    "name": "Podzimní Řakom",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/49622",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-archeon-beh-2026",
+    "name": "ARCHEON běh",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.8
+    ],
+    "surface": "road",
+    "description": "5,8 km",
+    "website": "https://www.behej.com/zavod/49929",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-horsky-beh-smolnik-2026",
+    "name": "Horský beh Smolník",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      51
+    ],
+    "surface": "road",
+    "description": "11/33/51 km",
+    "website": "https://www.behej.com/zavod/51057",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-hubertuv-lesni-trail-2026",
+    "name": "Hubertův lesní trail",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "trail",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/51127",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-dvouetapovy-kros-zajecov-2026",
+    "name": "Dvouetapový kros Zaječov",
+    "date": "2026-11-14",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "road",
+    "description": "13,5 a 7 km",
+    "website": "https://www.behej.com/zavod/51234",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-karlovarsky-kros-2026",
+    "name": "Karlovarský kros",
+    "date": "2026-11-15",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.2
+    ],
+    "surface": "road",
+    "description": "6,2 km",
+    "website": "https://www.behej.com/zavod/49886",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-chuchelsky-dostihovy-kros-2026",
+    "name": "Chuchelský dostihový kros",
+    "date": "2026-11-15",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/50191",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-verona-marathon-2026",
+    "name": "Verona Marathon",
+    "date": "2026-11-15",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50747",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maratona-di-palermo-2026",
+    "name": "Maratona di Palermo",
+    "date": "2026-11-15",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50752",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-radisson-blu-larnaka-international-marathon-2026",
+    "name": "Radisson Blu Larnaka International Marathon",
+    "date": "2026-11-15",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50753",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-horicky-kros-2026",
+    "name": "Hořický kros",
+    "date": "2026-11-15",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/51098",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mala-kralovicka-2026",
+    "name": "Malá Kralovická",
+    "date": "2026-11-16",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.13
+    ],
+    "surface": "road",
+    "description": "0,14- 3,13 km",
+    "website": "https://www.behej.com/zavod/49173",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-17-listopadu-2026",
+    "name": "Běh 17. listopadu",
+    "date": "2026-11-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/49989",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-krosova-12-2026",
+    "name": "Krosová 12°",
+    "date": "2026-11-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12
+    ],
+    "surface": "road",
+    "description": "6/12 km",
+    "website": "https://www.behej.com/zavod/49366",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-kolem-koupaliste-2026",
+    "name": "Běh kolem koupaliště",
+    "date": "2026-11-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/49738",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-mestem-hradec-kralove-2026",
+    "name": "Běh městem Hradec Králové",
+    "date": "2026-11-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.7
+    ],
+    "surface": "road",
+    "description": "9,7 km",
+    "website": "https://www.behej.com/zavod/49970",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-cross-beh-17-listopadu-2026",
+    "name": "Podzimní cross – Běh 17. listopadu",
+    "date": "2026-11-17",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5/10 km",
+    "website": "https://www.behej.com/zavod/51229",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-louceni-2026",
+    "name": "Loučení",
+    "date": "2026-11-20",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      54.125
+    ],
+    "surface": "road",
+    "description": "10,17,32,54,125 km",
+    "website": "https://www.behej.com/zavod/49916",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-trail-do-haje-vasi-ligy-2026",
+    "name": "Trail do Háje VAŠÍ LIGY",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      14
+    ],
+    "surface": "trail",
+    "description": "9 a 14 km",
+    "website": "https://www.behej.com/zavod/49018",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-certovskej-wintertrail-2026",
+    "name": "Čertovskej wintertrail",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      33.3
+    ],
+    "surface": "trail",
+    "description": "16,6/33,3 km",
+    "website": "https://www.behej.com/zavod/49088",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-sv-kateriny-praslavicka-desitka-2026",
+    "name": "Běh sv.Kateřiny - Přáslavická desítka",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49140",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-kruzska-kundraticka-2026",
+    "name": "Kružská kundratická",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      11
+    ],
+    "surface": "road",
+    "description": "0,2/2/5/11 km",
+    "website": "https://www.behej.com/zavod/49306",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-forestovo-nocnik-2026",
+    "name": "Forestovo nočník",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.5
+    ],
+    "surface": "road",
+    "description": "5,5 km",
+    "website": "https://www.behej.com/zavod/49395",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-nocni-beh-chuze-pres-uhost-2026",
+    "name": "Noční běh/chůze přes Úhošť",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "8 km",
+    "website": "https://www.behej.com/zavod/49679",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-pradelna-trail-2026",
+    "name": "Prádelna Trail",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "trail",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/50886",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-voderadskymi-bucinami-2026",
+    "name": "Běh Voděradskými bučinami",
+    "date": "2026-11-21",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      16.5
+    ],
+    "surface": "road",
+    "description": "16,5 km",
+    "website": "https://www.behej.com/zavod/51151",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-405-mala-cena-monaka-2026",
+    "name": "405. Malá cena Monaka",
+    "date": "2026-11-22",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10,
+      3.6
+    ],
+    "surface": "road",
+    "description": "10 km / 3,6 km",
+    "website": "https://www.behej.com/zavod/49252",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-marathon-de-beaujolais-nouveau-2026",
+    "name": "Marathon de Beaujolais Nouveau",
+    "date": "2026-11-22",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50754",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-san-sebastian-marathon-2026",
+    "name": "San Sebastian Marathon",
+    "date": "2026-11-22",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50755",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-5-a-10-km-vasi-ligy-listopadovy-2026",
+    "name": "5 a 10 km VAŠÍ LIGY - listopadový",
+    "date": "2026-11-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "5 a 10 km",
+    "website": "https://www.behej.com/zavod/49012",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-stupenska-sedmicka-2026",
+    "name": "Stupenská sedmička",
+    "date": "2026-11-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      7
+    ],
+    "surface": "road",
+    "description": "7 km",
+    "website": "https://www.behej.com/zavod/49170",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-slanske-behy-2026",
+    "name": "Slánské běhy",
+    "date": "2026-11-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12
+    ],
+    "surface": "road",
+    "description": "12 km",
+    "website": "https://www.behej.com/zavod/49437",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mikulasska-dvacitka-2026",
+    "name": "Mikulášská dvacítka",
+    "date": "2026-11-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      20
+    ],
+    "surface": "road",
+    "description": "20 km",
+    "website": "https://www.behej.com/zavod/49623",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-vybeh-na-lovos-2026",
+    "name": "Výběh na Lovoš",
+    "date": "2026-11-28",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3
+    ],
+    "surface": "road",
+    "description": "3 km/400 m",
+    "website": "https://www.behej.com/zavod/50157",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-podzimni-beh-lyzaru-memorial-aly-syrovatskeho-2026",
+    "name": "Podzimní běh lyžařů - memoriál Ály Syrovatského",
+    "date": "2026-11-29",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8
+    ],
+    "surface": "road",
+    "description": "0,06-8 km",
+    "website": "https://www.behej.com/zavod/49807",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-torino-city-marathon-2026",
+    "name": "Torino City Marathon",
+    "date": "2026-11-29",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2",
+    "website": "https://www.behej.com/zavod/50756",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-firenze-marathon-2026",
+    "name": "Firenze Marathon",
+    "date": "2026-11-29",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50757",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-prazska-stovka-2026",
+    "name": "Pražská stovka",
+    "date": "2026-12-04",
+    "region": "",
+    "location": "",
+    "distancesKm": [],
+    "surface": "road",
+    "description": "? km",
+    "website": "https://www.behej.com/zavod/49914",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-mikulassky-beh-2026",
+    "name": "Mikulášský běh",
+    "date": "2026-12-05",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.8
+    ],
+    "surface": "road",
+    "description": "8,8 km",
+    "website": "https://www.behej.com/zavod/49365",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maraton-praha-dobris-pulka-2026",
+    "name": "Maraton Praha - Dobříš (půlka)",
+    "date": "2026-12-05",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      21.1
+    ],
+    "surface": "road",
+    "description": "21,1 km",
+    "website": "https://www.behej.com/zavod/49289",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maraton-praha-dobris-2026",
+    "name": "Maraton Praha - Dobříš",
+    "date": "2026-12-05",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "10/21/42,2 km",
+    "website": "https://www.behej.com/zavod/49290",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maraton-praha-dobris-10-km-2026",
+    "name": "Maraton Praha - Dobříš (10 km)",
+    "date": "2026-12-05",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49291",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-certovska-5-2026",
+    "name": "Čertovská 5",
+    "date": "2026-12-05",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.7
+    ],
+    "surface": "road",
+    "description": "5,7 km",
+    "website": "https://www.behej.com/zavod/49436",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-lanzarote-marathon-2026",
+    "name": "Lanzarote Marathon",
+    "date": "2026-12-05",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50758",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-last-man-standing-run-vysocina-2026",
+    "name": "Last Man Standing Run Vysočina",
+    "date": "2026-12-05",
+    "region": "",
+    "location": "",
+    "distancesKm": [],
+    "surface": "road",
+    "description": "-",
+    "website": "https://www.behej.com/zavod/51196",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-2-mile-2026",
+    "name": "Běh 2 míle",
+    "date": "2026-12-06",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3.2
+    ],
+    "surface": "road",
+    "description": "2 míle (3,2 km)",
+    "website": "https://www.behej.com/zavod/50123",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-boudeckou-rokli-2026",
+    "name": "Běh Boudeckou roklí",
+    "date": "2026-12-06",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.8
+    ],
+    "surface": "road",
+    "description": "6,8 km",
+    "website": "https://www.behej.com/zavod/49696",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-maraton-valencia-trinidad-alfonso-2026",
+    "name": "Maratón Valencia Trinidad Alfonso",
+    "date": "2026-12-06",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50759",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-bezecka-serie-berounka-nizbor-2026",
+    "name": "Běžecká série Berounka - Nižbor",
+    "date": "2026-12-07",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      9.5
+    ],
+    "surface": "road",
+    "description": "9,5 km",
+    "website": "https://www.behej.com/zavod/48930",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-memorial-vladimira-korbela-2026",
+    "name": "Memoriál Vladimíra Korbela",
+    "date": "2026-12-08",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      3
+    ],
+    "surface": "road",
+    "description": "0,8/1,5/3 km",
+    "website": "https://www.behej.com/zavod/50819",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-prosincovy-beh-smetanovymi-sady-2026",
+    "name": "Prosincový běh Smetanovými sady",
+    "date": "2026-12-10",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.55
+    ],
+    "surface": "road",
+    "description": "6,55 km",
+    "website": "https://www.behej.com/zavod/49159",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-na-byci-skalu-2026",
+    "name": "Běh na Býčí skálu",
+    "date": "2026-12-12",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      30
+    ],
+    "surface": "road",
+    "description": "30 km",
+    "website": "https://www.behej.com/zavod/49067",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-beh-okolo-namestskeho-zamku-2026",
+    "name": "Běh okolo náměšťského zámku",
+    "date": "2026-12-12",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10.4
+    ],
+    "surface": "road",
+    "description": "10,4 km",
+    "website": "https://www.behej.com/zavod/49156",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-zrucsky-adventni-beh-2026",
+    "name": "Zručský adventní běh",
+    "date": "2026-12-12",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5.5
+    ],
+    "surface": "road",
+    "description": "5,5 km",
+    "website": "https://www.behej.com/zavod/49380",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-vranovsky-nocni-trail-2026",
+    "name": "Vranovský Noční Trail",
+    "date": "2026-12-12",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      12
+    ],
+    "surface": "trail",
+    "description": "12 km",
+    "website": "https://www.behej.com/zavod/50537",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-adnoc-abu-dhabi-marathon-2026",
+    "name": "ADNOC Abu Dhabi Marathon",
+    "date": "2026-12-12",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50760",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-honolulu-marathon-2026",
+    "name": "Honolulu Marathon",
+    "date": "2026-12-13",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "42,2 km",
+    "website": "https://www.behej.com/zavod/50762",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-adventni-beh-na-cyklostezce-2026",
+    "name": "Adventní běh na cyklostezce",
+    "date": "2026-12-13",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.2
+    ],
+    "surface": "road",
+    "description": "4,2 km",
+    "website": "https://www.behej.com/zavod/51236",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-predvanocni-beh-prokopskym-udolim-2026",
+    "name": "Předvánoční běh Prokopským údolím",
+    "date": "2026-12-19",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6
+    ],
+    "surface": "road",
+    "description": "6 km",
+    "website": "https://www.behej.com/zavod/51255",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-ceskobrodska-vanocni-desitka-2026",
+    "name": "Českobrodská vánoční desítka",
+    "date": "2026-12-20",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/49665",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-pisa-marathon-2026",
+    "name": "Pisa Marathon",
+    "date": "2026-12-20",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      42.2
+    ],
+    "surface": "road",
+    "description": "3/7/14/21,1/42,2 km",
+    "website": "https://www.behej.com/zavod/50763",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-vanocni-beh-v-dablickem-haji-2026",
+    "name": "Vánoční běh v Ďáblickém háji",
+    "date": "2026-12-24",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.5
+    ],
+    "surface": "road",
+    "description": "4,5 km",
+    "website": "https://www.behej.com/zavod/49546",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-stepansky-beh-2026",
+    "name": "Štěpánský běh",
+    "date": "2026-12-26",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      8.2
+    ],
+    "surface": "road",
+    "description": "8,2 km",
+    "website": "https://www.behej.com/zavod/49940",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-vanocni-beh-trtice-2026",
+    "name": "Vánoční běh Třtice",
+    "date": "2026-12-26",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.6
+    ],
+    "surface": "road",
+    "description": "4,6 km",
+    "website": "https://www.behej.com/zavod/49451",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-vanocni-beh-pod-cernou-vezi-2026",
+    "name": "Vánoční běh pod Černou věží",
+    "date": "2026-12-26",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      4.8
+    ],
+    "surface": "road",
+    "description": "3,6/4,8 km",
+    "website": "https://www.behej.com/zavod/49625",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-pred-silvestrovsky-beh-2026",
+    "name": "(Před)Silvestrovský běh",
+    "date": "2026-12-27",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      6.2
+    ],
+    "surface": "road",
+    "description": "6,2 km a kratší",
+    "website": "https://www.behej.com/zavod/49442",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-silvestrovsky-beh-ulicemi-mesta-sobeslavi-2026",
+    "name": "Silvestrovský běh ulicemi města Soběslavi",
+    "date": "2026-12-30",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      2026
+    ],
+    "surface": "road",
+    "description": "2026 km",
+    "website": "https://www.behej.com/zavod/49404",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-silvestrovsky-beh-5-km-2026",
+    "name": "Silvestrovský běh (5 km)",
+    "date": "2026-12-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      5
+    ],
+    "surface": "road",
+    "description": "5 km",
+    "website": "https://www.behej.com/zavod/49146",
+    "source": "behej.com"
+  },
+  {
+    "id": "behej-silvestrovsky-beh-2026",
+    "name": "Silvestrovský běh",
+    "date": "2026-12-31",
+    "region": "",
+    "location": "",
+    "distancesKm": [
+      10
+    ],
+    "surface": "road",
+    "description": "10 km",
+    "website": "https://www.behej.com/zavod/50318",
+    "source": "behej.com"
   }
 ]
