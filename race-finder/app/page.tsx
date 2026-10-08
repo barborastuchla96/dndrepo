@@ -111,55 +111,54 @@ export default function HomePage() {
         ))}
       </div>
 
-      {/* Detailed filters row 1 */}
-      <div className="filters">
-        <div className="filter-field">
-          <label>Search</label>
-          <input
-            type="text"
-            placeholder="name, town, region…"
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-          />
+      <div className="filter-panel">
+        <div className="filter-row">
+          <div className="filter-field">
+            <label>Search</label>
+            <input
+              type="text"
+              placeholder="name, town, region…"
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+            />
+          </div>
+          <div className="filter-field">
+            <label>Region</label>
+            <select value={region} onChange={(e) => setRegion(e.target.value)}>
+              <option value="">All regions</option>
+              {regions.map((r) => (
+                <option key={r} value={r}>{r}</option>
+              ))}
+            </select>
+          </div>
+          <div className="filter-field">
+            <label>Surface</label>
+            <select value={surface} onChange={(e) => setSurface(e.target.value)}>
+              <option value="">All</option>
+              <option value="road">Road</option>
+              <option value="trail">Trail</option>
+              <option value="track">Track</option>
+              <option value="mixed">Mixed / OCR</option>
+            </select>
+          </div>
+          <div className="filter-field">
+            <label>Min km</label>
+            <input type="number" min={0} placeholder="0" value={minDistance} onChange={(e) => setMinDistance(e.target.value)} />
+          </div>
+          <div className="filter-field">
+            <label>Max km</label>
+            <input type="number" min={0} placeholder="any" value={maxDistance} onChange={(e) => setMaxDistance(e.target.value)} />
+          </div>
         </div>
-        <div className="filter-field">
-          <label>Region</label>
-          <select value={region} onChange={(e) => setRegion(e.target.value)}>
-            <option value="">All regions</option>
-            {regions.map((r) => (
-              <option key={r} value={r}>{r}</option>
-            ))}
-          </select>
-        </div>
-        <div className="filter-field">
-          <label>Surface</label>
-          <select value={surface} onChange={(e) => setSurface(e.target.value)}>
-            <option value="">All</option>
-            <option value="road">Road</option>
-            <option value="trail">Trail</option>
-            <option value="track">Track</option>
-            <option value="mixed">Mixed</option>
-          </select>
-        </div>
-        <div className="filter-field">
-          <label>Min distance (km)</label>
-          <input type="number" min={0} value={minDistance} onChange={(e) => setMinDistance(e.target.value)} />
-        </div>
-        <div className="filter-field">
-          <label>Max distance (km)</label>
-          <input type="number" min={0} value={maxDistance} onChange={(e) => setMaxDistance(e.target.value)} />
-        </div>
-      </div>
-
-      {/* Detailed filters row 2 */}
-      <div className="filters-row2">
-        <div className="filter-field">
-          <label>From date</label>
-          <input type="date" value={dateFrom} onChange={(e) => setDateFrom(e.target.value)} />
-        </div>
-        <div className="filter-field">
-          <label>To date</label>
-          <input type="date" value={dateTo} onChange={(e) => setDateTo(e.target.value)} />
+        <div className="filter-row">
+          <div className="filter-field">
+            <label>From date</label>
+            <input type="date" value={dateFrom} onChange={(e) => setDateFrom(e.target.value)} />
+          </div>
+          <div className="filter-field">
+            <label>To date</label>
+            <input type="date" value={dateTo} onChange={(e) => setDateTo(e.target.value)} />
+          </div>
         </div>
       </div>
 
