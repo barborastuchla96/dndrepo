@@ -11,7 +11,7 @@
  */
 
 import * as cheerio from "cheerio";
-import { writeFileSync, readFileSync } from "fs";
+import { writeFileSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { chromium } from "playwright";
 import { Race, Surface } from "../lib/types";
@@ -88,6 +88,17 @@ async function scrapeBehej(): Promise<Race[]> {
       await page.waitForTimeout(2000);
 
       const html = await page.content();
+
+      // Debug: dump rendered HTML on first page
+      if (pageNum === 1) {
+        const debugPath = path.join(__dirname, "..", "data", "behej-debug.html");
+        writeFileSync(debugPath, html);
+        const $ = cheerio.load(html);
+        console.log(`  [behej-debug] tables: ${$("table").length}, tr: ${$("tr").length}, td: ${$("td").length}`);
+        console.log(`  [behej-debug] table HTML: ${$("table").html()?.slice(0, 600).replace(/\s+/g, " ")}`);
+        console.log(`  [behej-debug] saved full HTML to data/behej-debug.html`);
+      }
+
       const $ = cheerio.load(html);
 
       // The table columns (from header): [icon] [Datum] [flag] [Název akce, Místo] [Délka] [Pohár/seriál] [Ode mne]
