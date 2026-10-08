@@ -75,37 +75,119 @@ async function scrapeBehej(): Promise<Race[]> {
   while (hasMore && page <= 20) {
     const url = `https://www.behej.com/terminovka?page=${page}`;
     console.log(`  [behej] page ${page}: ${url}`);
-    const html = await fetchHtml(url);
+    let html: string;
+    try {
+      html = await fetchHtml(url);
+    } catch (err) {
+      console.warn(`  [behej] fetch failed: ${err}`);
+      break;
+    }
     const $ = cheerio.load(html);
 
-    const rows = $("table.race-list tr, table.zavody tr, .terminovka-table tr, .race-table tr").filter((_, el) => {
-      return $(el).find("td").length >= 3;
-    });
+    // Debug: log page title and table count to understand structure
+    if (page === 1) {
+      console.log(`  [behej] page title: ${$("title").text().trim()}`);
+      console.log(`  [behej] tables found: ${$("table").length}`);
+      console.log(`  [behej] HTML snippet (500 chars): ${html.slice(0, 500).replace(/\s+/g, " ")}`);
+    }
+
+    // Try many possible row selectors
+    let rows = $([
+      "table.race-list tr",
+      "table.zavody tr",
+      ".terminovka-table tr",
+      ".race-table tr",
+      "table tr",
+      ".terminovka tr",
+      ".race-list tr",
+      "[class*='terminov'] tr",
+      "[class*='race'] tr",
+    ].join(", ")).filter((_, el) => $(el).find("td").length >= 3);
 
     if (rows.length === 0) {
-      // try generic table rows as fallback
-      const anyRows = $("table tr").filter((_, el) => $(el).find("td").length >= 3);
-      if (anyRows.length === 0) { hasMore = false; break; }
+      // Last resort: any tr with enough tds
+      rows = $("tr").filter((_, el) => $(el).find("td").length >= 3);
+    }
+
+    if (page === 1) {
+      console.log(`  [behej] matching rows: ${rows.length}`);
+    }
+
+    if (rows.length === 0) {
+      // Maybe it's not a table layout — try list items
+      const items = $([
+        ".event-item",
+        ".race-item",
+        ".terminovka-item",
+        "[class*='event']",
+        "[class*='race']",
+        "li",
+      ].join(", ")).filter((_, el) => {
+        const text = $(el).text();
+        return /\d{1,2}\.\d{1,2}\.\d{4}/.test(text);
+      });
+      if (page === 1) console.log(`  [behej] list items with dates: ${items.length}`);
+
+      items.each((_, el) => {
+        const text = $(el).text();
+        const dm = text.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})/);
+        if (!dm) return;
+        const date = `${dm[3]}-${dm[2].padStart(2, "0")}-${dm[1].padStart(2, "0")}`;
+        const name = $(el).find("a").first().text().trim() || text.split("\n")[0].trim();
+        const href = $(el).find("a").first().attr("href") ?? "";
+        if (!name || name.length < 3) return;
+        races.push({
+          id: `behej-${slug(name)}-${date.slice(0, 4)}`,
+          name, date, region: "", location: "", distancesKm: parseDistances(text),
+          surface: guessSurface(name, ""),
+          description: text.replace(/\s+/g, " ").slice(0, 200),
+          website: href.startsWith("http") ? href : href ? `https://www.behej.com${href}` : undefined,
+          source: "behej.com",
+        });
+      });
+
+      hasMore = false;
+      break;
     }
 
     let found = 0;
     rows.each((_, el) => {
       const tds = $(el).find("td");
-      const dateRaw = tds.eq(0).text().trim();
-      const name = tds.eq(1).find("a").first().text().trim() || tds.eq(1).text().trim();
-      const href = tds.eq(1).find("a").attr("href") ?? "";
-      const location = tds.eq(2).text().trim();
-      const distRaw = tds.eq(3).text().trim();
-      const typeRaw = tds.eq(4).text().trim();
+      // Try to find date in any td (look for Czech date pattern)
+      let dateRaw = "";
+      let dateTdIdx = -1;
+      tds.each((i, td) => {
+        const txt = $(td).text().trim();
+        if (/\d{1,2}[.\s]\d{1,2}[.\s]\d{4}/.test(txt)) {
+          dateRaw = txt;
+          dateTdIdx = i;
+          return false; // break
+        }
+      });
+
+      if (!dateRaw) {
+        dateRaw = tds.eq(0).text().trim();
+        dateTdIdx = 0;
+      }
+
+      const nameIdx = dateTdIdx + 1 < tds.length ? dateTdIdx + 1 : 1;
+      const locIdx = nameIdx + 1 < tds.length ? nameIdx + 1 : 2;
+      const distIdx = locIdx + 1 < tds.length ? locIdx + 1 : 3;
+      const typeIdx = distIdx + 1 < tds.length ? distIdx + 1 : 4;
+
+      const name = tds.eq(nameIdx).find("a").first().text().trim() || tds.eq(nameIdx).text().trim();
+      const href = tds.eq(nameIdx).find("a").attr("href") ?? "";
+      const location = tds.eq(locIdx).text().trim();
+      const distRaw = tds.eq(distIdx).text().trim();
+      const typeRaw = tds.eq(typeIdx).text().trim();
 
       if (!name || !dateRaw) return;
 
-      // parse Czech date: "8.10.2026" or "08. 10. 2026"
       const dm = dateRaw.match(/(\d{1,2})[.\s]+(\d{1,2})[.\s]+(\d{4})/);
       if (!dm) return;
       const date = `${dm[3]}-${dm[2].padStart(2, "0")}-${dm[1].padStart(2, "0")}`;
 
-      const distancesKm = parseDistances(distRaw);
+      const distancesKm = parseDistances(distRaw || tds.text());
       const surface = guessSurface(name, typeRaw);
       const website = href.startsWith("http") ? href : href ? `https://www.behej.com${href}` : undefined;
 
@@ -119,8 +201,7 @@ async function scrapeBehej(): Promise<Race[]> {
     });
 
     console.log(`  [behej] page ${page}: found ${found} races`);
-    // stop if page had no races or no "next" link
-    hasMore = found > 0 && $("a[rel=next], .pagination .next, a:contains('Další')").length > 0;
+    hasMore = found > 0 && $("a[rel=next], .pagination .next, a:contains('Další'), a:contains('dalsi'), .next-page").length > 0;
     page++;
   }
 
@@ -168,6 +249,7 @@ async function scrapeItra(): Promise<Race[]> {
   const year = new Date().getFullYear();
   const urls = [
     `https://itra.run/api/Races/GetRaces?country=CZE&year=${year}&page=1&pageSize=200`,
+    `https://itra.run/api/Races/GetRaces?country=CZE&year=${year + 1}&page=1&pageSize=200`,
     `https://itra.run/api/races/search?country=CZE&limit=200`,
   ];
 
@@ -176,18 +258,36 @@ async function scrapeItra(): Promise<Race[]> {
       const res = await fetch(url, {
         headers: { Accept: "application/json", "User-Agent": "RaceFinderCZ/1.0" },
       });
-      if (!res.ok) continue;
-      const json = await res.json() as {
+      if (!res.ok) {
+        console.warn(`  [itra] HTTP ${res.status} for ${url}`);
+        continue;
+      }
+      const text = await res.text();
+      if (!text || text.trim().length < 5) {
+        console.warn(`  [itra] empty response from ${url}`);
+        continue;
+      }
+      console.log(`  [itra] response preview: ${text.slice(0, 120)}`);
+      let json: {
         races?: Array<{
           name: string; date: string; city: string;
           distanceKm?: number; distances?: number[];
-          itraPoints?: number; website?: string; country?: string;
+          itraPoints?: number; website?: string;
         }>;
         data?: Array<{ name: string; date: string; city: string; distanceKm?: number; itraPoints?: number; website?: string }>;
       };
+      try {
+        json = JSON.parse(text);
+      } catch {
+        console.warn(`  [itra] JSON parse error from ${url}: ${text.slice(0, 200)}`);
+        continue;
+      }
 
       const items = json.races ?? json.data ?? [];
-      if (items.length === 0) continue;
+      if (items.length === 0) {
+        console.warn(`  [itra] 0 items in response from ${url}`);
+        continue;
+      }
 
       const races: Race[] = items.map((r) => ({
         id: `itra-${slug(r.name)}-${String(r.date).slice(0, 4)}`,
