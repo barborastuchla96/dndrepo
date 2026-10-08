@@ -88,10 +88,22 @@ async function scrapeBehej(): Promise<Race[]> {
     if (page === 1) {
       console.log(`  [behej] page title: ${$("title").text().trim()}`);
       console.log(`  [behej] tables found: ${$("table").length}`);
-      console.log(`  [behej] HTML snippet (500 chars): ${html.slice(0, 500).replace(/\s+/g, " ")}`);
+      // Log first table's HTML to understand structure
+      const firstTable = $("table").first();
+      console.log(`  [behej] first table class: "${firstTable.attr("class") ?? "none"}"`);
+      console.log(`  [behej] first table HTML (800 chars): ${firstTable.html()?.slice(0, 800).replace(/\s+/g, " ") ?? "empty"}`);
+      // Log any tr with th elements
+      console.log(`  [behej] tr with th: ${$("tr").filter((_, el) => $(el).find("th").length > 0).length}`);
+      // Log all tr count and td distribution
+      const trCounts: number[] = [];
+      $("tr").each((_, el) => trCounts.push($(el).find("td, th").length));
+      console.log(`  [behej] td/th per row: ${JSON.stringify(trCounts.slice(0, 20))}`);
+      // Find any dates in the page
+      const dateMatches = html.match(/\d{1,2}\.\d{1,2}\.\d{4}/g) ?? [];
+      console.log(`  [behej] dates found in HTML: ${dateMatches.slice(0, 10).join(", ")}`);
     }
 
-    // Try many possible row selectors
+    // Try many possible row selectors, including th-based rows
     let rows = $([
       "table.race-list tr",
       "table.zavody tr",
@@ -102,11 +114,11 @@ async function scrapeBehej(): Promise<Race[]> {
       ".race-list tr",
       "[class*='terminov'] tr",
       "[class*='race'] tr",
-    ].join(", ")).filter((_, el) => $(el).find("td").length >= 3);
+    ].join(", ")).filter((_, el) => $(el).find("td, th").length >= 3);
 
     if (rows.length === 0) {
-      // Last resort: any tr with enough tds
-      rows = $("tr").filter((_, el) => $(el).find("td").length >= 3);
+      // Last resort: any tr with enough td or th
+      rows = $("tr").filter((_, el) => $(el).find("td, th").length >= 3);
     }
 
     if (page === 1) {
@@ -152,7 +164,7 @@ async function scrapeBehej(): Promise<Race[]> {
 
     let found = 0;
     rows.each((_, el) => {
-      const tds = $(el).find("td");
+      const tds = $(el).find("td, th");
       // Try to find date in any td (look for Czech date pattern)
       let dateRaw = "";
       let dateTdIdx = -1;
