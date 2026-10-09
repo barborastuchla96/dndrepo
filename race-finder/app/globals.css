@@ -298,6 +298,29 @@ main {
 }
 
 /* ── Detail page ── */
+.detail-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.detail-website-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 10px;
+  transition: opacity 0.1s;
+  margin-top: 8px;
+}
+.detail-website-btn:hover { opacity: 0.88; }
+
 .back-link {
   display: inline-flex;
   align-items: center;

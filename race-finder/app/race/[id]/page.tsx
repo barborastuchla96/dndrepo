@@ -5,53 +5,73 @@ export function generateStaticParams() {
   return getAllRaces().map((race) => ({ id: race.id }));
 }
 
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
 function fmtDistances(dists: number[]) {
   return dists.map((d) => (Number.isInteger(d) ? d : d.toFixed(1))).join(" / ") + " km";
+}
+
+function fmtDate(s: string) {
+  const d = new Date(s + "T00:00:00");
+  return `${DAYS[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
 }
 
 export default function RaceDetailPage({ params }: { params: { id: string } }) {
   const race = getRace(params.id);
   if (!race) notFound();
 
+  const surfaceLabel: Record<string, string> = {
+    road: "Road", trail: "Trail", track: "Track", mixed: "OCR / Mixed",
+  };
+
   return (
     <div>
-      <a href="/" className="back-link">← back to calendar</a>
+      <a href="/" className="back-link">← Back to calendar</a>
+
       <div className="race-detail">
-        <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
-          <span className={`tag tag-surface-${race.surface}`}>{race.surface}</span>
+        {/* Top badges */}
+        <div className="detail-badges">
+          {race.surface && (
+            <span className={`badge b-${race.surface}`}>{surfaceLabel[race.surface] ?? race.surface}</span>
+          )}
           {race.itraPoints != null && (
-            <span className="tag tag-itra">ITRA {race.itraPoints} pts</span>
+            <span className="badge b-itra">ITRA · {race.itraPoints} pts</span>
           )}
         </div>
+
         <h1>{race.name}</h1>
+
+        {/* Key info grid */}
         <div className="detail-grid">
           <div className="detail-item">
             <div className="detail-item-label">Date</div>
-            <div className="detail-item-value">{race.date}</div>
+            <div className="detail-item-value">{fmtDate(race.date)}</div>
+          </div>
+          <div className="detail-item">
+            <div className="detail-item-label">Distance{race.distancesKm.length > 1 ? "s" : ""}</div>
+            <div className="detail-item-value">{fmtDistances(race.distancesKm)}</div>
           </div>
           <div className="detail-item">
             <div className="detail-item-label">Location</div>
-            <div className="detail-item-value">{race.location}</div>
-          </div>
-          <div className="detail-item">
-            <div className="detail-item-label">Region</div>
-            <div className="detail-item-value">{race.region}</div>
-          </div>
-          <div className="detail-item">
-            <div className="detail-item-label">Distances</div>
-            <div className="detail-item-value">{fmtDistances(race.distancesKm)}</div>
+            <div className="detail-item-value">{[race.location, race.region].filter(Boolean).join(", ") || "—"}</div>
           </div>
           {race.elevationGainM != null && (
             <div className="detail-item">
               <div className="detail-item-label">Elevation gain</div>
-              <div className="detail-item-value">{race.elevationGainM} m</div>
+              <div className="detail-item-value">{race.elevationGainM} m ↑</div>
             </div>
           )}
         </div>
-        <p className="detail-desc">{race.description}</p>
+
+        {race.description && (
+          <p className="detail-desc">{race.description}</p>
+        )}
+
+        {/* Website link */}
         {race.website && (
-          <a href={race.website} target="_blank" rel="noopener noreferrer" className="detail-link">
-            Official website →
+          <a href={race.website} target="_blank" rel="noopener noreferrer" className="detail-website-btn">
+            {race.source === "behej.com" ? "View on Behej.com →" : "Official website →"}
           </a>
         )}
       </div>
