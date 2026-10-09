@@ -1,0 +1,47 @@
+name: Scrape races
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'  # every Monday at 04:00 UTC
+  workflow_dispatch:       # also triggerable manually from GitHub UI
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/determined-noether-g4zrjy
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: race-finder/package-lock.json
+
+      - name: Install dependencies
+        working-directory: race-finder
+        run: npm ci
+
+      - name: Install Playwright browsers
+        working-directory: race-finder
+        run: npx playwright install chromium --with-deps
+
+      - name: Run scraper
+        working-directory: race-finder
+        run: npm run scrape
+
+      - name: Commit updated races
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add race-finder/data/races.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update races.json [$(date -u '+%Y-%m-%d')]"
+            git push
+          fi
