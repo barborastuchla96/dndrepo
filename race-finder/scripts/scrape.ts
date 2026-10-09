@@ -180,73 +180,103 @@ async function scrapeRunCzech(): Promise<Race[]> {
 // ─── itra.run ────────────────────────────────────────────────────────────────
 // ITRA exposes a public JSON API used by their race finder.
 
+// ITRA renders its race finder client-side — use Playwright and intercept the API call
 async function scrapeItra(): Promise<Race[]> {
-  const year = new Date().getFullYear();
-  const urls = [
-    `https://itra.run/api/Races/GetRaces?country=CZE&year=${year}&page=1&pageSize=200`,
-    `https://itra.run/api/Races/GetRaces?country=CZE&year=${year + 1}&page=1&pageSize=200`,
-    `https://itra.run/api/races/search?country=CZE&limit=200`,
-  ];
+  const browser = await chromium.launch({ headless: true });
+  const races: Race[] = [];
+  try {
+    const context = await browser.newContext();
+    const page = await context.newPage();
 
-  for (const url of urls) {
-    try {
-      const res = await fetch(url, {
-        headers: { Accept: "application/json", "User-Agent": "RaceFinderCZ/1.0" },
+    // Intercept the JSON API response that ITRA's race finder calls
+    let apiData: unknown = null;
+    page.on("response", async (response) => {
+      const url = response.url();
+      if (url.includes("itra.run/api") || url.includes("itra.run/Races")) {
+        try {
+          const ct = response.headers()["content-type"] ?? "";
+          if (ct.includes("json")) {
+            const text = await response.text();
+            if (text.length > 10) {
+              console.log(`  [itra] intercepted API: ${url.slice(0, 80)} (${text.length} bytes)`);
+              try { apiData = JSON.parse(text); } catch { /* ignore */ }
+            }
+          }
+        } catch { /* ignore */ }
+      }
+    });
+
+    // Navigate to ITRA race finder filtered to Czech Republic
+    const year = new Date().getFullYear();
+    await page.goto(`https://itra.run/Races/FindRace?countryCode=CZE&year=${year}`, {
+      waitUntil: "domcontentloaded", timeout: 25000,
+    });
+    await page.waitForTimeout(5000); // wait for JS/API calls to fire
+
+    // Try next year too if current year has few results
+    if (!apiData) {
+      await page.goto(`https://itra.run/Races/FindRace?country=CZE&year=${year}`, {
+        waitUntil: "domcontentloaded", timeout: 20000,
       });
-      if (!res.ok) {
-        console.warn(`  [itra] HTTP ${res.status} for ${url}`);
-        continue;
-      }
-      const text = await res.text();
-      if (!text || text.trim().length < 5) {
-        console.warn(`  [itra] empty response from ${url}`);
-        continue;
-      }
-      console.log(`  [itra] response preview: ${text.slice(0, 120)}`);
-      let json: {
-        races?: Array<{
-          name: string; date: string; city: string;
-          distanceKm?: number; distances?: number[];
-          itraPoints?: number; website?: string;
-        }>;
-        data?: Array<{ name: string; date: string; city: string; distanceKm?: number; itraPoints?: number; website?: string }>;
-      };
-      try {
-        json = JSON.parse(text);
-      } catch {
-        console.warn(`  [itra] JSON parse error from ${url}: ${text.slice(0, 200)}`);
-        continue;
-      }
-
-      const items = json.races ?? json.data ?? [];
-      if (items.length === 0) {
-        console.warn(`  [itra] 0 items in response from ${url}`);
-        continue;
-      }
-
-      const races: Race[] = items.map((r) => ({
-        id: `itra-${slug(r.name)}-${String(r.date).slice(0, 4)}`,
-        name: r.name,
-        date: String(r.date).slice(0, 10),
-        region: "",
-        location: r.city ?? "",
-        distancesKm: (r as { distances?: number[] }).distances ?? (r.distanceKm ? [r.distanceKm] : []),
-        surface: "trail" as Surface,
-        itraPoints: r.itraPoints,
-        description: `ITRA-listed trail race.${r.itraPoints ? ` ITRA points: ${r.itraPoints}.` : ""}`,
-        website: r.website,
-        source: "itra.run",
-      }));
-
-      console.log(`  [itra] found ${races.length} races from ${url}`);
-      return races;
-    } catch (err) {
-      console.warn(`  [itra] ${url} failed: ${err}`);
+      await page.waitForTimeout(4000);
     }
-  }
 
-  console.warn("  [itra] all endpoints failed");
-  return [];
+    if (apiData) {
+      const obj = apiData as Record<string, unknown>;
+      const items = (obj["races"] ?? obj["data"] ?? obj["results"] ?? (Array.isArray(apiData) ? apiData : [])) as Array<{
+        name?: string; raceName?: string; date?: string; startDate?: string;
+        city?: string; location?: string; distanceKm?: number;
+        distances?: number[]; itraPoints?: number; mountPoints?: number;
+        website?: string; url?: string;
+      }>;
+
+      for (const r of items) {
+        const name = r.name ?? r.raceName ?? "";
+        const date = String(r.date ?? r.startDate ?? "").slice(0, 10);
+        if (!name || !date) continue;
+        races.push({
+          id: `itra-${slug(name)}-${date.slice(0, 4)}`,
+          name, date, region: "", location: r.city ?? r.location ?? "",
+          distancesKm: r.distances ?? (r.distanceKm ? [r.distanceKm] : []),
+          surface: "trail",
+          itraPoints: r.itraPoints ?? r.mountPoints,
+          description: `ITRA-listed trail race.${r.itraPoints ? ` ITRA points: ${r.itraPoints}.` : ""}`,
+          website: r.website ?? r.url,
+          source: "itra.run",
+        });
+      }
+      console.log(`  [itra] parsed ${races.length} races from intercepted API`);
+    }
+
+    // Fallback: parse the rendered HTML
+    if (races.length === 0) {
+      const html = await page.content();
+      const $ = cheerio.load(html);
+      console.log(`  [itra] HTML fallback — page title: ${$("title").text().trim()}`);
+      // Look for race rows with a date pattern
+      $("tr, .race-item, .event-item, [class*='race'], [class*='event']").each((_, el) => {
+        const text = $(el).text();
+        const dm = text.match(/(\d{1,2})[.\-\/](\d{1,2})[.\-\/](\d{4})/);
+        if (!dm) return;
+        const date = `${dm[3]}-${dm[2].padStart(2, "0")}-${dm[1].padStart(2, "0")}`;
+        const name = $(el).find("a").first().text().trim() || text.split("\n")[0].trim();
+        const href = $(el).find("a").first().attr("href") ?? "";
+        if (!name || name.length < 3) return;
+        races.push({
+          id: `itra-${slug(name)}-${date.slice(0, 4)}`,
+          name, date, region: "", location: "",
+          distancesKm: parseDistances(text), surface: "trail",
+          description: "ITRA-listed trail race.",
+          website: href.startsWith("http") ? href : href ? `https://itra.run${href}` : undefined,
+          source: "itra.run",
+        });
+      });
+      console.log(`  [itra] HTML fallback found ${races.length} races`);
+    }
+  } finally {
+    await browser.close();
+  }
+  return races;
 }
 
 // ─── main ────────────────────────────────────────────────────────────────────
