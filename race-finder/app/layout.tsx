@@ -20,10 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="site-header">
           <div className="site-header-inner">
             <a href="/" className="brand">
-              <span className="brand-flag">🇨🇿</span>
-              Race Finder CZ
+              🇨🇿 Race Finder CZ
             </a>
-            <p className="header-stat"><span>{count}</span> races in the database</p>
+            <p className="header-stat"><span>{count}</span> races</p>
           </div>
         </header>
         <main>{children}</main>
