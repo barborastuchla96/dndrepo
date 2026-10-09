@@ -101,8 +101,8 @@ async function scrapeBehej(): Promise<Race[]> {
 
       const $ = cheerio.load(html);
 
-      // The table columns (from header): [icon] [Datum] [flag] [Název akce, Místo] [Délka] [Pohár/seriál] [Ode mne]
-      // col 0=icon, 1=date, 2=flag, 3=name+location, 4=distance, 5=series, 6=distance-from-me
+      // Columns: [icon] [Datum] [flag] [Název akce + type + Místo combined] [Délka] [Pohár/seriál] [Ode mne]
+      // td[3] has: <a>Name</a><br>type/dist info<br>Location, region
       const rows = $("table tr").filter((_, el) => $(el).find("td").length >= 4);
 
       let found = 0;
@@ -110,10 +110,14 @@ async function scrapeBehej(): Promise<Race[]> {
         const tds = $(el).find("td");
         const dateRaw = tds.eq(1).text().trim();
         const nameCell = tds.eq(3);
-        const name = nameCell.find("a").first().text().trim() || nameCell.text().trim().split("\n")[0].trim();
+        const name = nameCell.find("a").first().text().trim();
         const href = nameCell.find("a").first().attr("href") ?? "";
-        // location is often a second line in the name cell
-        const location = nameCell.text().trim().split("\n").slice(1).join(" ").trim();
+        // After the <a>, the cell contains <br>type/dist<br>Location
+        const cellHtml = nameCell.html() ?? "";
+        const parts = cellHtml.split(/<br\s*\/?>/i);
+        // parts[0] = <a>name</a>, parts[1] = type/dist info, parts[2] = location
+        const typeRaw = cheerio.load(parts[1] ?? "").text().trim();
+        const location = cheerio.load(parts[2] ?? "").text().trim();
         const distRaw = tds.eq(4).text().trim();
 
         if (!name || !dateRaw) return;
@@ -123,10 +127,10 @@ async function scrapeBehej(): Promise<Race[]> {
 
         races.push({
           id: `behej-${slug(name)}-${date.slice(0, 4)}`,
-          name, date, region: "", location: location || "",
-          distancesKm: parseDistances(distRaw),
-          surface: guessSurface(name, distRaw),
-          description: distRaw || "",
+          name, date, region: "", location,
+          distancesKm: parseDistances(distRaw || typeRaw),
+          surface: guessSurface(name, typeRaw),
+          description: typeRaw || "",
           website: href.startsWith("http") ? href : href ? `https://www.behej.com${href}` : undefined,
           source: "behej.com",
         });
@@ -185,7 +189,19 @@ async function scrapeItra(): Promise<Race[]> {
   const browser = await chromium.launch({ headless: true });
   const races: Race[] = [];
   try {
-    const context = await browser.newContext();
+    const context = await browser.newContext({
+      userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      viewport: { width: 1280, height: 800 },
+      locale: "cs-CZ",
+      extraHTTPHeaders: {
+        "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+      },
+    });
+    // Mask automation signals
+    await context.addInitScript(() => {
+      Object.defineProperty(navigator, "webdriver", { get: () => false });
+    });
     const page = await context.newPage();
 
     // Intercept the JSON API response that ITRA's race finder calls
