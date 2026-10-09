@@ -222,19 +222,27 @@ async function scrapeItra(): Promise<Race[]> {
       }
     });
 
-    // Navigate to ITRA race finder filtered to Czech Republic
     const year = new Date().getFullYear();
-    await page.goto(`https://itra.run/Races/FindRace?countryCode=CZE&year=${year}`, {
-      waitUntil: "domcontentloaded", timeout: 25000,
-    });
-    await page.waitForTimeout(5000); // wait for JS/API calls to fire
 
-    // Try next year too if current year has few results
-    if (!apiData) {
-      await page.goto(`https://itra.run/Races/FindRace?country=CZE&year=${year}`, {
-        waitUntil: "domcontentloaded", timeout: 20000,
-      });
+    // Visit homepage first to establish session/cookies
+    await page.goto("https://itra.run", { waitUntil: "domcontentloaded", timeout: 20000 }).catch(() => {});
+    await page.waitForTimeout(2000);
+
+    // Try several URL patterns for the race finder
+    const itraUrls = [
+      `https://itra.run/Races/FindRace`,
+      `https://itra.run/en/Race/FindRace`,
+      `https://itra.run/race-database`,
+    ];
+
+    for (const itraUrl of itraUrls) {
+      if (apiData) break;
+      console.log(`  [itra] trying: ${itraUrl}`);
+      await page.goto(itraUrl, { waitUntil: "domcontentloaded", timeout: 20000 }).catch(() => {});
       await page.waitForTimeout(4000);
+      const title = await page.title();
+      console.log(`  [itra] page title: ${title}`);
+      if (!title.toLowerCase().includes("error")) break;
     }
 
     if (apiData) {
