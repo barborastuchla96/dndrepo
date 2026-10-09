@@ -6,18 +6,17 @@ import allRaces from "@/data/races.json";
 
 const races = allRaces as Race[];
 
-const MONTH_NAMES = [
-  "January","February","March","April","May","June",
-  "July","August","September","October","November","December",
-];
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const MONTHS_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
 type QuickFilter = "all" | "road" | "trail" | "mixed" | "short" | "half" | "marathon" | "ultra";
 
 const QUICK_FILTERS: { id: QuickFilter; label: string }[] = [
-  { id: "all",      label: "All types" },
+  { id: "all",      label: "All" },
   { id: "road",     label: "Road" },
   { id: "trail",    label: "Trail" },
-  { id: "mixed",    label: "OCR / Mixed" },
+  { id: "mixed",    label: "OCR" },
   { id: "short",    label: "≤10 km" },
   { id: "half",     label: "Half" },
   { id: "marathon", label: "Marathon" },
@@ -36,22 +35,15 @@ function matchesQuick(race: Race, qf: QuickFilter): boolean {
   return true;
 }
 
-function today() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function threeMonthsLater() {
-  const d = new Date();
-  d.setMonth(d.getMonth() + 3);
+function getToday() { return new Date().toISOString().slice(0, 10); }
+function in3Months() {
+  const d = new Date(); d.setMonth(d.getMonth() + 3);
   return d.toISOString().slice(0, 10);
 }
 
-function fmtCardDate(dateStr: string) {
+function parseDateParts(dateStr: string) {
   const d = new Date(dateStr + "T00:00:00");
-  const day = d.getDate();
-  const month = MONTH_NAMES[d.getMonth()].slice(0, 3).toUpperCase();
-  const weekday = d.toLocaleDateString("en-GB", { weekday: "short" });
-  return { day, month, weekday };
+  return { d, day: d.getDate(), month: d.getMonth(), year: d.getFullYear(), weekday: d.getDay() };
 }
 
 function fmtDistances(dists: number[]) {
@@ -62,12 +54,11 @@ export default function HomePage() {
   const [q, setQ] = useState("");
   const [region, setRegion] = useState("");
   const [surface, setSurface] = useState("");
-  const [minDistance, setMinDistance] = useState("");
-  const [maxDistance, setMaxDistance] = useState("");
-  const [dateFrom, setDateFrom] = useState(today);
-  const [dateTo, setDateTo] = useState(threeMonthsLater);
+  const [minKm, setMinKm] = useState("");
+  const [maxKm, setMaxKm] = useState("");
+  const [dateFrom, setDateFrom] = useState(getToday);
+  const [dateTo, setDateTo] = useState(in3Months);
   const [quick, setQuick] = useState<QuickFilter>("all");
-  const [showAll, setShowAll] = useState(false);
 
   const regions = useMemo(
     () => Array.from(new Set(races.map((r) => r.region).filter(Boolean))).sort(),
@@ -84,39 +75,49 @@ export default function HomePage() {
         }
         if (region && race.region !== region) return false;
         if (surface && race.surface !== surface) return false;
-        if (minDistance && !race.distancesKm.some((d) => d >= Number(minDistance))) return false;
-        if (maxDistance && !race.distancesKm.some((d) => d <= Number(maxDistance))) return false;
-        if (!showAll) {
-          if (dateFrom && race.date < dateFrom) return false;
-          if (dateTo && race.date > dateTo) return false;
-        } else {
-          if (dateFrom && race.date < dateFrom) return false;
-          if (dateTo && race.date > dateTo) return false;
-        }
+        if (minKm && !race.distancesKm.some((d) => d >= Number(minKm))) return false;
+        if (maxKm && !race.distancesKm.some((d) => d <= Number(maxKm))) return false;
+        if (dateFrom && race.date < dateFrom) return false;
+        if (dateTo && race.date > dateTo) return false;
         return true;
       })
       .sort((a, b) => a.date.localeCompare(b.date));
-  }, [q, region, surface, minDistance, maxDistance, dateFrom, dateTo, quick, showAll]);
+  }, [q, region, surface, minKm, maxKm, dateFrom, dateTo, quick]);
 
+  // Group by date
   const groups = useMemo(() => {
     const map = new Map<string, Race[]>();
     for (const race of filtered) {
-      const [year, month] = race.date.split("-");
-      const key = `${year}-${month}`;
-      if (!map.has(key)) map.set(key, []);
-      map.get(key)!.push(race);
+      if (!map.has(race.date)) map.set(race.date, []);
+      map.get(race.date)!.push(race);
     }
-    return Array.from(map.entries()).map(([key, items]) => {
-      const [year, month] = key.split("-");
-      return { key, label: `${MONTH_NAMES[Number(month) - 1]} ${year}`, items };
-    });
+    return Array.from(map.entries()).map(([date, items]) => ({ date, items }));
   }, [filtered]);
+
+  // Group dates by month for month headers
+  const months = useMemo(() => {
+    const map = new Map<string, typeof groups>();
+    for (const g of groups) {
+      const key = g.date.slice(0, 7);
+      if (!map.has(key)) map.set(key, []);
+      map.get(key)!.push(g);
+    }
+    return Array.from(map.entries()).map(([key, dateGroups]) => {
+      const [year, month] = key.split("-");
+      return { key, label: `${MONTHS[Number(month) - 1]} ${year}`, dateGroups };
+    });
+  }, [groups]);
+
+  function clearAll() {
+    setQ(""); setRegion(""); setSurface(""); setMinKm(""); setMaxKm("");
+    setDateFrom(""); setDateTo("");
+  }
 
   return (
     <div className="page">
       {/* Toolbar */}
       <div className="toolbar">
-        <div className="toolbar-top">
+        <div className="toolbar-row">
           <input
             className="search-input"
             type="text"
@@ -132,80 +133,72 @@ export default function HomePage() {
             <option value="">All surfaces</option>
             <option value="road">Road</option>
             <option value="trail">Trail</option>
-            <option value="track">Track</option>
             <option value="mixed">Mixed / OCR</option>
           </select>
-          <input className="tb-input-sm" type="number" min={0} placeholder="Min km" value={minDistance} onChange={(e) => setMinDistance(e.target.value)} />
-          <input className="tb-input-sm" type="number" min={0} placeholder="Max km" value={maxDistance} onChange={(e) => setMaxDistance(e.target.value)} />
+          <input className="tb-num" type="number" min={0} placeholder="Min km" value={minKm} onChange={(e) => setMinKm(e.target.value)} />
+          <input className="tb-num" type="number" min={0} placeholder="Max km" value={maxKm} onChange={(e) => setMaxKm(e.target.value)} />
+          <input className="tb-date" type="date" value={dateFrom} onChange={(e) => setDateFrom(e.target.value)} />
+          <span className="dash">–</span>
+          <input className="tb-date" type="date" value={dateTo} onChange={(e) => setDateTo(e.target.value)} />
+          {(q || region || surface || minKm || maxKm) && (
+            <button className="clear-btn" onClick={clearAll}>Clear</button>
+          )}
         </div>
-        <div className="toolbar-bottom">
-          <div className="pill-row">
-            {QUICK_FILTERS.map((f) => (
-              <button
-                key={f.id}
-                className={`pill${quick === f.id ? " pill-active" : ""}`}
-                onClick={() => setQuick(f.id)}
-              >
-                {f.label}
-              </button>
-            ))}
-          </div>
-          <div className="date-controls">
-            <input className="tb-input-date" type="date" value={dateFrom} onChange={(e) => { setDateFrom(e.target.value); setShowAll(false); }} />
-            <span className="date-sep">–</span>
-            <input className="tb-input-date" type="date" value={dateTo} onChange={(e) => { setDateTo(e.target.value); setShowAll(false); }} />
-            <button className="btn-show-all" onClick={() => { setShowAll(!showAll); setDateFrom(""); setDateTo(""); }}>
-              {showAll ? "Show upcoming" : "Show all dates"}
-            </button>
-          </div>
+        <div className="pill-row">
+          {QUICK_FILTERS.map((f) => (
+            <button
+              key={f.id}
+              className={`pill${quick === f.id ? " pill-on" : ""}`}
+              onClick={() => setQuick(f.id)}
+            >{f.label}</button>
+          ))}
+          <span className="result-inline">{filtered.length} races</span>
+          <button className="link-btn" onClick={() => { setDateFrom(""); setDateTo(""); }}>All dates</button>
         </div>
       </div>
 
-      <div className="result-bar">
-        <span className="result-count">{filtered.length} races</span>
-        {!showAll && <span className="result-hint">— next 3 months · <button className="link-btn" onClick={() => { setShowAll(true); setDateFrom(""); setDateTo(""); }}>see all</button></span>}
-      </div>
-
-      {/* Race groups */}
-      {groups.map((group) => (
-        <section key={group.key} className="month-section">
-          <h2 className="month-heading">{group.label} <span className="month-count">{group.items.length}</span></h2>
-          <div className="card-grid">
-            {group.items.map((race) => {
-              const { day, month, weekday } = fmtCardDate(race.date);
+      {/* List */}
+      <div className="race-list">
+        {months.map((month) => (
+          <div key={month.key} className="month-block">
+            <div className="month-hd">{month.label}</div>
+            {month.dateGroups.map(({ date, items }) => {
+              const { day, month: mo, year, weekday } = parseDateParts(date);
+              const isToday = date === getToday();
               return (
-                <a key={race.id} href={`/race/${race.id}`} className="race-card">
-                  <div className="card-header">
-                    <div className="card-date">
-                      <span className="card-day">{day}</span>
-                      <span className="card-month">{month}</span>
+                <div key={date} className="date-block">
+                  <div className={`date-hd${isToday ? " date-hd-today" : ""}`}>
+                    <span className="date-hd-day">{day}</span>
+                    <div className="date-hd-right">
+                      <span className="date-hd-weekday">{DAYS[weekday]}</span>
+                      <span className="date-hd-month">{MONTHS_SHORT[mo]} {year}</span>
                     </div>
-                    <div className="card-badges">
-                      {race.surface && <span className={`badge badge-${race.surface}`}>{race.surface}</span>}
-                      {race.itraPoints != null && <span className="badge badge-itra">ITRA</span>}
-                    </div>
+                    <span className="date-hd-count">{items.length} race{items.length !== 1 ? "s" : ""}</span>
                   </div>
-                  <div className="card-name">{race.name}</div>
-                  <div className="card-meta">
-                    <span className="card-loc">{[race.location, race.region].filter(Boolean).join(" · ")}</span>
+                  <div className="race-rows">
+                    {items.map((race) => (
+                      <a key={race.id} href={`/race/${race.id}`} className="race-row">
+                        <div className="row-name">{race.name}</div>
+                        <div className="row-loc">{[race.location, race.region].filter(Boolean).join(", ")}</div>
+                        <div className="row-right">
+                          {race.surface && <span className={`badge b-${race.surface}`}>{race.surface}</span>}
+                          {race.itraPoints != null && <span className="badge b-itra">ITRA</span>}
+                          <span className="row-dist">{fmtDistances(race.distancesKm)}</span>
+                        </div>
+                      </a>
+                    ))}
                   </div>
-                  <div className="card-footer">
-                    <span className="card-dist">{fmtDistances(race.distancesKm)}</span>
-                    <span className="card-weekday">{weekday}</span>
-                  </div>
-                </a>
+                </div>
               );
             })}
           </div>
-        </section>
-      ))}
-
-      {filtered.length === 0 && (
-        <div className="empty">
-          <p>No races found.</p>
-          <button className="link-btn" onClick={() => { setShowAll(true); setDateFrom(""); setDateTo(""); setQ(""); }}>Clear all filters</button>
-        </div>
-      )}
+        ))}
+        {filtered.length === 0 && (
+          <div className="empty">
+            No races found. <button className="link-btn" onClick={clearAll}>Clear filters</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
