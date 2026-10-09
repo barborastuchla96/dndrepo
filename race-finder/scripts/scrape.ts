@@ -222,27 +222,26 @@ async function scrapeItra(): Promise<Race[]> {
       }
     });
 
-    const year = new Date().getFullYear();
+    // Navigate to ITRA Race Calendar
+    console.log("  [itra] navigating to RaceCalendar...");
+    await page.goto("https://itra.run/Races/RaceCalendar", {
+      waitUntil: "domcontentloaded", timeout: 25000,
+    }).catch((e: Error) => console.warn("  [itra] goto error:", e.message));
+    await page.waitForTimeout(3000);
+    console.log(`  [itra] page title: ${await page.title()}`);
 
-    // Visit homepage first to establish session/cookies
-    await page.goto("https://itra.run", { waitUntil: "domcontentloaded", timeout: 20000 }).catch(() => {});
-    await page.waitForTimeout(2000);
-
-    // Try several URL patterns for the race finder
-    const itraUrls = [
-      `https://itra.run/Races/FindRace`,
-      `https://itra.run/en/Race/FindRace`,
-      `https://itra.run/race-database`,
-    ];
-
-    for (const itraUrl of itraUrls) {
-      if (apiData) break;
-      console.log(`  [itra] trying: ${itraUrl}`);
-      await page.goto(itraUrl, { waitUntil: "domcontentloaded", timeout: 20000 }).catch(() => {});
-      await page.waitForTimeout(4000);
-      const title = await page.title();
-      console.log(`  [itra] page title: ${title}`);
-      if (!title.toLowerCase().includes("error")) break;
+    // Click COUNTRY filter and select Czech Republic
+    try {
+      await page.click("text=COUNTRY", { timeout: 5000 });
+      await page.waitForTimeout(1000);
+      // Try typing CZE or Czech in the search box inside the dropdown
+      await page.fill("input[placeholder*='search' i], input[placeholder*='hledat' i], .filter-search input", "Czech", { timeout: 3000 }).catch(() => {});
+      await page.waitForTimeout(500);
+      await page.click("text=Czech Republic", { timeout: 5000 });
+      await page.waitForTimeout(3000);
+      console.log("  [itra] country filter applied");
+    } catch (e) {
+      console.warn("  [itra] could not apply country filter:", (e as Error).message);
     }
 
     if (apiData) {
@@ -272,30 +271,45 @@ async function scrapeItra(): Promise<Race[]> {
       console.log(`  [itra] parsed ${races.length} races from intercepted API`);
     }
 
-    // Fallback: parse the rendered HTML
+    // Parse rendered HTML — ITRA shows event cards
     if (races.length === 0) {
       const html = await page.content();
       const $ = cheerio.load(html);
-      console.log(`  [itra] HTML fallback — page title: ${$("title").text().trim()}`);
-      // Look for race rows with a date pattern
-      $("tr, .race-item, .event-item, [class*='race'], [class*='event']").each((_, el) => {
-        const text = $(el).text();
-        const dm = text.match(/(\d{1,2})[.\-\/](\d{1,2})[.\-\/](\d{4})/);
+      console.log(`  [itra] parsing HTML, title: ${$("title").text().trim()}`);
+
+      // Each event is a card/section; find all elements that contain a date + race name
+      // ITRA structure: h2/h3 for name, date text like "10 October 2026", city line
+      const seen = new Set<string>();
+      $("h1, h2, h3, h4, .race-name, .event-name, [class*='RaceName'], [class*='EventName'], [class*='title']").each((_, el) => {
+        const name = $(el).text().trim();
+        if (!name || name.length < 4 || seen.has(name)) return;
+        // Look for a date in surrounding context (parent or siblings)
+        const container = $(el).closest("section, article, .event, .race, [class*='card'], [class*='item'], li, div").first();
+        const containerText = container.text();
+        // Match "10 October 2026" or "10 oct 2026" or "10/10/2026"
+        const dm = containerText.match(/(\d{1,2})\s+(january|february|march|april|may|june|july|august|september|october|november|december)\s+(\d{4})/i)
+          ?? containerText.match(/(\d{1,2})[.\-\/](\d{1,2})[.\-\/](\d{4})/);
         if (!dm) return;
-        const date = `${dm[3]}-${dm[2].padStart(2, "0")}-${dm[1].padStart(2, "0")}`;
-        const name = $(el).find("a").first().text().trim() || text.split("\n")[0].trim();
-        const href = $(el).find("a").first().attr("href") ?? "";
-        if (!name || name.length < 3) return;
+        let date: string;
+        if (dm.length === 4 && isNaN(Number(dm[2]))) {
+          const months: Record<string, string> = { january:"01",february:"02",march:"03",april:"04",may:"05",june:"06",july:"07",august:"08",september:"09",october:"10",november:"11",december:"12" };
+          date = `${dm[3]}-${months[dm[2].toLowerCase()]}-${dm[1].padStart(2,"0")}`;
+        } else {
+          date = `${dm[3]}-${dm[2].padStart(2,"0")}-${dm[1].padStart(2,"0")}`;
+        }
+        const href = container.find("a").first().attr("href") ?? "";
+        const distText = container.find("[class*='dist'], [class*='km'], [class*='distance']").text() || containerText;
+        seen.add(name);
         races.push({
-          id: `itra-${slug(name)}-${date.slice(0, 4)}`,
+          id: `itra-${slug(name)}-${date.slice(0,4)}`,
           name, date, region: "", location: "",
-          distancesKm: parseDistances(text), surface: "trail",
+          distancesKm: parseDistances(distText), surface: "trail",
           description: "ITRA-listed trail race.",
           website: href.startsWith("http") ? href : href ? `https://itra.run${href}` : undefined,
           source: "itra.run",
         });
       });
-      console.log(`  [itra] HTML fallback found ${races.length} races`);
+      console.log(`  [itra] HTML parse found ${races.length} races`);
     }
   } finally {
     await browser.close();
