@@ -77,7 +77,7 @@ async function scrapeBehej(): Promise<Race[]> {
     let pageNum = 1;
     let hasMore = true;
 
-    while (hasMore && pageNum <= 20) {
+    while (hasMore && pageNum <= 50) {
       const url = `https://www.behej.com/terminovka?page=${pageNum}`;
       console.log(`  [behej] page ${pageNum}: ${url}`);
       await page.goto(url, { waitUntil: "domcontentloaded", timeout: 20000 });
