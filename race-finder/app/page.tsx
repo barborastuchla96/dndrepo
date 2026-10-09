@@ -7,18 +7,18 @@ import allRaces from "@/data/races.json";
 const races = allRaces as Race[];
 
 const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-const DAYS_SHORT = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const DAYS = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 type QuickFilter = "all"|"road"|"trail"|"mixed"|"short"|"half"|"marathon"|"ultra";
 const QUICK_FILTERS: {id: QuickFilter; label: string}[] = [
-  {id:"all", label:"All"},
-  {id:"road", label:"Road"},
-  {id:"trail", label:"Trail"},
-  {id:"mixed", label:"OCR"},
-  {id:"short", label:"≤10 km"},
-  {id:"half", label:"Half"},
+  {id:"all",      label:"All"},
+  {id:"road",     label:"🏙 Road"},
+  {id:"trail",    label:"🌲 Trail"},
+  {id:"mixed",    label:"💪 OCR"},
+  {id:"short",    label:"≤10 km"},
+  {id:"half",     label:"Half"},
   {id:"marathon", label:"Marathon"},
-  {id:"ultra", label:"Ultra"},
+  {id:"ultra",    label:"Ultra"},
 ];
 
 function matchesQuick(race: Race, qf: QuickFilter) {
@@ -35,12 +35,6 @@ function matchesQuick(race: Race, qf: QuickFilter) {
 
 const today = new Date().toISOString().slice(0, 10);
 function in3m() { const d = new Date(); d.setMonth(d.getMonth()+3); return d.toISOString().slice(0,10); }
-
-function fmtDate(s: string) {
-  const d = new Date(s + "T00:00:00");
-  return `${DAYS_SHORT[d.getDay()]} ${d.getDate()}.${d.getMonth()+1}.`;
-}
-
 function fmtDist(dists: number[]) {
   return dists.map(d => Number.isInteger(d) ? d : d.toFixed(1)).join(" / ") + " km";
 }
@@ -72,23 +66,25 @@ export default function HomePage() {
     }).sort((a,b) => a.date.localeCompare(b.date)),
   [q, region, surface, minKm, maxKm, dateFrom, dateTo, quick]);
 
-  // Group by month → dates → races
+  // Group: month → date → races
   const months = useMemo(() => {
-    const monthMap = new Map<string, Map<string, Race[]>>();
+    const mm = new Map<string, Map<string, Race[]>>();
     for (const race of filtered) {
       const mk = race.date.slice(0,7);
-      if (!monthMap.has(mk)) monthMap.set(mk, new Map());
-      const dm = monthMap.get(mk)!;
+      if (!mm.has(mk)) mm.set(mk, new Map());
+      const dm = mm.get(mk)!;
       if (!dm.has(race.date)) dm.set(race.date, []);
       dm.get(race.date)!.push(race);
     }
-    return Array.from(monthMap.entries()).map(([mk, dm]) => {
+    return Array.from(mm.entries()).map(([mk, dm]) => {
       const [y, m] = mk.split("-");
       return {
         key: mk,
         label: `${MONTHS[+m-1]} ${y}`,
-        dates: Array.from(dm.entries()).map(([date, items]) => ({ date, items })),
-        count: Array.from(dm.values()).reduce((s, a) => s+a.length, 0),
+        dates: Array.from(dm.entries()).map(([date, items]) => {
+          const d = new Date(date + "T00:00:00");
+          return { date, items, day: d.getDate(), weekday: DAYS[d.getDay()] };
+        }),
       };
     });
   }, [filtered]);
@@ -97,7 +93,7 @@ export default function HomePage() {
     <div className="page">
       {/* Filters */}
       <div className="toolbar">
-        <input className="search-input" type="text" placeholder="Search races or locations…"
+        <input className="search-input" type="text" placeholder="🔍  Search races or locations…"
           value={q} onChange={e => setQ(e.target.value)} />
         <select className="tb-select" value={region} onChange={e => setRegion(e.target.value)}>
           <option value="">All regions</option>
@@ -126,49 +122,39 @@ export default function HomePage() {
         <span className="result-inline">{filtered.length} races</span>
       </div>
 
-      {/* Table */}
-      {months.length > 0 ? (
-        <div className="table-wrap">
-          <table className="race-table">
-            <thead>
-              <tr>
-                <th className="col-date">Date</th>
-                <th>Race</th>
-                <th>Location</th>
-                <th className="col-surface">Surface</th>
-                <th className="col-dist">Distance</th>
-              </tr>
-            </thead>
-            {months.map(month => (
-              <tbody key={month.key}>
-                <tr>
-                  <td colSpan={5} style={{padding:0}}>
-                    <div className="month-divider">
-                      <span className="month-divider-label">{month.label}</span>
-                      <span className="month-divider-count">{month.count}</span>
+      {/* Content */}
+      {months.length === 0 ? (
+        <div className="empty">No races found — try different filters</div>
+      ) : months.map((month, mi) => (
+        <div key={month.key}>
+          <div className={`month-divider${mi===0?" first":""}`}>{month.label}</div>
+          {month.dates.map(({ date, items, day, weekday }) => (
+            <div key={date} className="date-section" style={{marginTop: 16}}>
+              <div className="date-heading">
+                <span className="date-heading-day">{day}</span>
+                <span className="date-heading-label">{weekday}</span>
+                <span className="date-heading-count">{items.length} race{items.length!==1?"s":""}</span>
+              </div>
+              <div className="card-grid">
+                {items.map(race => (
+                  <a key={race.id} href={`/race/${race.id}`}
+                    className={`race-card${race.surface ? ` surface-${race.surface}` : ""}`}>
+                    <div className="card-top">
+                      <span className={`badge b-${race.surface}`}>{race.surface || "?"}</span>
+                      <span className="card-dist">{fmtDist(race.distancesKm)}</span>
                     </div>
-                  </td>
-                </tr>
-                {month.dates.map(({ date, items }) =>
-                  items.map((race, i) => (
-                    <tr key={race.id} className={i===0?"date-first":""} onClick={() => window.location.href=`/race/${race.id}`}>
-                      <td className="col-date">{i===0 ? fmtDate(date) : ""}</td>
-                      <td className="col-name">{race.name}</td>
-                      <td className="col-loc">{[race.location, race.region].filter(Boolean).join(", ")}</td>
-                      <td className="col-surface">
-                        {race.surface && <span className={`badge b-${race.surface}`}>{race.surface}</span>}
-                      </td>
-                      <td className="col-dist">{fmtDist(race.distancesKm)}</td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            ))}
-          </table>
+                    <div className="card-name">{race.name}</div>
+                    <div className="card-loc">📍 {[race.location, race.region].filter(Boolean).join(", ") || "–"}</div>
+                    {race.itraPoints != null && (
+                      <div className="card-badge-row"><span className="badge b-itra">ITRA {race.itraPoints}pts</span></div>
+                    )}
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      ) : (
-        <div className="empty">No races found. <button className="link-btn" onClick={() => { setQ(""); setRegion(""); setSurface(""); setMinKm(""); setMaxKm(""); setDateFrom(""); setDateTo(""); }}>Clear all filters</button></div>
-      )}
+      ))}
     </div>
   );
 }
